@@ -248,8 +248,10 @@ text-align: end;
   position: absolute;
   /* top: -35%;
   left: 8%; */
-  top: -25%;
-  left: 25%;
+  top: 0%;
+  left: 35%;
+  width: 400px;
+  height: 400px;
 }
 .banner-desc .right{
   line-height: 1.4;
@@ -415,7 +417,7 @@ padding: 30px 65px;
   transform: scale(1.1,1.1);
 }
 .product-detail-container{
-  display: flex;
+ display: flex;
  gap: 40px;
  margin: 40px;
  margin-top: 60px;
@@ -450,7 +452,9 @@ padding: 30px 65px;
 }
 
 .selected-image{
-  background-color:#f02d34;
+  /* background-color:#f02d34; */
+  border-color: #f02d3399;
+  border-style: solid;
 }
 .reviews{
   color: #f02d34;

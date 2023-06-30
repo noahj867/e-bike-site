@@ -1,0 +1,10 @@
+.how-it-works-title {
+    display: flex;
+    justify-content: center;
+    font-size: 60px;
+  }
+  
+  .how-it-works-image {
+    max-width: 100%;
+    height: auto;
+  }

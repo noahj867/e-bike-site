@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {Product, FooterBanner, HeroBanner}
+import {Product, FooterBanner, HeroBanner, HowItWorks, ProductHighlight}
 from '../components';
 
 import {client} from '../lib/client';
@@ -9,7 +9,8 @@ const Index = ({products, bannerData}) => {
   return (
     <>
       <HeroBanner heroBanner={bannerData.length && bannerData[0]}/>
-      {console.log(bannerData)}
+      <ProductHighlight heroBanner={bannerData.length && bannerData[0]}/>
+      <HowItWorks/>
     <div className='products-heading'>
       <h2>E-bike Products</h2>
       <p>This stuff will blow your mind</p>

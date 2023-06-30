@@ -1,0 +1,22 @@
+.productHighlightContainer {
+  display: flex;
+  margin: 20px;
+}
+.productHighlightContainer .productHighlightDetails {
+  margin: 30px;
+}
+.productHighlightContainer .productHighlightDetails .productHighlightRow {
+  display: flex;
+  gap: 30px;
+  margin: 30px;
+}
+.productHighlightContainer .productHighlightDetails .productHighlightRow .productHighlightIconContainer {
+  flex: 1;
+  margin-top: 5px;
+}
+.productHighlightContainer .productHighlightDetails .productHighlightRow .productHighlightIconContainer .productHighlightIcon {
+  size: 60px;
+}
+.productHighlightContainer .productHighlightDetails .productHighlightRow .productHighlightIconContainer .productHighlightDesc {
+  flex: 8;
+}/*# sourceMappingURL=productHighlight.module.css.map */

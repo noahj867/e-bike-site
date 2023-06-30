@@ -1,0 +1,23 @@
+.productCard {
+  transform: scale(1, 1);
+  transition: transform 0.5s ease;
+  color: #324d67;
+  margin-bottom: 15px;
+}
+.productCard:hover {
+  transform: scale(1.1, 1.1);
+}
+.productCard .productImage {
+  border-radius: 15px;
+  background-color: #ebebeb;
+  transform: scale(1, 1);
+  transition: transform 0.5s ease;
+}
+.productCard .productName {
+  font-weight: 500;
+}
+.productCard .productPrice {
+  font-weight: 800;
+  margin-top: 6px;
+  color: black;
+}/*# sourceMappingURL=product.module.css.map */

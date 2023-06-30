@@ -1,0 +1,28 @@
+.productHighlightContainer {
+    display: flex;
+    margin: 20px;
+    
+    .productHighlightDetails {
+    margin: 30px;
+
+        .productHighlightRow {
+            display: flex;
+            gap: 30px;
+            margin: 30px;
+
+            .productHighlightIconContainer {
+                flex: 1;
+                margin-top: 5px;
+
+                .productHighlightIcon {
+                    size: 60px;
+                  }
+
+                .productHighlightDesc {
+                    flex: 8;
+                  }
+
+              }
+        }
+    }
+}

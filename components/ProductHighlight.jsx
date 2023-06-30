@@ -1,9 +1,10 @@
-import React from 'react'
-import { urlFor } from '@/lib/client'
+import React from 'react';
+import { urlFor } from '@/lib/client';
 import BatteryChargingFullIcon from '@mui/icons-material/BatteryChargingFull';
 import Speed from '@mui/icons-material/Speed';
 import HandshakeIcon from '@mui/icons-material/Handshake';
 import HealthAndSafetyIcon from '@mui/icons-material/HealthAndSafety';
+import style from 'styles/productHighlight.module.css';
 
 const ProductHighlight = ({heroBanner}) => {
   const productHighlightImages = [BatteryChargingFullIcon, Speed, HandshakeIcon, HealthAndSafetyIcon];
@@ -15,24 +16,24 @@ const ProductHighlight = ({heroBanner}) => {
   }]
 
   return (
-    <div className='product-highlight-container'>
+    <div className={style.productHighlightContainer}>
         <img
-            className='product-highlight-image'
+            className={style.productHighlightImage}
             src={urlFor(heroBanner.image)} 
             alt="bike machine"/>
-        <div className='product-highlight-details'>
+        <div className={style.productHighlightDetails}>
             {productHighlightDescs.map((item, index) => (
-                <div className='product-highlight-row' key={index}>
-                  <div className="product-highlight-icon-container">
-                    <h2 className="product-highlight-icon">
+                <div className={style.productHighlightRow} key={index}>
+                  <div className={style.productHighlightIconContainer}>
+                    <h2 className={style.productHighlightIcon}>
                       {React.createElement(productHighlightImages[index], {fontSize: 'large'})}
                     </h2>
                   </div>
-                  <div className='product-highlight-desc'>
-                    <h2 className='product-highlight-title'>
+                  <div className={style.productHighlightDesc}>
+                    <h2>
                       {item.title}
                     </h2>
-                    <div className='product-highlight-body'>
+                    <div>
                       {item.body}
                     </div>
                   </div>

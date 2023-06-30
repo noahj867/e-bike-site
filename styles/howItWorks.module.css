@@ -1,0 +1,10 @@
+.howItWorksTitle {
+  display: flex;
+  justify-content: center;
+  font-size: 60px;
+}
+
+.howItWorksImage {
+  max-width: 100%;
+  height: auto;
+}/*# sourceMappingURL=howItWorks.module.css.map */

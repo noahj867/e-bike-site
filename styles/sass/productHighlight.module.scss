@@ -11,11 +11,10 @@
             margin: 30px;
 
             .productHighlightIconContainer {
-                flex: 1;
                 margin-top: 5px;
 
                 .productHighlightIcon {
-                    size: 60px;
+                    flex:1
                   }
 
                 .productHighlightDesc {

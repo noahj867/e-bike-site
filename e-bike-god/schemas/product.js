@@ -28,12 +28,32 @@ export default {
         },
         {
             name: 'price',
-            Title: 'Price',
+            title: 'Price',
             type: 'number',
         },
         {
-            name: 'details',
-            Title: 'Details',
+            name: 'price_display',
+            title: 'Price Display',
+            type: 'string',
+        },
+        {
+            name: 'subtitle',
+            title: 'Subtitle',
+            type: 'string',
+        },
+        {
+            name: 'highlight1',
+            title: 'Highlight1',
+            type: 'string',
+        },
+        {
+            name: 'highlight2',
+            title: 'Highlight2',
+            type: 'string',
+        },         
+        {
+            name: 'highlight3',
+            title: 'Highlight3',
             type: 'string',
         }
     ]

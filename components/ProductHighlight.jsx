@@ -8,6 +8,7 @@ import style from 'styles/productHighlight.module.css';
 
 const ProductHighlight = ({heroBanner}) => {
   const productHighlightImages = [BatteryChargingFullIcon, Speed, HandshakeIcon, HealthAndSafetyIcon];
+  // const productHighlightColors = ['black', 'black', 'black', 'black'];
   const productHighlightDescs = [
     { title: 'Power', body: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis, reprehenderit? Possimus, molestiae laboriosam tempora quae temporibus at ad perferendis'},
     { title: 'Speed', body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam et voluptates, cupiditate quibusdam eos explicabo.'},
@@ -26,7 +27,7 @@ const ProductHighlight = ({heroBanner}) => {
                 <div className={style.productHighlightRow} key={index}>
                   <div className={style.productHighlightIconContainer}>
                     <h2 className={style.productHighlightIcon}>
-                      {React.createElement(productHighlightImages[index], {fontSize: 'large'})}
+                      {React.createElement(productHighlightImages[index], {fontSize: 'large',})}
                     </h2>
                   </div>
                   <div className={style.productHighlightDesc}>

@@ -11,11 +11,10 @@
   margin: 30px;
 }
 .productHighlightContainer .productHighlightDetails .productHighlightRow .productHighlightIconContainer {
-  flex: 1;
   margin-top: 5px;
 }
 .productHighlightContainer .productHighlightDetails .productHighlightRow .productHighlightIconContainer .productHighlightIcon {
-  size: 60px;
+  flex: 1;
 }
 .productHighlightContainer .productHighlightDetails .productHighlightRow .productHighlightIconContainer .productHighlightDesc {
   flex: 8;

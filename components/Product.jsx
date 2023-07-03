@@ -28,7 +28,7 @@ const Product = ({product}) => {
             className={style.productImage}
             />
           <div className={style.productHighlights}>
-            {highlights && highlights.length > 0 && highlights.map((highlight, index) => (
+            {highlights.map((highlight, index) => (
               <div key={index} className={style.highlightRow}>
                 <BeenhereIcon style={{color: 'blue'}}/>
                 <div>{highlight}</div>

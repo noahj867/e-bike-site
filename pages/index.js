@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {Product, FooterBanner, HeroBanner, HowItWorks, ProductHighlight}
+import {Product, FooterBanner, HeroBanner, HowItWorks, ProductHighlight, News}
 from '../components';
 
 import {client} from '../lib/client';
@@ -18,6 +18,7 @@ const Index = ({products, bannerData}) => {
     <div className='products-container'>
       {products?.map((product) => <Product key={product._id} product={product}/>)}
     </div>
+    <News />
 
     <FooterBanner footerBanner={bannerData.length && bannerData[0]}/>
     </>

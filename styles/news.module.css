@@ -1,0 +1,14 @@
+.newsHeader {
+  display: flex;
+  justify-content: center;
+  font-size: 60px;
+}
+
+.newsMainContainer {
+  display: flex;
+}
+
+.newsContainer {
+  display: flex;
+  align-items: center;
+}/*# sourceMappingURL=news.module.css.map */

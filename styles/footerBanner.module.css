@@ -1,0 +1,57 @@
+.footerBannerContainer {
+  padding: 100px 40px;
+  background-image: url(/footer-banner-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
+  line-height: 1;
+  color: white;
+  width: 100%;
+  margin-top: 120px;
+}
+.footerBannerContainer .bannerDesc {
+  display: flex;
+  justify-content: space-between;
+}
+.footerBannerContainer .bannerDesc button {
+  border-radius: 15px;
+  padding: 10px 16px;
+  background-color: white;
+  color: red;
+  border: none;
+  margin-top: 40px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.footerBannerContainer .bannerDesc .left h3 {
+  font-weight: 900;
+  font-size: 80px;
+  margin-left: 25px;
+}
+.footerBannerContainer .bannerDesc .left p {
+  margin: 18px;
+}
+.footerBannerContainer .bannerDesc .left .footer-banner-image {
+  position: absolute;
+  top: -35%;
+  left: 8%;
+  top: 0%;
+  left: 35%;
+  width: 400px;
+  height: 400px;
+}
+.footerBannerContainer .bannerDesc .right {
+  line-height: 1.4;
+}
+.footerBannerContainer .bannerDesc .right h3 {
+  font-weight: 800;
+  font-size: 60px;
+}
+.footerBannerContainer .bannerDesc .right p {
+  font-size: 18px;
+}
+.footerBannerContainer .bannerDesc .right .companyDesc {
+  font-size: 14px;
+  font-weight: 300;
+}/*# sourceMappingURL=footerBanner.module.css.map */

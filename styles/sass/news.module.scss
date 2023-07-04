@@ -4,11 +4,32 @@
     font-size: 60px;
 }
 
-.newsMainContainer {
-    display: flex;
-}
-
 .newsContainer {
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100vw;
+    height: auto;
+    padding: 20px; 
+}
+
+.newsCard {
+    flex: 1;
+    flex-basis: 300px;
+    max-width: 400px;
+    margin: 20px; 
+    transform: scale(1,1);
+    transition: 1s ease;
+
+    &:hover {
+        box-shadow: 3px 3px 5px  rgba(0, 0, 0, 0.64);
+        transform: scale(1.1,1.1);
+        transition: 1s ease;
+    }
+}
+
+.newsImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
 }

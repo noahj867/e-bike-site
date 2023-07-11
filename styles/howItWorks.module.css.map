@@ -1,1 +1,1 @@
-{"version":3,"sources":["sass/howItWorks.module.scss","howItWorks.module.css"],"names":[],"mappings":"AAAA;EACI,aAAA;EACA,uBAAA;EACA,eAAA;ACCJ;;ADEE;EACE,eAAA;EACA,YAAA;ACCJ","file":"howItWorks.module.css"}
+{"version":3,"sourceRoot":"","sources":["sass/sections/howItWorks.module.scss"],"names":[],"mappings":"AAAA;EACI;EACA;EACA;;;AAGF;EACE;EACA","file":"howItWorks.module.css"}

@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["sass/productHighlight.module.scss"],"names":[],"mappings":"AAAA;EACI;EACA;;AAEA;EACA;;AAEI;EACI;EACA;EACA;;AAEA;EACI;;AAEA;EACI;;AAGJ;EACI","file":"productHighlight.module.css"}
+{"version":3,"sourceRoot":"","sources":["sass/sections/productHighlight.module.scss"],"names":[],"mappings":"AAAA;EACI;EACA;;AAEA;EACA;;AAEI;EACI;EACA;EACA;;AAEA;EACI;;AAEA;EACI;;AAGJ;EACI","file":"productHighlight.module.css"}

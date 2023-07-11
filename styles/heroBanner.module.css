@@ -1,0 +1,53 @@
+.heroBannerContainer {
+  padding: 100px 40px;
+  background-color: #dcdcdc;
+  /* border-radius: 15px; */
+  position: relative;
+  height: 500px;
+  line-height: 0.9;
+  width: 100%;
+}
+.heroBannerContainer .beatsSolo {
+  font-size: 20px;
+  margin-top: 20px;
+}
+.heroBannerContainer .heroBannerImage {
+  position: absolute;
+  top: 0%;
+  right: 20%;
+  width: 450px;
+  height: 450px;
+}
+.heroBannerContainer button {
+  /* border-radius: 15px; */
+  padding: 10px 16px;
+  background-color: #6797df;
+  color: white;
+  border: none;
+  margin-top: 40px;
+  margin-right: 15px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  z-index: 10000 !important;
+  transition: all 0.5s linear 0s;
+}
+.heroBannerContainer button:hover {
+  background-image: linear-gradient(45deg, #6797df, #7d8084);
+}
+.heroBannerContainer .buttonSecondary {
+  background-color: #7d8084;
+  /* &:hover{
+    background-image: linear-gradient(45deg,#6797df, #7d8084 );
+  } */
+}
+.heroBannerContainer h3 {
+  font-size: 4rem;
+  margin-top: 4px;
+}
+.heroBannerContainer h1 {
+  color: white;
+  font-size: 10em;
+  margin-left: -20px;
+  text-transform: uppercase;
+}/*# sourceMappingURL=heroBanner.module.css.map */

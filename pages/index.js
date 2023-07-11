@@ -1,4 +1,5 @@
 import React from 'react';
+import style from 'styles/layout.module.css';
 
 import {Product, FooterBanner, HeroBanner, HowItWorks, ProductHighlight, News}
 from '../components';
@@ -11,11 +12,11 @@ const Index = ({products, bannerData}) => {
       <HeroBanner heroBanner={bannerData.length && bannerData[0]}/>
       <ProductHighlight heroBanner={bannerData.length && bannerData[0]}/>
       <HowItWorks/>
-    <div className='products-heading'>
+    <div className={style.productsHeading}>
       <h2>E-bike Products</h2>
       <p>This stuff will blow your mind</p>
     </div>
-    <div className='products-container'>
+    <div className={style.productsContainer}>
       {products?.map((product) => <Product key={product._id} product={product}/>)}
     </div>
     <News />

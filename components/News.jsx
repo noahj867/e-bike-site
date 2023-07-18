@@ -33,7 +33,7 @@ const newsItems = [
                 <div key={index} className={style.newsCard}>
                     <Link href={newsItem.link}>
                         <img src={newsItem.image} className={style.newsImage} />
-                        <h2 className={style.newsHeadline}>{newsItem.headline.charAt(0).toUpperCase() + newsItem.headline.slice(1).replace(/-/g, ' ')}</h2>
+                        <h3 className={style.newsHeadline}>{newsItem.headline.charAt(0).toUpperCase() + newsItem.headline.slice(1).replace(/-/g, ' ')}</h3>
                     </Link>   
                 </div>
             ))}

@@ -1,76 +1,85 @@
-.navbar-container{
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 18px;
-    position: relative;
-    background-color: #6797df;
-  
-  .navbar-item {
-    transition: all 0.2s linear 0s;
-    margin-right: -100px;
-    color: white;
-    
-    &:before {
-      content: "\f178";
-      font-family: FontAwesome;
-      font-size: 15px;
-      position: absolute;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      right: 0;
-      top: 0;
-      opacity: 0;
-      height: 100%;
-      width: 40px;
-      transition: all 0.2s linear 0s;
-    }
-    
-    &:hover {
-      text-indent: -20px;
-      color: black;
-      
-      &:before {
-        opacity: 1;
-        text-indent: 0px;
-      }
-    }
-}
+@use '../core/colors' as *;
 
-    .logo{
-        color: white;
-        font-size: 18px;
-        margin-right: 500px;
-      
+.navbarContainer{
+    display: flex;
+    // justify-content: space-between;
+    padding: 20px 18px;
+    padding-right: 25px;
+    background-color: $dark-green;
+    color: white;
+        .logo{
+        padding-right: 25px;
+
+        &:hover{
+          color: black
+        }
       }
-      .cart-icon{
+
+    .navbarItemContainer {
+      display: flex;
+      margin-left: auto;
+      gap: 50px;
+      padding-right: 25px;
+
+      @media (max-width: 537px) {
+        display: none;
+      }
+
+
+      @media (max-width: 500px) {
+        gap: 25px;
+        padding-right: 0px;
+      }
+
+      .navbarItem {
+        transition: all 0.2s linear 0s;
+        font-size: 1rem;
+
+        // &:before {
+        //   content: "\f178";
+        //   font-family: FontAwesome;
+        //   font-size: 15px;
+        //   display: flex;
+        //   align-items: center;
+        //   justify-content: center;
+        //   right: 0;
+        //   top: 0;
+        //   opacity: 0;
+        //   height: 100%;
+        //   width: 40px;
+        //   transition: all 0.2s linear 0s;
+        // }
+        
+        &:hover {
+          text-indent: -20px;
+          color: black;
+          
+          &:before {
+            opacity: 1;
+            text-indent: 0px;
+          }
+        }
+    }
+    }
+
+      .cartIcon{
         transition: all 0.2s linear 0s;
         font-size: 25px;
+        padding-left: 50px;
         color: white;
         cursor: pointer;
-        position: relative;
         /* transition: transform .4s ease; */
         border: none;
         background-color: transparent;
-        margin-left: 200px;
+
+        @media (max-width: 537px) {
+          display: none;
+        }
 
         &:hover{
-            transform: scale(1.1,1.1);
             color: black;
           }
       
       }
-      .cart-item-qty{
-        position: absolute;
-        right: -8px;
-        font-size: 12px;
-        color: #eee;
-        background-color: #f02d34;
-        width: 18px;
-        height: 18px;
-        border-radius: 50%;
-        text-align: center;
-        font-weight: 600;
-    }
   }
 

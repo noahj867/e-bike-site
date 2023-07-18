@@ -1,6 +1,17 @@
 .productHighlightContainer {
   display: flex;
-  margin: 20px;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to top, #B7D7BD, white);
+  color: black;
+}
+@media (max-width: 1085px) {
+  .productHighlightContainer {
+    flex-direction: column;
+  }
+}
+.productHighlightContainer .productHighlightImage {
+  max-width: 100%;
 }
 .productHighlightContainer .productHighlightDetails {
   margin: 30px;
@@ -12,10 +23,4 @@
 }
 .productHighlightContainer .productHighlightDetails .productHighlightRow .productHighlightIconContainer {
   margin-top: 5px;
-}
-.productHighlightContainer .productHighlightDetails .productHighlightRow .productHighlightIconContainer .productHighlightIcon {
-  flex: 1;
-}
-.productHighlightContainer .productHighlightDetails .productHighlightRow .productHighlightIconContainer .productHighlightDesc {
-  flex: 8;
 }/*# sourceMappingURL=productHighlight.module.css.map */

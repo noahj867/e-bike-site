@@ -16,9 +16,9 @@ const Product = ({product}) => {
     <div className={`${style.productCardContainer} ${name === 'Power' ? style.productSpecial : '' }`}>
       <Link href={`/product/${slug.current}`}>
         <div className={style.productBanner}>
-          <h1 className={style.productName}>{name}</h1>
+          <h2 className={style.productName}>{name}</h2>
           <p className={style.productSubtitle}>{subtitle}</p>
-          <p className={style.productPrice}>{price_display}</p>
+          <h3 className={style.productPrice}>{price_display}</h3>
         </div>
         <div className={style.productDetailContainer}>
          <img 
@@ -30,7 +30,7 @@ const Product = ({product}) => {
           <div className={style.productHighlights}>
             {highlights.map((highlight, index) => (
               <div key={index} className={style.highlightRow}>
-                <BeenhereIcon style={{color: 'blue'}}/>
+                <BeenhereIcon style={{color: '#66846C'}}/>
                 <div>{highlight}</div>
               </div>
             ))}

@@ -1,0 +1,35 @@
+    :root {
+        --fs-xl: clamp(2.5rem, 12vw + .5rem, 4rem); 
+        --fs-600: 2rem; 
+        --fs-500: 1.5rem;
+        --fs-400: 1rem; 
+    }
+
+@media (min-width: 1200px) {
+    :root {
+        --fs-600: 2.5rem;
+        --fs-500: 1.75rem;
+        --fs-400: 1.25rem; 
+    }
+}
+
+p {
+    font-size: var(--fs-400);
+}
+
+h3 {
+    font-size: var(--fs-500);
+}
+
+h2 {
+    font-size: var(--fs-600);
+}
+
+h1 {
+    font-size: var(--fs-xl);
+}
+
+div {
+    font-size: var(--fs-400);
+}
+

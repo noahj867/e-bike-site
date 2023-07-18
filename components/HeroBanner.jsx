@@ -6,25 +6,19 @@ import style from 'styles/heroBanner.module.css';
 const HeroBanner = ({heroBanner}) => {
   return (
     <div className={style.heroBannerContainer}>
-        <div>
-            <h3>Boundless Potential</h3>
+        <div className={style.heroBannerText}>
+            <h1>Boundless Potential</h1>
             <p className={style.beatsSolo}>Bikes that can go as far you go</p>
-            {/* <h1>{heroBanner.largeText1}</h1> */}
-            <img src={urlFor(heroBanner.image)} 
-            alt="headphones" 
-            className={style.heroBannerImage}/>
             <div>
                 <Link href={`/product/${heroBanner.product}`}>
                     <button type="button">Buy Bike</button>
                     <button class={style.buttonSecondary} type="button">Purchase Pass</button>
-
                 </Link>
-                {/* <div className='desc'>
-                    <h5>Description</h5>
-                    <p>{heroBanner.desc}</p>
-                </div> */}
             </div>
         </div>
+        <img src={urlFor(heroBanner.image)} 
+        alt="headphones" 
+        className={style.heroBannerImage}/>
     </div>
   )
 }

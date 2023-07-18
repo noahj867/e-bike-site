@@ -1,9 +1,22 @@
 .productHighlightContainer {
     display: flex;
-    margin: 20px;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to top,#B7D7BD, white);
+    // background-color: #B7D7BD;
+    color: black;
+    // flex-wrap: wrap;
+
+    @media (max-width: 1085px) {
+        flex-direction: column;
+    }
+
+    .productHighlightImage {
+        max-width: 100%;
+    }
     
     .productHighlightDetails {
-    margin: 30px;
+        margin: 30px;
 
         .productHighlightRow {
             display: flex;
@@ -14,11 +27,9 @@
                 margin-top: 5px;
 
                 .productHighlightIcon {
-                    flex:1
                   }
 
                 .productHighlightDesc {
-                    flex: 8;
                   }
 
               }

@@ -1,7 +1,7 @@
 .heroBannerContainer {
   display: flex;
-  flex-wrap: wrap;
   padding: 80px 40px;
+  background-image: linear-gradient(to bottom, #B7D7BD, white);
   background-color: white;
   gap: 50px;
 }
@@ -21,7 +21,7 @@
 .heroBannerContainer .heroBannerText button {
   /* border-radius: 15px; */
   padding: 10px 16px;
-  background-color: #36523D;
+  background-color: black;
   color: white;
   border: none;
   margin-top: 25px;
@@ -30,11 +30,44 @@
   cursor: pointer;
   z-index: 10000 !important;
   transition: all 0.5s linear 0s;
+  border-radius: 10px;
+  font-size: 1rem;
+  box-shadow: 2px 2px 3px #36523D;
 }
 .heroBannerContainer .heroBannerText .buttonSecondary {
-  background-color: #82a98a;
-  color: white;
+  background-color: white;
+  color: black;
 }
 .heroBannerContainer .heroBannerImage {
   max-width: 100%;
+}
+.heroBannerContainer .motorcycleGifWrapper {
+  display: flex;
+  max-width: 600px;
+  margin-left: 50px;
+}
+.heroBannerContainer .motorcycleGifWrapper .motorcycleGif {
+  object-fit: contain;
+  width: 100%;
+  border-radius: 10px;
+}
+@media (max-width: 600px) {
+  .heroBannerContainer .motorcycleGifWrapper .motorcycleGif {
+    max-width: 340px;
+  }
+}
+@media (max-width: 800px) {
+  .heroBannerContainer {
+    flex-wrap: wrap-reverse;
+  }
+  .heroBannerContainer .motorcycleGifWrapper {
+    max-width: 400px;
+    justify-content: center;
+    margin-left: 0px;
+  }
+}
+@media (max-width: 800px) {
+  .heroBannerContainer {
+    justify-content: center;
+  }
 }/*# sourceMappingURL=heroBanner.module.css.map */

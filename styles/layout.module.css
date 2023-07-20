@@ -1,18 +1,20 @@
-.productsHeading {
+.productSection {
+  background-image: linear-gradient(#B7D7BD, white);
+}
+.productSection .productsHeading {
   text-align: center;
-  margin: 40px 0px;
+  padding: 40px 0px;
   color: black;
 }
-.productsHeading h2 {
-  font-size: 40px;
+.productSection .productsHeading h2 {
+  font-size: 50px;
   font-weight: 800;
 }
-.productsHeading p {
-  font-size: 16px;
+.productSection .productsHeading p {
+  font-size: 24px;
   font-weight: 200;
 }
-
-.productsContainer {
+.productSection .productsContainer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

@@ -2,11 +2,12 @@
 
 .navbarContainer{
     display: flex;
+    align-items: center;
     // justify-content: space-between;
     padding: 20px 18px;
     padding-right: 25px;
-    background-color: $dark-green;
-    color: white;
+    background-color: $light-green;
+    color: black;
         .logo{
         padding-right: 25px;
 
@@ -32,41 +33,21 @@
       }
 
       .navbarItem {
-        transition: all 0.2s linear 0s;
+        transition: all 0.2s ease;
         font-size: 1rem;
+        }
 
-        // &:before {
-        //   content: "\f178";
-        //   font-family: FontAwesome;
-        //   font-size: 15px;
-        //   display: flex;
-        //   align-items: center;
-        //   justify-content: center;
-        //   right: 0;
-        //   top: 0;
-        //   opacity: 0;
-        //   height: 100%;
-        //   width: 40px;
-        //   transition: all 0.2s linear 0s;
-        // }
-        
-        &:hover {
-          text-indent: -20px;
-          color: black;
-          
-          &:before {
-            opacity: 1;
-            text-indent: 0px;
-          }
+        .dropDownIcon{
+          margin-left: -45px;
+          padding-bottom: 5px;
         }
     }
     }
 
       .cartIcon{
         transition: all 0.2s linear 0s;
-        font-size: 25px;
+        font-size: 23px;
         padding-left: 50px;
-        color: white;
         cursor: pointer;
         /* transition: transform .4s ease; */
         border: none;
@@ -75,11 +56,14 @@
         @media (max-width: 537px) {
           display: none;
         }
+        @media (max-width: 1200px) {
+          font-size: 20px;
+        }
 
         &:hover{
             color: black;
           }
       
       }
-  }
+
 

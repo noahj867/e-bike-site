@@ -8,15 +8,47 @@
   background-color: rgb(242 242 242);
   border-radius: 15px;
   width: 380px;
-  height: 500px;
+  height: 550px;
   transform: scale(1, 1);
   transition: transform 0.5s ease;
-  color: white;
+  color: black;
   margin-bottom: 50px;
   box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
+  margin-right: 10px;
 
   &:hover{
     transform: scale(1.05,1.05);
+  }
+
+  .productBanner {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 15px 0px 15px 0px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    background: linear-gradient($light-green,$lighter-green);
+
+    .productName {
+      font-weight: 500;
+    }
+
+    .productSubtitle{
+      margin-bottom: 10px;
+      margin-top: 5px;
+    }
+
+    .productPrice {
+      font-weight: 500;
+    }
+
+    .productImage {
+      display: flex;
+      justify-content: center;
+      transform: scale(1, 1);
+      transition: transform 0.5s ease;
+    }
   }
 
   .productDetailContainer {
@@ -28,33 +60,11 @@
         gap: 10px;
         padding: 5px;
         color: black;
-      
+
+        .productBullet {
+          font-weight: 425;
+        }
       }
-    }
-  }
-  .productBanner {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    padding: 15px 0px 15px 0px;
-    border-radius: 15px;
-    margin-bottom: 10px;
-    background-color: $lighter-green;
-
-    .productImage {
-      display: flex;
-      justify-content: center;
-      transform: scale(1, 1);
-      transition: transform 0.5s ease;
-    }
-    .productSubtitle{
-      margin-bottom: 10px;
-    }
-
-    .productPrice{
-    font-weight: 800;
-    font-size: 40px;
     }
   }
 }

@@ -55,6 +55,16 @@ export default {
             name: 'highlight3',
             title: 'Highlight3',
             type: 'string',
+        },        
+        {
+            name: 'highlight4',
+            title: 'Highlight4',
+            type: 'string',
+        },
+        {
+            name: 'highlight5',
+            title: 'Highlight5',
+            type: 'string',
         }
     ]
 }

@@ -1,8 +1,21 @@
+@use '../core/colors' as *;
+
+@property --gradient-angle {
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
+}
+
+@keyframes rotation {
+    0% { --gradient-angle: 0deg; }
+    100% { --gradient-angle: 360deg; }
+}
+
 .productHighlightContainer {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient(to top,#B7D7BD, white);
+    // background-image: linear-gradient(to top,#B7D7BD, white);
     // background-color: #B7D7BD;
     color: black;
     // flex-wrap: wrap;
@@ -19,20 +32,79 @@
         margin: 30px;
 
         .productHighlightRow {
+            transition: all 0.2s ease;
             display: flex;
             gap: 30px;
-            margin: 30px;
+            margin-bottom: 30px;
+            margin-top: 30px;
+            position: relative;
+            background-color: white;
+            border-radius: 10px;
+            cursor: pointer;     
+            transition: all .6s ease;   
+            
+            &:hover {
+                box-shadow: 2px 2px 2px $light-green;
+                transform: scale(1.02, 1.02);
+            }
+            }
 
             .productHighlightIconContainer {
                 margin-top: 5px;
+                margin-left: 10px;
 
                 .productHighlightIcon {
                   }
+        }
 
-                .productHighlightDesc {
-                  }
+        .animation {
+            position: relative;
 
+            &::before {
+                content: "";
+                position: absolute;
+                background-color: white;
+                opacity: 1;
+                z-index: -1;
+                inset: -.5rem;
+                transition: all .6s ease;
+                border-radius: 10px;
+            }
+            &::after {
+                content: "";
+                position: absolute;
+                background-image: linear-gradient(
+                    var(--gradient-angle),
+                    #a2d6ac,
+                    $lighter-green,
+                    #a2d6ac);
+                z-index: -1;
+                inset: -.3rem;
+                animation: rotation 7s linear infinite;
+                opacity: 0;
+                transition: all .6s ease;
+                border-radius: 10px;
+    
+            }
+
+            &:hover {
+                &::before{
+                opacity: 0;
+            }
+        }
+
+            &:hover {
+                &::after{
+                opacity: 1;
+                transform: scale(1.02, 1.02);
+
+            }
+        }
+
+        }
+            .productHighlightDesc {
+                background-color: white;
+                margin-bottom: 10px;
+              }
               }
         }
-    }
-}

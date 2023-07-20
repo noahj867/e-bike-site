@@ -8,17 +8,18 @@ import {urlFor} from '../lib/client'
 
 const Product = ({product}) => {
 
-  const {image, name, slug, price_display, subtitle, highlight1, highlight2, highlight3} = product 
-  const highlights = [highlight1, highlight2, highlight3];
+  const {image, name, slug, price_display, subtitle, highlight1, highlight2, highlight3, highlight4} = product 
+  const highlights = [highlight1, highlight2, highlight3, highlight4];
  
 
   return (
-    <div className={`${style.productCardContainer} ${name === 'Power' ? style.productSpecial : '' }`}>
+    <>
+    <div className={`${style.productCardContainer} ${name === 'Classic' ? style.productSpecial : '' }`}>
       <Link href={`/product/${slug.current}`}>
         <div className={style.productBanner}>
           <h2 className={style.productName}>{name}</h2>
           <p className={style.productSubtitle}>{subtitle}</p>
-          <h3 className={style.productPrice}>{price_display}</h3>
+          <h2 className={style.productPrice}>{price_display}</h2>
         </div>
         <div className={style.productDetailContainer}>
          <img 
@@ -30,14 +31,15 @@ const Product = ({product}) => {
           <div className={style.productHighlights}>
             {highlights.map((highlight, index) => (
               <div key={index} className={style.highlightRow}>
-                <BeenhereIcon style={{color: '#66846C'}}/>
-                <div>{highlight}</div>
+                <BeenhereIcon style={{color: '#82a98a'}}/>
+                <div className={style.productBullet}>{highlight}</div>
               </div>
             ))}
           </div>
         </div>
       </Link>
     </div>
+    </>
   )
 }
 

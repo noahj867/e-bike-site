@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import {AiOutlineShopping} from 'react-icons/ai';
+import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import style from "styles/navbar.module.css";
 const Navbar = () => {
   return (
@@ -16,12 +17,13 @@ const Navbar = () => {
           <Link href="">Locations</Link>
         </p>
         <p className={style.navbarItem}>
-          <Link href="">Bikes</Link>
+          <Link href="">Products</Link>
         </p>
+        <ArrowDropDownIcon className={style.dropDownIcon}/> 
       </div>
       <button type='button' className={style.cartIcon} onClick=''>
         <AiOutlineShopping />
-        <span className={style.cartItemQty}>1</span>
+        <span className={style.cartItemQty}></span>
       </button>
     </div>
   )

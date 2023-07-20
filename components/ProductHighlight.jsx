@@ -24,7 +24,8 @@ const ProductHighlight = ({heroBanner}) => {
             alt="bike machine"/>
         <div className={style.productHighlightDetails}>
             {productHighlightDescs.map((item, index) => (
-                <div className={style.productHighlightRow} key={index}>
+             <div className={style.animation} key={index}>
+                <div className={style.productHighlightRow}>
                   <div className={style.productHighlightIconContainer}>
                     <h2 className={style.productHighlightIcon}>
                       {React.createElement(productHighlightImages[index], {fontSize: 'large',})}
@@ -37,6 +38,7 @@ const ProductHighlight = ({heroBanner}) => {
                     <div>
                       {item.body}
                     </div>
+                  </div>
                   </div>
                 </div>
             ))}

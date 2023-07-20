@@ -1,17 +1,20 @@
 @use '../core/colors' as *;
 
-.productsHeading{
+.productSection {
+  background-image: linear-gradient($light-green, white);
+
+  .productsHeading{
     text-align: center;
-    margin: 40px 0px;
+    padding: 40px 0px;
     color: black;
 
    h2 {
-    font-size: 40px;
+    font-size: 50px;
     font-weight: 800;
   }
 
   p {
-    font-size: 16px;
+    font-size: 24px;
     font-weight: 200;
   }
   }
@@ -24,3 +27,6 @@
     margin-top: 20px;
     width: 100%;
   }
+
+}
+

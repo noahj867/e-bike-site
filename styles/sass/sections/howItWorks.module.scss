@@ -1,14 +1,199 @@
-// .howItWorksContainer {
-//   background-image: linear-gradient(to top,#B7D7BD, white);
+@use '../core/colors' as *;
+.howItWorksContainer {
+  background-image: linear-gradient(to top,$light-green, white);
 
-.howItWorksTitle {
+  .howItWorksTitle {
     padding-top: 50px;
     display: flex;
     justify-content: center;
     font-size: 60px;
   }
-  
-  .howItWorksImage {
-    max-width: 100%;
-    height: auto;
+
+  .subtitle {
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 200;
+    margin-bottom: 75px;
   }
+
+  .stepAnimation {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    background-color: $darkest-green;
+  }
+
+  .moveHorizontal {
+    animation-name: move-horizontal;
+    width: 100px;
+    height: 100px;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: 3;
+  }
+
+  @keyframes move-horizontal{
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(100%);
+    }
+  }
+
+  .moveHorizontalReverse {
+    animation-name: move-horizontal;
+    animation-direction: reverse;
+  }
+
+  .stepContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
+    .stepNumber {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-right: 125px;
+      margin-left: 125px;
+
+    .stepCircle {
+      flex: 1 1 150px;
+      min-width: 75px;
+      max-width: 175px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      aspect-ratio: 1 / 1;
+      background: linear-gradient($light-green,$lighter-green);
+      border-radius: 100%;
+      font-size: 2.5rem;
+      color: white;
+    }
+
+    .horizontalDottedLine {
+      flex: 1 1 100px;
+      display: inline-block;
+      max-width: 300px;
+      min-width: 50px;
+      height: 10px;
+      border-top: 5px dashed black;
+      margin-right: 20px;
+      margin-left: 20px;  
+      }
+  }
+
+    .stepText {
+      flex: 2 1 100px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-right: 45px;
+      margin-left: 45px;
+      margin-bottom: 80px;
+
+      .step {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 30px;
+        margin-bottom: 50px;
+        max-width: 1200px;
+        margin-right: 20px;
+        margin-left: 20px;
+
+        .verticalLine {
+          width: 3px;
+          height: 25px;
+          margin-bottom: 20px;
+          background-color: black;
+          margin-top: 20px;
+        }
+  
+      .stepTextContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: linear-gradient($light-green,$lighter-green);
+        padding: 20px;
+        border-radius: 20px;
+        gap: 20px;
+        max-width: 300px;
+        min-height: 150px;
+
+        .stepBody {
+          font-size: minmax(1vw, 1.5rem);
+        }
+
+        .stepTitle {
+          font-size: 30px;
+        }
+        }
+      }
+    }
+  }
+
+@media (max-width: 1200px) {
+
+  // .horizontalDottedLine {
+  //     max-width: 15vw
+  //   }
+
+  .stepContainer {
+    // max-width: 900px;
+    // margin-left: auto;
+    // margin-right: auto;
+
+    .stepNumber {
+      margin-right: 75px;
+      margin-left: 75px;
+      justify-content: center;
+
+
+  .stepCircle {
+      max-width: 175px;  
+    }
+
+    .horizontalDottedLine {
+      max-width: 100px;
+      margin-right: 35px;
+    }
+    
+    }
+
+    .stepText {
+      justify-content: center;
+      margin-left: 25px;
+      // gap: 20px;
+
+      .step {
+
+        .stepTextContainer {
+          // max-width: 200px;
+
+          // .stepBody {
+          //   font-size: 1vw;
+          // }
+
+          // .stepTitle {
+          //   font-size: 2vw;
+          // }
+        }
+      }
+  }
+  } 
+  }
+}
+
+
+.howItWorksImage {
+  max-width: 100%;
+  height: auto;
+}

@@ -3,44 +3,38 @@
   flex-direction: column;
   align-items: center;
   padding: 100px 40px;
-  background-image: url(/footer-banner-background.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 400px;
+  background-image: linear-gradient(to right, #36523D, #82a98a, #36523D);
+  max-height: 400px;
   line-height: 1;
-  color: black;
-  margin: 100px 50px 20px 50px;
+  color: rgb(255, 255, 255);
+  margin: 50px 50px 20px 50px;
 }
 .footerBannerContainer .bannerHeader {
   display: flex;
   justify-content: center;
-  font-size: 60px;
+  align-items: center;
   margin-bottom: 30px;
+  text-align: center;
 }
 .footerBannerContainer .bannerSubtitle {
   font-size: 20px;
+  margin-bottom: 40px;
 }
-.footerBannerContainer .primaryButton {
+.footerBannerContainer button {
   border-radius: 10px;
   padding: 10px 16px;
   background-color: white;
-  color: red;
+  color: black;
   border: none;
-  margin-top: 40px;
   font-size: 18px;
   font-weight: 500;
   cursor: pointer;
+  box-shadow: 2px 2px 3px #36523D;
 }
 .footerBannerContainer .secondaryButton {
-  border-radius: 10px;
-  padding: 10px 16px;
-  background-color: red;
+  margin-left: 15px;
+  background-color: black;
   color: white;
-  border: none;
-  margin-top: 40px;
-  font-size: 18px;
-  font-weight: 500;
-  cursor: pointer;
 }
 .footerBannerContainer .footer-banner-image {
   position: absolute;
@@ -50,4 +44,26 @@
   left: 35%;
   width: 400px;
   height: 400px;
+}
+@media (max-width: 653px) {
+  .footerBannerContainer {
+    padding: 20px;
+    margin: 25px 25px 15px 25px;
+  }
+  .footerBannerContainer .bannerSubtitle {
+    display: none;
+  }
+  .footerBannerContainer .bannerHeader {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 445px) {
+  .footerBannerContainer .bannerHeader {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  .footerBannerContainer button {
+    font-size: 16px;
+    padding: 8px 12px;
+  }
 }/*# sourceMappingURL=footerBanner.module.css.map */

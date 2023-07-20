@@ -1,9 +1,10 @@
 .navbarContainer {
   display: flex;
+  align-items: center;
   padding: 20px 18px;
   padding-right: 25px;
-  background-color: #36523D;
-  color: white;
+  background-color: #B7D7BD;
+  color: black;
 }
 .navbarContainer .logo {
   padding-right: 25px;
@@ -29,32 +30,33 @@
   }
 }
 .navbarContainer .navbarItemContainer .navbarItem {
-  transition: all 0.2s linear 0s;
+  transition: all 0.2s ease;
   font-size: 1rem;
 }
-.navbarContainer .navbarItemContainer .navbarItem:hover {
-  text-indent: -20px;
-  color: black;
+.navbarContainer .navbarItemContainer .dropDownIcon {
+  margin-left: -45px;
+  padding-bottom: 5px;
 }
-.navbarContainer .navbarItemContainer .navbarItem:hover:before {
-  opacity: 1;
-  text-indent: 0px;
-}
-.navbarContainer .cartIcon {
+
+.cartIcon {
   transition: all 0.2s linear 0s;
-  font-size: 25px;
+  font-size: 23px;
   padding-left: 50px;
-  color: white;
   cursor: pointer;
   /* transition: transform .4s ease; */
   border: none;
   background-color: transparent;
 }
 @media (max-width: 537px) {
-  .navbarContainer .cartIcon {
+  .cartIcon {
     display: none;
   }
 }
-.navbarContainer .cartIcon:hover {
+@media (max-width: 1200px) {
+  .cartIcon {
+    font-size: 20px;
+  }
+}
+.cartIcon:hover {
   color: black;
 }/*# sourceMappingURL=navbar.module.css.map */

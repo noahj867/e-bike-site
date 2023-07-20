@@ -6,21 +6,16 @@
   background-color: rgb(242, 242, 242);
   border-radius: 15px;
   width: 380px;
-  height: 500px;
+  height: 550px;
   transform: scale(1, 1);
   transition: transform 0.5s ease;
-  color: white;
+  color: black;
   margin-bottom: 50px;
   box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
+  margin-right: 10px;
 }
 .productCardContainer:hover {
   transform: scale(1.05, 1.05);
-}
-.productCardContainer .productDetailContainer .productHighlights .highlightRow {
-  display: flex;
-  gap: 10px;
-  padding: 5px;
-  color: black;
 }
 .productCardContainer .productBanner {
   display: flex;
@@ -30,7 +25,17 @@
   padding: 15px 0px 15px 0px;
   border-radius: 15px;
   margin-bottom: 10px;
-  background-color: #82a98a;
+  background: linear-gradient(#B7D7BD, #82a98a);
+}
+.productCardContainer .productBanner .productName {
+  font-weight: 500;
+}
+.productCardContainer .productBanner .productSubtitle {
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+.productCardContainer .productBanner .productPrice {
+  font-weight: 500;
 }
 .productCardContainer .productBanner .productImage {
   display: flex;
@@ -38,12 +43,14 @@
   transform: scale(1, 1);
   transition: transform 0.5s ease;
 }
-.productCardContainer .productBanner .productSubtitle {
-  margin-bottom: 10px;
+.productCardContainer .productDetailContainer .productHighlights .highlightRow {
+  display: flex;
+  gap: 10px;
+  padding: 5px;
+  color: black;
 }
-.productCardContainer .productBanner .productPrice {
-  font-weight: 800;
-  font-size: 40px;
+.productCardContainer .productDetailContainer .productHighlights .highlightRow .productBullet {
+  font-weight: 425;
 }
 
 @keyframes shadows {

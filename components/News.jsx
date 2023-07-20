@@ -28,12 +28,13 @@ const newsItems = [
   return (
     <>
         <h1 className={style.newsHeader}>News</h1>
+        <h4 className={style.newsSubtitle}>Why safe and swappable e-bikes are here to stay</h4>
         <div className={style.newsContainer}>
             {newsItems.map((newsItem, index) => (
                 <div key={index} className={style.newsCard}>
                     <Link href={newsItem.link}>
                         <img src={newsItem.image} className={style.newsImage} />
-                        <h3 className={style.newsHeadline}>{newsItem.headline.charAt(0).toUpperCase() + newsItem.headline.slice(1).replace(/-/g, ' ')}</h3>
+                        <h4 className={style.newsHeadline}>{newsItem.headline.charAt(0).toUpperCase() + newsItem.headline.slice(1).replace(/-/g, ' ')}</h4>
                     </Link>   
                 </div>
             ))}

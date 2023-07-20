@@ -7,8 +7,8 @@ const HeroBanner = ({heroBanner}) => {
   return (
     <div className={style.heroBannerContainer}>
         <div className={style.heroBannerText}>
-            <h1>Boundless Potential</h1>
-            <p className={style.beatsSolo}>Bikes that can go as far you go</p>
+            <h1>Unlimited Potential</h1>
+            <p className={style.beatsSolo}>Bikes that go as far you go</p>
             <div>
                 <Link href={`/product/${heroBanner.product}`}>
                     <button type="button">Buy Bike</button>
@@ -16,9 +16,13 @@ const HeroBanner = ({heroBanner}) => {
                 </Link>
             </div>
         </div>
-        <img src={urlFor(heroBanner.image)} 
+        
+        <div className={style.motorcycleGifWrapper}>
+          <img src={"/motorcycle-green.gif"} alt="my cool gif" className={style.motorcycleGif}/>
+        </div>
+        {/* <img src={urlFor(heroBanner.image)} 
         alt="headphones" 
-        className={style.heroBannerImage}/>
+        className={style.heroBannerImage}/> */}
     </div>
   )
 }

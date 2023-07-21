@@ -44,7 +44,7 @@
             transition: all .6s ease;   
             
             &:hover {
-                box-shadow: 2px 2px 2px $light-green;
+                // box-shadow: 2px 2px 2px black;
                 transform: scale(1.02, 1.02);
             }
             }
@@ -57,51 +57,51 @@
                   }
         }
 
-        .animation {
-            position: relative;
+        // .animation {
+        //     position: relative;
 
-            &::before {
-                content: "";
-                position: absolute;
-                background-color: white;
-                opacity: 1;
-                z-index: -1;
-                inset: -.5rem;
-                transition: all .6s ease;
-                border-radius: 10px;
-            }
-            &::after {
-                content: "";
-                position: absolute;
-                background-image: linear-gradient(
-                    var(--gradient-angle),
-                    #a2d6ac,
-                    $lighter-green,
-                    #a2d6ac);
-                z-index: -1;
-                inset: -.3rem;
-                animation: rotation 7s linear infinite;
-                opacity: 0;
-                transition: all .6s ease;
-                border-radius: 10px;
+        //     &::before {
+        //         content: "";
+        //         position: absolute;
+        //         background-color: white;
+        //         opacity: 1;
+        //         z-index: -1;
+        //         inset: -.5rem;
+        //         transition: all .6s ease;
+        //         border-radius: 10px;
+        //     }
+        //     &::after {
+        //         content: "";
+        //         position: absolute;
+        //         background-image: linear-gradient(
+        //             var(--gradient-angle),
+        //             #a2d6ac,
+        //             $lighter-green,
+        //             #a2d6ac);
+        //         z-index: -1;
+        //         inset: -.3rem;
+        //         animation: rotation 7s linear infinite;
+        //         opacity: 0;
+        //         transition: all .6s ease;
+        //         border-radius: 10px;
     
-            }
+        //     }
 
-            &:hover {
-                &::before{
-                opacity: 0;
-            }
-        }
+        //     &:hover {
+        //         &::before{
+        //         opacity: 0;
+        //     }
+        // }
 
-            &:hover {
-                &::after{
-                opacity: 1;
-                transform: scale(1.02, 1.02);
+        //     &:hover {
+        //         &::after{
+        //         opacity: 1;
+        //         transform: scale(1.02, 1.02);
 
-            }
-        }
+        //     }
+        // }
 
-        }
+        // }
             .productHighlightDesc {
                 background-color: white;
                 margin-bottom: 10px;

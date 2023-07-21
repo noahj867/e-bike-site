@@ -18,7 +18,7 @@ const HeroBanner = ({heroBanner}) => {
         </div>
         
         <div className={style.motorcycleGifWrapper}>
-          <img src={"/motorcycle-green.gif"} alt="my cool gif" className={style.motorcycleGif}/>
+          <img src={"/motorcycle-gif.gif"} alt="my cool gif" className={style.motorcycleGif}/>
         </div>
         {/* <img src={urlFor(heroBanner.image)} 
         alt="headphones" 

@@ -1,8 +1,10 @@
 .productDetailContainer {
   display: flex;
   gap: 40px;
-  margin-top: 60px;
+  padding-left: 30px;
+  padding-top: 100px;
   color: #324d67;
+  background-image: linear-gradient(to bottom, #B7D7BD, white);
 }
 .productDetailContainer .imageContainer .productDetailImage {
   border-radius: 15px;

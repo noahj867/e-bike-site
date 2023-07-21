@@ -26,7 +26,7 @@ const newsItems = [
 ]
 
   return (
-    <>
+    <> <div className={style.newsSection}>
         <h1 className={style.newsHeader}>News</h1>
         <h4 className={style.newsSubtitle}>Why safe and swappable e-bikes are here to stay</h4>
         <div className={style.newsContainer}>
@@ -39,6 +39,7 @@ const newsItems = [
                 </div>
             ))}
             </div>
+        </div>
 
     </>
   )

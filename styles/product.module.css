@@ -6,13 +6,27 @@
   background-color: rgb(242, 242, 242);
   border-radius: 15px;
   width: 380px;
-  height: 550px;
+  height: 530px;
   transform: scale(1, 1);
   transition: transform 0.5s ease;
   color: black;
   margin-bottom: 50px;
   box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
   margin-right: 10px;
+}
+@media (max-width: 1200px) {
+  .productCardContainer {
+    height: 500px;
+  }
+}
+@media (max-width: 443px) {
+  .productCardContainer {
+    width: 300px;
+    height: 393px;
+  }
+  .productCardContainer .productHighlights {
+    display: none;
+  }
 }
 .productCardContainer:hover {
   transform: scale(1.05, 1.05);

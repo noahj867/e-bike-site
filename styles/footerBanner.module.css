@@ -4,10 +4,11 @@
   align-items: center;
   padding: 100px 40px;
   background-image: linear-gradient(to right, #36523D, #82a98a, #36523D);
+  background-image: linear-gradient(to right, #5b765f, #82a98a, #5b765f);
   max-height: 400px;
   line-height: 1;
   color: rgb(255, 255, 255);
-  margin: 50px 50px 20px 50px;
+  margin: 40px 35px 20px 35px;
 }
 .footerBannerContainer .bannerHeader {
   display: flex;

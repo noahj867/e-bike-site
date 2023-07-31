@@ -1,7 +1,8 @@
 import React from 'react';
 import style from 'styles/layout.module.css';
+// import Fade from 'react-reveal/fade';
 
-import {Product, FooterBanner, HeroBanner, HowItWorks, ProductHighlight, News}
+import {Product, FooterBanner, HeroBanner, HowItWorks, ProductHighlight, News, Location}
 from '../components';
 
 import {client} from '../lib/client';
@@ -9,6 +10,7 @@ import {client} from '../lib/client';
 const Index = ({products, bannerData}) => {
   return (
     <>
+      {/* <Location /> */}
       <HeroBanner heroBanner={bannerData.length && bannerData[0]}/>
       <ProductHighlight heroBanner={bannerData.length && bannerData[0]}/>
       <HowItWorks/>

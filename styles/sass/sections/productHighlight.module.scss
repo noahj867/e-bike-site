@@ -11,13 +11,23 @@
     100% { --gradient-angle: 360deg; }
 }
 
+.productHighlightTitle {
+    margin: 35px 50px
+}
+
+.underline {
+    background-image: url('/vector-13.png');
+    color: blue;
+}
+
 .productHighlightContainer {
     display: flex;
     align-items: center;
     justify-content: center;
+    color: black;
+    margin-left: 50px;
     // background-image: linear-gradient(to top,#B7D7BD, white);
     // background-color: #B7D7BD;
-    color: black;
     // flex-wrap: wrap;
 
     @media (max-width: 1085px) {
@@ -30,6 +40,7 @@
     
     .productHighlightDetails {
         margin: 30px;
+        max-width: 1000px;
 
         .productHighlightRow {
             transition: all 0.2s ease;

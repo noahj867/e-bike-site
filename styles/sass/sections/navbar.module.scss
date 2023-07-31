@@ -6,8 +6,9 @@
     // justify-content: space-between;
     padding: 20px 18px;
     padding-right: 25px;
-    background-color: $light-green;
-    color: black;
+    background-color: $blue-400;
+    color: white;
+  
         .logo{
         padding-right: 25px;
 
@@ -42,28 +43,30 @@
           padding-bottom: 5px;
         }
     }
+    
+    .cartIcon{
+      transition: all 0.2s linear 0s;
+      font-size: 23px;
+      padding-left: 50px;
+      cursor: pointer;
+      color: #d9d9d9;
+      /* transition: transform .4s ease; */
+      border: none;
+      background-color: transparent;
+      @media (max-width: 537px) {
+        display: none;
+      }
+      @media (max-width: 1200px) {
+        font-size: 20px;
+      }
+
+      &:hover{
+          color: black;
+        }
+    
+    }
     }
 
-      .cartIcon{
-        transition: all 0.2s linear 0s;
-        font-size: 23px;
-        padding-left: 50px;
-        cursor: pointer;
-        /* transition: transform .4s ease; */
-        border: none;
-        background-color: transparent;
 
-        @media (max-width: 537px) {
-          display: none;
-        }
-        @media (max-width: 1200px) {
-          font-size: 20px;
-        }
-
-        &:hover{
-            color: black;
-          }
-      
-      }
 
 

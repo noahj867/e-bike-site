@@ -1,22 +1,26 @@
 .heroBannerContainer {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 80px 40px;
-  background-image: linear-gradient(to bottom, #B7D7BD, white);
-  background-color: white;
+  background-color: #aeaeae;
   gap: 50px;
 }
 .heroBannerContainer .heroBannerText {
+  margin-top: 25px;
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
-  color: black;
+  text-align: center;
+  color: white;
 }
 .heroBannerContainer .heroBannerText h1 {
   margin-top: 5px;
+  font-size: 6rem;
 }
 .heroBannerContainer .heroBannerText .beatsSolo {
   font-size: 20px;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 .heroBannerContainer .heroBannerText button {
   /* border-radius: 15px; */
@@ -30,9 +34,9 @@
   cursor: pointer;
   z-index: 10000 !important;
   transition: all 0.5s linear 0s;
-  border-radius: 10px;
+  border-radius: 2px;
   font-size: 1rem;
-  box-shadow: 2px 2px 3px #36523D;
+  box-shadow: 2px 2px 3px #575757;
 }
 .heroBannerContainer .heroBannerText .buttonSecondary {
   background-color: white;
@@ -43,13 +47,12 @@
 }
 .heroBannerContainer .motorcycleGifWrapper {
   display: flex;
-  max-width: 600px;
-  margin-left: 50px;
+  max-width: 750px;
+  align-items: center;
 }
 .heroBannerContainer .motorcycleGifWrapper .motorcycleGif {
   object-fit: contain;
   width: 100%;
-  border-radius: 5px;
 }
 @media (max-width: 600px) {
   .heroBannerContainer .motorcycleGifWrapper .motorcycleGif {

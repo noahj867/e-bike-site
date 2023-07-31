@@ -17,11 +17,10 @@ const ProductHighlight = ({heroBanner}) => {
   }]
 
   return (
+    <>
+    <h1 className={style.productHighlightTitle}>Why 24 Hr Battery?</h1>
+    <div className={style.underline}></div>
     <div className={style.productHighlightContainer}>
-        <img
-            className={style.productHighlightImage}
-            src={urlFor(heroBanner.image)} 
-            alt="bike machine"/>
         <div className={style.productHighlightDetails}>
             {productHighlightDescs.map((item, index) => (
              <div className={style.animation} key={index}>
@@ -43,7 +42,12 @@ const ProductHighlight = ({heroBanner}) => {
                 </div>
             ))}
         </div>
+        <img
+            className={style.productHighlightImage}
+            src={urlFor(heroBanner.image)} 
+            alt="bike machine"/>
     </div>
+    </>
   )
 }
 

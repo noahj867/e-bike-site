@@ -5,8 +5,7 @@
     flex-direction: column;
     align-items: center;
     padding: 100px 40px;
-    background-image: linear-gradient(to right, $dark-green, $lighter-green, $dark-green);
-    background-image: linear-gradient(to right, $darkish-green, $lighter-green, $darkish-green);
+    background-image: linear-gradient(to right, $green-blue-400, $green-blue-300, $green-blue-400);
     // background-color: $dark-green;
     max-height: 400px;
     line-height: 1; 
@@ -27,7 +26,7 @@
     }
 
     button{
-        border-radius: 10px;
+        border-radius: 5px;
         padding: 10px 16px;
         background-color: white;
         color: black;
@@ -35,7 +34,7 @@
         font-size: 18px;
         font-weight: 500;
         cursor: pointer;
-        box-shadow: 2px 2px 3px $dark-green;
+        box-shadow: 2px 2px 3px $grey-500;
   }
 
     .secondaryButton {

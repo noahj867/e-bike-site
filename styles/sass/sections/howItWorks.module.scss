@@ -1,58 +1,58 @@
 @use '../core/colors' as *;
 .howItWorksContainer {
   // background-image: linear-gradient(to top,$light-green, white);
-  background-color: $dark-blue;
-  color: $light-grey;
+  background-color: $grey-100;
+  color: black;
 
-  @media (max-width: 1000px) {
-    display: none;
-  }
+  // @media (max-width: 1000px) {
+  //   display: none;
+  // }
 
   .howItWorksTitle {
     padding-top: 50px;
     display: flex;
-    justify-content: center;
-    font-size: 60px;
-    text-align: center;
+    font-size: 50px;
+    margin-left: 10%;
   }
 
   .subtitle {
     display: flex;
-    justify-content: center;
     font-size: 24px;
     font-weight: 200;
     margin-bottom: 75px;
+    margin-left: 10%;
+
   }
 
-  .stepAnimation {
-    display: flex;
-    width: 100px;
-    height: 100px;
-    background-color: $darkest-green;
-  }
+  // .stepAnimation {
+  //   display: flex;
+  //   width: 100px;
+  //   height: 100px;
+  //   background-color: $darkest-green;
+  // }
 
-  .moveHorizontal {
-    animation-name: move-horizontal;
-    width: 100px;
-    height: 100px;
-    animation-duration: 5s;
-    animation-timing-function: linear;
-    animation-iteration-count: 3;
-  }
+  // .moveHorizontal {
+  //   animation-name: move-horizontal;
+  //   width: 100px;
+  //   height: 100px;
+  //   animation-duration: 5s;
+  //   animation-timing-function: linear;
+  //   animation-iteration-count: 3;
+  // }
 
-  @keyframes move-horizontal{
-    from {
-      transform: translateX(-100%);
-    }
-    to {
-      transform: translateX(100%);
-    }
-  }
+  // @keyframes move-horizontal{
+  //   from {
+  //     transform: translateX(-100%);
+  //   }
+  //   to {
+  //     transform: translateX(100%);
+  //   }
+  // }
 
-  .moveHorizontalReverse {
-    animation-name: move-horizontal;
-    animation-direction: reverse;
-  }
+  // .moveHorizontalReverse {
+  //   animation-name: move-horizontal;
+  //   animation-direction: reverse;
+  // }
 
   .stepContainer {
     display: flex;
@@ -63,55 +63,41 @@
     margin-left: auto;
     margin-right: auto;
 
-    .stepNumber {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-right: 125px;
-      margin-left: 125px;
 
-    .stepCircle {
-      flex: 1 1 150px;
-      min-width: 75px;
-      max-width: 175px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      aspect-ratio: 1 / 1;
-      background: linear-gradient($light-grey, $darker-grey);
-      border-radius: 100%;
-      font-size: 2.5rem;
-      color: white;
-    }
 
-    .horizontalDottedLine {
-      flex: 1 1 100px;
-      display: inline-block;
-      max-width: 300px;
-      min-width: 50px;
-      height: 10px;
-      border-top: 5px dashed $light-grey;
-      margin-right: 20px;
-      margin-left: 20px;  
+    .stepImageText {
+      display: flex;
+      margin-bottom: 75px;
+
+
+      &.block0, &.block2 {
+        margin-left: 10%;
       }
-  }
 
-    .stepText {
-      flex: 2 1 100px;
+      &.block1 {
+        margin-left: 35%;
+      }
+
+      .stepImage {
+        max-width: 200px;
+      }
+
+
+      .stepText {
       display: flex;
-      align-items: center;
-      justify-content: space-between;
+      // align-items: center;
+      // justify-content: space-between;
       margin-right: 45px;
       margin-left: 45px;
-      margin-bottom: 80px;
+      // border: solid 2px $blue-400;
+      // border-radius: 5px;
 
       .step {
         display: flex;
-        align-items: center;
-        justify-content: center;
+        // align-items: center;
+        // justify-content: center;
         flex-direction: column;
-        margin-top: 30px;
-        margin-bottom: 50px;
+        // margin-top: 30px;
         max-width: 1200px;
         margin-right: 20px;
         margin-left: 20px;
@@ -120,35 +106,37 @@
           width: 3px;
           height: 25px;
           margin-bottom: 20px;
-          background-color: $light-grey;
+          // background-color: $light-grey;
           margin-top: 20px;
         }
   
       .stepTextContainer {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        background: linear-gradient($light-green,$lighter-green);
-        background: linear-gradient($dark-blue-gradient, $dark-blue);
-        color: $light-grey;
-        padding: 20px;
+        // align-items: center;
+        // background: linear-gradient($light-green,$lighter-green);
+        // background: linear-gradient($dark-blue-gradient, $dark-blue);
+        // color: $light-grey;
+        // padding: 20px;
         border-radius: 20px;
         gap: 20px;
-        max-width: 300px;
-        min-height: 150px;
+
 
         .stepBody {
-          font-size: minmax(1vw, 1.5rem);
+          font-size: 1.5rem;
         }
 
         .stepTitle {
-          font-size: 30px;
+          font-size: 2rem;
         }
         }
       }
     }
   }
 
+    }
+
+    
 @media (max-width: 1200px) {
 
   // .horizontalDottedLine {

@@ -3,8 +3,8 @@
   flex-direction: column;
   align-items: stretch;
   text-align: center;
-  background-color: rgb(242, 242, 242);
-  border-radius: 15px;
+  background-color: #e1e1e1;
+  border-radius: 5px;
   width: 380px;
   height: 530px;
   transform: scale(1, 1);
@@ -33,13 +33,11 @@
 }
 .productCardContainer .productBanner {
   display: flex;
-  justify-content: center;
   flex-direction: column;
-  text-align: center;
   padding: 15px 0px 15px 0px;
-  border-radius: 15px;
+  border-radius: 5px;
   margin-bottom: 10px;
-  background: linear-gradient(#B7D7BD, #82a98a);
+  background: linear-gradient(#aeaeae, #828282);
 }
 .productCardContainer .productBanner .productName {
   font-weight: 500;

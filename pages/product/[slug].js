@@ -7,7 +7,7 @@ import style from 'styles/slug.module.css';
 
 
 const ProductDetails = ({product, products}) => {
-    const {image, name, details, price } = product;
+    const {image, name, description, price } = product;
     const [index, setIndex] = useState(0)
 
   return (
@@ -29,7 +29,7 @@ const ProductDetails = ({product, products}) => {
                 </div>
             </div>
             <div className={style.productDetailDesc}>
-                <h1>{name}</h1>
+                {/* <h1>{name}</h1>
                 <div className={style.reviews}>
                     <div>
                         <AiFillStar />
@@ -41,18 +41,18 @@ const ProductDetails = ({product, products}) => {
                     <p>
                         (20)
                     </p>
-                </div>
-                <h4>Details:</h4>
-                <p>{details}</p>
+                </div> */}
+                <h2>Description:</h2>
+                <p>{description}</p>
                 <p className={style.price}>${price}</p>
-                <div className={style.quantity}>
+                {/* <div className={style.quantity}>
                     <h3>Quantity:</h3>
                     <p className={style.quantityDesc}>
                         <span className={style.minus} onClick=''><AiOutlineMinus/></span>
                         <span className={style.num} onclick=''>0</span>
                         <span className={style.plus} onClick=''><AiOutlinePlus/></span>
                     </p>
-                </div>
+                </div> */}
                 <div className={style.buttons}>
                     <button 
                     type='button' 
@@ -61,7 +61,7 @@ const ProductDetails = ({product, products}) => {
                     </button>
                     <button
                     className={style.buyNow} 
-                    onClick=''>Buy Now</button>
+                    onClick=''>Pre-order</button>
                 </div>
             </div>
         </div>

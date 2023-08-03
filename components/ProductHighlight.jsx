@@ -8,7 +8,7 @@ import style from 'styles/productHighlight.module.css';
 
 const ProductHighlight = ({heroBanner}) => {
   const productHighlightImages = [BatteryChargingFullIcon, Speed, HandshakeIcon, HealthAndSafetyIcon];
-  // const productHighlightColors = ['black', 'black', 'black', 'black'];
+  // const productHighlightColors = ['#284b63', '#284b63', '#536f82', '#536f82'];
   const productHighlightDescs = [
     { title: 'Power', body: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis, reprehenderit? Possimus, molestiae laboriosam tempora quae temporibus at ad perferendis'},
     { title: 'Speed', body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam et voluptates, cupiditate quibusdam eos explicabo.'},
@@ -18,7 +18,7 @@ const ProductHighlight = ({heroBanner}) => {
 
   return (
     <>
-    <h1 className={style.productHighlightTitle}>Why 24 Hr Battery?</h1>
+    <h2 className={style.sectionTitle}>Why 24 Hour Battery?</h2>
     <div className={style.underline}></div>
     <div className={style.productHighlightContainer}>
         <div className={style.productHighlightDetails}>
@@ -27,13 +27,13 @@ const ProductHighlight = ({heroBanner}) => {
                 <div className={style.productHighlightRow}>
                   <div className={style.productHighlightIconContainer}>
                     <h2 className={style.productHighlightIcon}>
-                      {React.createElement(productHighlightImages[index], {fontSize: 'large',})}
+                      {React.createElement(productHighlightImages[index], {fontSize: 'large' })}
                     </h2>
                   </div>
                   <div className={style.productHighlightDesc}>
-                    <h2>
+                    <h3 productHighlight>
                       {item.title}
-                    </h2>
+                    </h3>
                     <div>
                       {item.body}
                     </div>
@@ -42,10 +42,10 @@ const ProductHighlight = ({heroBanner}) => {
                 </div>
             ))}
         </div>
-        <img
+        {/* <img
             className={style.productHighlightImage}
             src={urlFor(heroBanner.image)} 
-            alt="bike machine"/>
+            alt="bike machine"/> */}
     </div>
     </>
   )

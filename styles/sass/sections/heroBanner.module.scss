@@ -5,8 +5,8 @@
   flex-direction: column;
   align-items: center;
   padding: 80px 40px;
-  // background-image: linear-gradient(to bottom,#B7D7BD, white);
-  background-color: $grey-300;
+  background-image: linear-gradient(to bottom, $grey-200 50%,white 100%);
+  background-color: $grey-200;
   gap: 50px;
 
   .heroBannerText {
@@ -15,7 +15,7 @@
     flex-wrap: nowrap;
     flex-direction: column;
     text-align: center;
-    color: white;
+    color: black;
 
     h1{
        margin-top: 5px; 
@@ -39,7 +39,7 @@
    cursor: pointer;
    z-index:10000 !important;
    transition: all 0.5s linear 0s;
-   border-radius: 2px;
+   border-radius: 5px;
    font-size: 1rem;
    box-shadow: 2px 2px 3px $grey-500;
 
@@ -68,6 +68,7 @@
 
     .motorcycleGif {
       object-fit: contain;
+      border-radius: 5px;
       width: 100%;
   
       @media (max-width: 600px) {

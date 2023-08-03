@@ -31,7 +31,7 @@ const Product = ({product}) => {
           <div className={style.productHighlights}>
             {highlights.map((highlight, index) => (
               <div key={index} className={style.highlightRow}>
-                <BeenhereIcon style={{color: '#82a98a'}}/>
+                <BeenhereIcon style={{color: '#284b63'}}/>
                 <div className={style.productBullet}>{highlight}</div>
               </div>
             ))}

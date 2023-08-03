@@ -3,14 +3,13 @@
   gap: 40px;
   padding-left: 30px;
   padding-top: 100px;
-  color: #324d67;
-  background-image: linear-gradient(to bottom, #B7D7BD, white);
+  color: #284b63;
+  background: white;
 }
 .productDetailContainer .imageContainer .productDetailImage {
   border-radius: 15px;
   background-color: #ebebeb;
-  width: 400px;
-  height: 400px;
+  max-width: 400px;
   cursor: pointer;
   transition: 0.3s ease-in-out;
 }
@@ -31,7 +30,6 @@
 }
 .productDetailContainer .imageContainer .smallImagesContainer .selectedImage {
   /* background-color:#f02d34; */
-  border-color: rgba(240, 45, 51, 0.6);
   border-style: solid;
 }
 
@@ -44,37 +42,29 @@
 }
 
 .productDetailDesc .buttons {
-  display: flex;
-  gap: 30px;
+  /* border-radius: 15px; */
 }
 .productDetailDesc .buttons .addToCart {
-  padding: 10px 20px;
-  border: 1px solid #f02d34;
-  margin-top: 40px;
-  font-size: 18px;
+  padding: 10px 16px;
+  background-color: black;
+  color: white;
+  border: none;
+  margin-top: 25px;
+  margin-right: 15px;
   font-weight: 500;
-  background-color: white;
-  color: #f02d34;
   cursor: pointer;
-  width: 200px;
-  transform: scale(1, 1);
-  transition: transform 0.5s ease;
+  z-index: 10000 !important;
+  transition: all 0.5s linear 0s;
+  border-radius: 10px;
+  font-size: 1rem;
+  box-shadow: 2px 2px 3px #182d3b;
 }
 .productDetailDesc .buttons .addToCart:hover {
   transform: scale(1.1, 1.1);
 }
 .productDetailDesc .buttons .buyNow {
-  width: 200px;
-  padding: 10px 20px;
-  background-color: #f02d34;
-  color: white;
-  border: none;
-  margin-top: 40px;
-  font-size: 18px;
-  font-weight: 500;
-  cursor: pointer;
-  transform: scale(1, 1);
-  transition: transform 0.5s ease;
+  background-color: white;
+  color: black;
 }
 .productDetailDesc .buttons .buyNow:hover {
   transform: scale(1.1, 1.1);

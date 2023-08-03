@@ -1,21 +1,27 @@
 @use '../core/colors' as *;
 
 .productSection {
-  background-image: linear-gradient($light-green, white);
+  background: $blue-300;
+  margin-bottom: 50px;
+  padding-bottom: 20px;
 
   .productsHeading{
     text-align: center;
     padding: 40px 0px;
-    color: black;
+    color: white;
+
 
    h2 {
     font-size: 50px;
     font-weight: 800;
+    color: $grey-100
+
   }
 
   p {
     font-size: 24px;
     font-weight: 200;
+    color: $grey-100
   }
   }
 

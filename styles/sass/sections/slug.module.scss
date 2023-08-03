@@ -1,11 +1,14 @@
+@use "../core/colors" as *;
+
+
 .productDetailContainer{
   display: flex;
   gap: 40px;
   // margin: 40px;
   padding-left: 30px;
   padding-top: 100px;
-  color: #324d67;
-  background-image: linear-gradient(to bottom,#B7D7BD, white);
+  color: $blue-300;
+  background: white;
 
 
   .imageContainer {
@@ -13,8 +16,7 @@
     .productDetailImage{
       border-radius: 15px;
       background-color: #ebebeb;
-      width: 400px;
-      height: 400px;
+      max-width: 400px;
       cursor: pointer;
       transition: .3s ease-in-out;
 
@@ -119,7 +121,7 @@
       transition: all 0.5s linear 0s;
       border-radius: 10px;
       font-size: 1rem;
-      box-shadow: 2px 2px 3px $dark-green;
+      box-shadow: 2px 2px 3px $blue-500;
     }
      .addToCart:hover{
       transform:scale(1.1,1.1)

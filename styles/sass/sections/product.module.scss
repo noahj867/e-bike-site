@@ -5,8 +5,8 @@
   flex-direction: column;
   align-items: stretch;
   text-align: center;  
-  background-color: rgb(242 242 242);
-  border-radius: 15px;
+  background-color: $grey-100;
+  border-radius: 5px;
   width: 380px;
   height: 530px;
   transform: scale(1, 1);
@@ -35,13 +35,11 @@
 
   .productBanner {
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    text-align: center;
     padding: 15px 0px 15px 0px;
-    border-radius: 15px;
+    border-radius: 5px;
     margin-bottom: 10px;
-    background: linear-gradient($light-green,$lighter-green);
+    background: linear-gradient($grey-300,$grey-400);
 
     .productName {
       font-weight: 500;

@@ -31,7 +31,7 @@ const ProductHighlight = ({heroBanner}) => {
                     </h2>
                   </div>
                   <div className={style.productHighlightDesc}>
-                    <h3 productHighlight>
+                    <h3 className={style.productHighlightTitle}>
                       {item.title}
                     </h3>
                     <div>

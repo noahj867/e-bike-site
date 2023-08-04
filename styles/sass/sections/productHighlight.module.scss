@@ -77,57 +77,14 @@
                     // color: #3C6E71;
                   }
         }
-
-        // .animation {
-        //     position: relative;
-
-        //     &::before {
-        //         content: "";
-        //         position: absolute;
-        //         background-color: white;
-        //         opacity: 1;
-        //         z-index: -1;
-        //         inset: -.5rem;
-        //         transition: all .6s ease;
-        //         border-radius: 10px;
-        //     }
-        //     &::after {
-        //         content: "";
-        //         position: absolute;
-        //         background-image: linear-gradient(
-        //             var(--gradient-angle),
-        //             #a2d6ac,
-        //             $lighter-green,
-        //             #a2d6ac);
-        //         z-index: -1;
-        //         inset: -.3rem;
-        //         animation: rotation 7s linear infinite;
-        //         opacity: 0;
-        //         transition: all .6s ease;
-        //         border-radius: 10px;
-    
-        //     }
-
-        //     &:hover {
-        //         &::before{
-        //         opacity: 0;
-        //     }
-        // }
-
-        //     &:hover {
-        //         &::after{
-        //         opacity: 1;
-        //         transform: scale(1.02, 1.02);
-
-        //     }
-        // }
-
-        // }
             .productHighlightDesc {
                 display: flex;
                 flex-direction: column;
                 gap: 10px;
                 margin-bottom: 10px;
+
+                .productHighlightTitle {
+                }
               }
               }
         }

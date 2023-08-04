@@ -5,8 +5,7 @@
   flex-direction: column;
   align-items: center;
   padding: 80px 40px;
-  background-image: linear-gradient(to bottom, $grey-200 50%,white 100%);
-  background-color: $grey-200;
+  background-image: linear-gradient(to bottom, $grey-100 50%,white 100%);
   gap: 50px;
 
   .heroBannerText {
@@ -18,41 +17,39 @@
     color: black;
 
     h1{
-       margin-top: 5px; 
        font-size: 6rem;  
      }
 
-     .beatsSolo{
+     .heroBannerSubtitle{
       font-size: 20px;
       margin-top: 30px;
   }
 
   button{
     /* border-radius: 15px; */
-   padding: 10px 16px;
+   padding: 15px 30px;
    background-color: black;
    color: white;
    border: none;
-   margin-top: 25px;
+   margin-top: 30px;
    margin-right: 15px;
    font-weight: 500;
    cursor: pointer;
    z-index:10000 !important;
    transition: all 0.5s linear 0s;
    border-radius: 5px;
-   font-size: 1rem;
-   box-shadow: 2px 2px 3px $grey-500;
+   font-size: 1.2rem;
+   box-shadow: 2px 2px 3px $blue-500;
 
   //  &:hover {
   //   box-shadow: 3px 3px 3px black;
   //  }
  }
 
-
- 
   .buttonSecondary{
    background-color: white;
    color: black;
+   margin-right: 0px;
   //  &:hover {
   //   box-shadow: 3px 3px 3px black;
   //  }
@@ -63,7 +60,7 @@
       }
   .motorcycleGifWrapper {
     display: flex;
-    max-width: 750px;
+    max-width: 850px;
     align-items: center;
 
     .motorcycleGif {

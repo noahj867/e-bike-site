@@ -11,12 +11,12 @@
 .productSection .productsHeading h2 {
   font-size: 50px;
   font-weight: 800;
-  color: #e1e1e1;
+  color: #eae9e9;
 }
 .productSection .productsHeading p {
   font-size: 24px;
   font-weight: 200;
-  color: #e1e1e1;
+  color: #eae9e9;
 }
 .productSection .productsContainer {
   display: flex;

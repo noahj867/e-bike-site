@@ -1,14 +1,65 @@
-.mapContainer {
-    margin-top: 100px;
-    padding: 50px;
-    overflow: hidden;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 30px;
-    height: 280px;
+@use '../core/colors' as *;
 
-    .map {
-        margin-top: -120px;
+.locationHeader {
+    background-color: $blue-100;
+    padding: 50px;
+    color: white;
+}
+
+.seperator {
+    border: dotted 1px;
+}
+
+.sectionContainer {
+    display: flex;
+    background-color: $blue-100;
+    padding: 85px;
+    gap: 50px;
+    color: white;
+
+    .addressContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 40px;
+        overflow: hidden;
+        overflow-y: scroll;
+        height: 400px;
+        margin-top: -20px;
+        // border: dotted $blue-300 1px;
+
+        .locationList {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            .locationWrapper {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                .seperator {
+                    border: dotted 1px;
+                }
+            }
+        }
+    }
+
+    .mapContainer {
+        padding: 50px;
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+        height: 390px;
+    
+        .map {
+            margin-top: -120px;
+        }
     }
 }
+
+
+
+

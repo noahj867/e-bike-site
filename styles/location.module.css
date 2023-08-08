@@ -1,13 +1,52 @@
-.mapContainer {
-  margin-top: 100px;
+.locationHeader {
+  background-color: #7e93a1;
+  padding: 50px;
+  color: white;
+}
+
+.seperator {
+  border: dotted 1px;
+}
+
+.sectionContainer {
+  display: flex;
+  background-color: #7e93a1;
+  padding: 85px;
+  gap: 50px;
+  color: white;
+}
+.sectionContainer .addressContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 40px;
+  overflow: hidden;
+  overflow-y: scroll;
+  height: 400px;
+  margin-top: -20px;
+}
+.sectionContainer .addressContainer .locationList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.sectionContainer .addressContainer .locationList .locationWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.sectionContainer .addressContainer .locationList .locationWrapper .seperator {
+  border: dotted 1px;
+}
+.sectionContainer .mapContainer {
   padding: 50px;
   overflow: hidden;
   position: relative;
   display: flex;
   justify-content: center;
   margin-bottom: 30px;
-  height: 280px;
+  height: 390px;
 }
-.mapContainer .map {
+.sectionContainer .mapContainer .map {
   margin-top: -120px;
 }/*# sourceMappingURL=location.module.css.map */

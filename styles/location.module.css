@@ -10,20 +10,20 @@
 
 .sectionContainer {
   display: flex;
-  background-color: #7e93a1;
+  background-color: white;
   padding: 85px;
   gap: 50px;
-  color: white;
+  color: black;
 }
 .sectionContainer .addressContainer {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 40px;
   padding: 40px;
   overflow: hidden;
   overflow-y: scroll;
-  height: 400px;
-  margin-top: -20px;
+  height: 580px;
+  margin-top: -40px;
 }
 .sectionContainer .addressContainer .locationList {
   display: flex;
@@ -38,6 +38,12 @@
 .sectionContainer .addressContainer .locationList .locationWrapper .seperator {
   border: dotted 1px;
 }
+.sectionContainer .addressContainer .locationList .locationWrapper .locationName {
+  margin-bottom: 10px;
+}
+.sectionContainer .addressContainer .locationList .locationWrapper .batteryCount {
+  font-size: 1.1rem;
+}
 .sectionContainer .mapContainer {
   padding: 50px;
   overflow: hidden;
@@ -45,8 +51,10 @@
   display: flex;
   justify-content: center;
   margin-bottom: 30px;
-  height: 390px;
+  height: 600px;
 }
 .sectionContainer .mapContainer .map {
   margin-top: -120px;
+  height: 600px;
+  width: 680px;
 }/*# sourceMappingURL=location.module.css.map */

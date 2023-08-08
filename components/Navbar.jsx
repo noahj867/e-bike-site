@@ -14,7 +14,7 @@ const Navbar = () => {
           <Link href="">About Us</Link>
         </p>
         <p className={style.navbarItem}>
-          <Link href="">Locations</Link>
+          <Link href="/location">Locations</Link>
         </p>
         <p className={style.navbarItem}>
           <Link href="/product/product-page">Products</Link>

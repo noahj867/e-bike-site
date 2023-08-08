@@ -36,6 +36,13 @@ export default {
             title: 'Price Display',
             type: 'string',
         },
+
+        {
+            name: 'description',
+            title: 'Description',
+            type: 'string',
+        },
+        
         {
             name: 'subtitle',
             title: 'Subtitle',

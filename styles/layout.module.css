@@ -1,5 +1,7 @@
 .productSection {
-  background-image: linear-gradient(#B7D7BD, white);
+  background: #eae9e9;
+  margin-bottom: 50px;
+  padding-bottom: 20px;
 }
 .productSection .productsHeading {
   text-align: center;

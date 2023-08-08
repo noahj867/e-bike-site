@@ -14,10 +14,10 @@ const Navbar = () => {
           <Link href="">About Us</Link>
         </p>
         <p className={style.navbarItem}>
-          <Link href="">Locations</Link>
+          <Link href="/location">Locations</Link>
         </p>
         <p className={style.navbarItem}>
-          <Link href="">Products</Link>
+          <Link href="/product/product-page">Products</Link>
         </p>
         <ArrowDropDownIcon className={style.dropDownIcon}/> 
       </div>

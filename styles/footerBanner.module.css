@@ -3,12 +3,11 @@
   flex-direction: column;
   align-items: center;
   padding: 100px 40px;
-  background-image: linear-gradient(to right, #36523D, #82a98a, #36523D);
-  background-image: linear-gradient(to right, #5b765f, #82a98a, #5b765f);
+  background-image: linear-gradient(to right, #284b63, #536f82, #284b63);
   max-height: 400px;
   line-height: 1;
-  color: rgb(255, 255, 255);
-  margin: 40px 35px 20px 35px;
+  color: white;
+  margin: 60px 20px 20px 20px;
 }
 .footerBannerContainer .bannerHeader {
   display: flex;
@@ -22,7 +21,7 @@
   margin-bottom: 40px;
 }
 .footerBannerContainer button {
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 10px 16px;
   background-color: white;
   color: black;
@@ -30,7 +29,7 @@
   font-size: 18px;
   font-weight: 500;
   cursor: pointer;
-  box-shadow: 2px 2px 3px #36523D;
+  box-shadow: 2px 2px 3px #575757;
 }
 .footerBannerContainer .secondaryButton {
   margin-left: 15px;
@@ -49,7 +48,7 @@
 @media (max-width: 653px) {
   .footerBannerContainer {
     padding: 20px;
-    margin: 25px 25px 15px 25px;
+    margin: 40px 20px 15px 20px;
   }
   .footerBannerContainer .bannerSubtitle {
     display: none;

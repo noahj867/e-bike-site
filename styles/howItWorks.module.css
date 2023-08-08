@@ -1,186 +1,96 @@
 .howItWorksContainer {
-  background-image: linear-gradient(to top, #B7D7BD, white);
-}
-@media (max-width: 1000px) {
-  .howItWorksContainer {
-    display: none;
-  }
+  background-color: white;
+  color: black;
 }
 .howItWorksContainer .howItWorksTitle {
   padding-top: 50px;
   display: flex;
-  justify-content: center;
-  font-size: 60px;
-  text-align: center;
+  font-size: 50px;
+  margin-left: 5%;
 }
 .howItWorksContainer .subtitle {
   display: flex;
-  justify-content: center;
   font-size: 24px;
   font-weight: 200;
-  margin-bottom: 75px;
-}
-.howItWorksContainer .stepAnimation {
-  display: flex;
-  width: 100px;
-  height: 100px;
-  background-color: #273b2c;
-}
-.howItWorksContainer .moveHorizontal {
-  animation-name: move-horizontal;
-  width: 100px;
-  height: 100px;
-  animation-duration: 5s;
-  animation-timing-function: linear;
-  animation-iteration-count: 3;
-}
-@keyframes move-horizontal {
-  from {
-    transform: translateX(-100%);
-  }
-  to {
-    transform: translateX(100%);
-  }
-}
-.howItWorksContainer .moveHorizontalReverse {
-  animation-name: move-horizontal;
-  animation-direction: reverse;
+  margin-bottom: 60px;
+  margin-left: 5%;
 }
 .howItWorksContainer .stepContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-top: 50px;
-  padding: 20px;
   margin-left: auto;
   margin-right: auto;
 }
-.howItWorksContainer .stepContainer .stepNumber {
+.howItWorksContainer .stepContainer .stepImageText {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-right: 125px;
-  margin-left: 125px;
+  margin-bottom: 75px;
+  margin-left: 25px;
+  margin-right: 25px;
 }
-.howItWorksContainer .stepContainer .stepNumber .stepCircle {
-  flex: 1 1 150px;
-  min-width: 75px;
-  max-width: 175px;
+.howItWorksContainer .stepContainer .stepImageText.block0, .howItWorksContainer .stepContainer .stepImageText.block2 {
+  margin-left: 5%;
+}
+.howItWorksContainer .stepContainer .stepImageText.block1 {
+  margin-left: 20%;
+}
+.howItWorksContainer .stepContainer .stepImageText .stepImageContainer {
+  max-width: 500px;
+}
+.howItWorksContainer .stepContainer .stepImageText .stepImageContainer .stepImage {
+  width: 100%;
+  border-radius: 5px;
+}
+.howItWorksContainer .stepContainer .stepImageText .stepText {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  aspect-ratio: 1/1;
-  background: linear-gradient(#B7D7BD, #82a98a);
-  border-radius: 100%;
-  font-size: 2.5rem;
-  color: white;
-}
-.howItWorksContainer .stepContainer .stepNumber .horizontalDottedLine {
-  flex: 1 1 100px;
-  display: inline-block;
-  max-width: 300px;
-  min-width: 50px;
-  height: 10px;
-  border-top: 5px dashed black;
-  margin-right: 20px;
-  margin-left: 20px;
-}
-.howItWorksContainer .stepContainer .stepText {
-  flex: 2 1 100px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   margin-right: 45px;
   margin-left: 45px;
-  margin-bottom: 80px;
 }
-.howItWorksContainer .stepContainer .stepText .step {
+.howItWorksContainer .stepContainer .stepImageText .stepText .stepTextContainer {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
-  flex-direction: column;
-  margin-top: 30px;
-  margin-bottom: 50px;
-  max-width: 1200px;
-  margin-right: 20px;
-  margin-left: 20px;
+  text-overflow: clip;
+  border-radius: 5px;
+  max-width: 500px;
+  gap: 30px;
 }
-.howItWorksContainer .stepContainer .stepText .step .verticalLine {
-  width: 3px;
-  height: 25px;
-  margin-bottom: 20px;
-  background-color: black;
-  margin-top: 20px;
+.howItWorksContainer .stepContainer .stepImageText .stepText .stepTextContainer .stepBody {
+  font-size: 1.25rem;
+  font-weight: 400;
 }
-.howItWorksContainer .stepContainer .stepText .step .stepTextContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: linear-gradient(#B7D7BD, #82a98a);
-  padding: 20px;
-  border-radius: 20px;
-  gap: 20px;
-  max-width: 300px;
-  min-height: 150px;
+.howItWorksContainer .stepContainer .stepImageText .stepText .stepTextContainer .stepTitle {
+  font-size: 2rem;
+  line-height: 3px;
+  text-decoration: underline #00a3c0;
 }
-.howItWorksContainer .stepContainer .stepText .step .stepTextContainer .stepBody {
-  font-size: minmax(1vw, 1.5rem);
-}
-.howItWorksContainer .stepContainer .stepText .step .stepTextContainer .stepTitle {
-  font-size: 30px;
-}
-@media (max-width: 1200px) {
-  .howItWorksContainer .stepContainer .stepNumber {
-    margin-right: 75px;
-    margin-left: 75px;
-    justify-content: center;
+@media (max-width: 885px) {
+  .howItWorksContainer {
+    margin-left: 20px;
   }
-  .howItWorksContainer .stepContainer .stepNumber .stepCircle {
-    max-width: 175px;
+  .howItWorksContainer .howItWorksTitle {
+    font-size: 50px;
   }
-  .howItWorksContainer .stepContainer .stepNumber .horizontalDottedLine {
-    max-width: 100px;
-    margin-right: 35px;
+  .howItWorksContainer .subtitle {
+    margin-left: 20px;
   }
-  .howItWorksContainer .stepContainer .stepText {
-    justify-content: center;
-    margin-left: 25px;
+  .howItWorksContainer .stepContainer .stepImageText {
+    flex-direction: column;
+    row-gap: 40px;
   }
-  .howItWorksContainer .stepContainer .stepText .step .stepTextContainer .stepBody {
-    font-size: 2vw;
+  .howItWorksContainer .stepContainer .stepImageText.block0, .howItWorksContainer .stepContainer .stepImageText.block2 {
+    margin-left: 0px;
   }
-  .howItWorksContainer .stepContainer .stepText .step .stepTextContainer .stepTitle {
-    font-size: 3vw;
+  .howItWorksContainer .stepContainer .stepImageText.block1 {
+    margin-left: 0px;
+  }
+  .howItWorksContainer .stepContainer .stepImageText .stepText {
+    margin-left: 5px;
   }
 }
-@media (max-width: 630px) {
-  .howItWorksContainer .stepContainer .stepNumber {
-    margin-right: 2vw;
-    margin-left: 2vw;
-    justify-content: center;
+@media (max-width: 885px) {
+  .howItWorksContainer {
+    margin-left: 20px;
   }
-  .howItWorksContainer .stepContainer .stepNumber .stepCircle {
-    max-width: 75px;
-    font-size: 20px;
-    min-width: 50px;
-  }
-  .howItWorksContainer .stepContainer .stepNumber .horizontalDottedLine {
-    max-width: 10vw;
-    margin-right: 20px;
-  }
-  .howItWorksContainer .stepContainer .stepText {
-    justify-content: center;
-    margin-left: 25px;
-  }
-  .howItWorksContainer .stepContainer .stepText .step .stepTextContainer .stepBody {
-    font-size: 2vw;
-  }
-  .howItWorksContainer .stepContainer .stepText .step .stepTextContainer .stepTitle {
-    font-size: 3vw;
-  }
-}
-
-.howItWorksImage {
-  max-width: 100%;
-  height: auto;
 }/*# sourceMappingURL=howItWorks.module.css.map */

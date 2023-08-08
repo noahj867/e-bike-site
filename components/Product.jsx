@@ -10,7 +10,6 @@ const Product = ({product}) => {
 
   const {image, name, slug, price_display, subtitle, highlight1, highlight2, highlight3, highlight4} = product 
   const highlights = [highlight1, highlight2, highlight3, highlight4];
- 
 
   return (
     <>
@@ -31,7 +30,7 @@ const Product = ({product}) => {
           <div className={style.productHighlights}>
             {highlights.map((highlight, index) => (
               <div key={index} className={style.highlightRow}>
-                <BeenhereIcon style={{color: '#82a98a'}}/>
+                <BeenhereIcon style={{color: '#8da8bf'}}/>
                 <div className={style.productBullet}>{highlight}</div>
               </div>
             ))}

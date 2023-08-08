@@ -1,0 +1,60 @@
+.locationHeader {
+  background-color: #7e93a1;
+  padding: 50px;
+  color: white;
+}
+
+.seperator {
+  border: dotted 1px;
+}
+
+.sectionContainer {
+  display: flex;
+  background-color: white;
+  padding: 85px;
+  gap: 50px;
+  color: black;
+}
+.sectionContainer .addressContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 40px;
+  overflow: hidden;
+  overflow-y: scroll;
+  height: 580px;
+  margin-top: -40px;
+}
+.sectionContainer .addressContainer .locationList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.sectionContainer .addressContainer .locationList .locationWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.sectionContainer .addressContainer .locationList .locationWrapper .seperator {
+  border: dotted 1px;
+}
+.sectionContainer .addressContainer .locationList .locationWrapper .locationName {
+  margin-bottom: 10px;
+}
+.sectionContainer .addressContainer .locationList .locationWrapper .batteryCount {
+  font-size: 1.1rem;
+}
+.sectionContainer .mapContainer {
+  padding: 50px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  height: 600px;
+}
+.sectionContainer .mapContainer .map {
+  margin-top: -120px;
+  height: 600px;
+  width: 680px;
+}/*# sourceMappingURL=location.module.css.map */

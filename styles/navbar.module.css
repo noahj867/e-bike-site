@@ -3,8 +3,8 @@
   align-items: center;
   padding: 20px 18px;
   padding-right: 25px;
-  background-color: #B7D7BD;
-  color: black;
+  background-color: #284b63;
+  color: white;
 }
 .navbarContainer .logo {
   padding-right: 25px;
@@ -37,26 +37,26 @@
   margin-left: -45px;
   padding-bottom: 5px;
 }
-
-.cartIcon {
+.navbarContainer .cartIcon {
   transition: all 0.2s linear 0s;
   font-size: 23px;
   padding-left: 50px;
   cursor: pointer;
+  color: #d9d9d9;
   /* transition: transform .4s ease; */
   border: none;
   background-color: transparent;
 }
 @media (max-width: 537px) {
-  .cartIcon {
+  .navbarContainer .cartIcon {
     display: none;
   }
 }
 @media (max-width: 1200px) {
-  .cartIcon {
+  .navbarContainer .cartIcon {
     font-size: 20px;
   }
 }
-.cartIcon:hover {
+.navbarContainer .cartIcon:hover {
   color: black;
 }/*# sourceMappingURL=navbar.module.css.map */

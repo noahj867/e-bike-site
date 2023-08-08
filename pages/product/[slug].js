@@ -7,11 +7,10 @@ import style from 'styles/slug.module.css';
 
 
 const ProductDetails = ({product, products}) => {
-    const {image, name, details, price } = product;
+    const {image, name, description, price, subtitle, highlight1, highlight2, highlight3, highlight4 } = product;
     const [index, setIndex] = useState(0)
 
   return (
-    <div>
         <div className={style.productDetailContainer}>
             <div className={style.imageContainer}>
                 <img 
@@ -29,30 +28,14 @@ const ProductDetails = ({product, products}) => {
                 </div>
             </div>
             <div className={style.productDetailDesc}>
-                <h1>{name}</h1>
-                <div className={style.reviews}>
-                    <div>
-                        <AiFillStar />
-                        <AiFillStar />
-                        <AiFillStar />
-                        <AiFillStar />
-                        <AiOutlineStar />
-                    </div>
-                    <p>
-                        (20)
-                    </p>
-                </div>
-                <h4>Details:</h4>
-                <p>{details}</p>
+                <h2>{name} Pass</h2>
+                <p className={style.productSubtitle}> <em>{subtitle}</em></p>
+                <br></br>
+                <hr></hr>
+                <p className={style.productDescription}>{description}</p>
+                <br></br>
+                {/* <hr></hr> */}
                 <p className={style.price}>${price}</p>
-                <div className={style.quantity}>
-                    <h3>Quantity:</h3>
-                    <p className={style.quantityDesc}>
-                        <span className={style.minus} onClick=''><AiOutlineMinus/></span>
-                        <span className={style.num} onclick=''>0</span>
-                        <span className={style.plus} onClick=''><AiOutlinePlus/></span>
-                    </p>
-                </div>
                 <div className={style.buttons}>
                     <button 
                     type='button' 
@@ -61,11 +44,21 @@ const ProductDetails = ({product, products}) => {
                     </button>
                     <button
                     className={style.buyNow} 
-                    onClick=''>Buy Now</button>
+                    onClick=''>Pre-order</button>
                 </div>
+                <div className={style.productAccessoryContainer}>
+                    <h3 className={style.productAccessoryTitle}>Pass Includes...</h3>
+                    <ul className={style.productAccessoryList}>
+                        <li className={style.productAccessory}>{highlight1}</li>
+                        <li className={style.productAccessory}>{highlight2}</li>
+                        <li className={style.productAccessory}>{highlight3}</li>
+                        <li className={style.productAccessory}>{highlight4}</li>
+                    </ul>
+
+\            </div>
+
             </div>
         </div>
-    </div>
     )
 };
 

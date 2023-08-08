@@ -11,11 +11,22 @@
     --gradient-angle: 360deg;
   }
 }
+.sectionTitle {
+  margin: 25px 0px;
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+}
+
+.underline {
+  background-image: url("/vector-13.png");
+  color: blue;
+}
+
 .productHighlightContainer {
   display: flex;
-  align-items: center;
-  justify-content: center;
   color: black;
+  margin-bottom: 30px;
 }
 @media (max-width: 1085px) {
   .productHighlightContainer {
@@ -26,28 +37,40 @@
   max-width: 100%;
 }
 .productHighlightContainer .productHighlightDetails {
-  margin: 30px;
+  margin: 10px 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  gap: 10px;
+}
+@media (max-width: 530px) {
+  .productHighlightContainer .productHighlightDetails {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
 }
 .productHighlightContainer .productHighlightDetails .productHighlightRow {
   transition: all 0.2s ease;
   display: flex;
   gap: 30px;
-  margin-bottom: 30px;
-  margin-top: 30px;
+  padding: 10px 0px;
+  margin-bottom: 10px;
   position: relative;
-  background-color: white;
-  border-radius: 10px;
+  border-radius: 4px;
   cursor: pointer;
   transition: all 0.6s ease;
 }
 .productHighlightContainer .productHighlightDetails .productHighlightRow:hover {
   transform: scale(1.02, 1.02);
 }
-.productHighlightContainer .productHighlightDetails .productHighlightIconContainer {
-  margin-top: 5px;
-  margin-left: 10px;
+.productHighlightContainer .productHighlightDetails .productHighlightRow .productHighlightIconContainer {
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 4px;
+  max-height: 70px;
 }
-.productHighlightContainer .productHighlightDetails .productHighlightDesc {
-  background-color: white;
+.productHighlightContainer .productHighlightDetails .productHighlightRow .productHighlightDesc {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   margin-bottom: 10px;
 }/*# sourceMappingURL=productHighlight.module.css.map */

@@ -17,7 +17,7 @@ const Navbar = () => {
           <Link href="">Locations</Link>
         </p>
         <p className={style.navbarItem}>
-          <Link href="">Products</Link>
+          <Link href="/product/product-page">Products</Link>
         </p>
         <ArrowDropDownIcon className={style.dropDownIcon}/> 
       </div>

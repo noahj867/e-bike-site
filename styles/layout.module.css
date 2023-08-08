@@ -1,22 +1,20 @@
 .productSection {
-  background: #284b63;
+  background: #eae9e9;
   margin-bottom: 50px;
   padding-bottom: 20px;
 }
 .productSection .productsHeading {
   text-align: center;
   padding: 40px 0px;
-  color: white;
+  color: black;
 }
 .productSection .productsHeading h2 {
   font-size: 50px;
   font-weight: 800;
-  color: #eae9e9;
 }
 .productSection .productsHeading p {
   font-size: 24px;
   font-weight: 200;
-  color: #eae9e9;
 }
 .productSection .productsContainer {
   display: flex;

@@ -1,27 +1,25 @@
 @use '../core/colors' as *;
 
 .productSection {
-  background: $blue-300;
+  background: $grey-100;
   margin-bottom: 50px;
   padding-bottom: 20px;
 
   .productsHeading{
     text-align: center;
     padding: 40px 0px;
-    color: white;
+    color: black;
 
 
    h2 {
     font-size: 50px;
     font-weight: 800;
-    color: $grey-100
 
   }
 
   p {
     font-size: 24px;
     font-weight: 200;
-    color: $grey-100
   }
   }
 

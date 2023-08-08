@@ -1,0 +1,19 @@
+.linebreak {
+  border: 1px dotted black;
+}
+
+.productPageBanner {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 60px;
+  background-color: #536f82;
+  color: white;
+}
+
+.productPageContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 30px;
+  margin: 50px 25px;
+}/*# sourceMappingURL=productPage.module.css.map */

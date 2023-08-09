@@ -8,7 +8,7 @@ const HeroBanner = ({heroBanner}) => {
     <div className={style.heroBannerContainer}>
         <div className={style.heroBannerText}>
             <h1>Swap & GO</h1>
-            <p className={style.heroBannerSubtitle}>The Fast and Affordable Future of E-bike Delivery</p>
+            <p className={style.heroBannerSubtitle}>Premium e-bikes and battery swaps at your fingertips</p>
             <div>
                 <Link href={`/product/${heroBanner.product}`}>
                     <button type="button">Buy Bike</button>

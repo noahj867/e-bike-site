@@ -10,3 +10,4 @@ export {default as HowItWorks} from './HowItWorks';
 export {default as News} from './News';
 export {default as Location} from './Location';
 export {default as ProductCard} from './ProductCard';
+export {default as AboutUs} from './AboutUs';

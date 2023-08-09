@@ -23,7 +23,6 @@ const HowItWorks = () => {
               </div>
               <div className={style.stepText}>
                 <div className={style.stepTextContainer}>
-                  {/* <p className={style.stepNumber}>{item.step}</p> */}
                   <h3 className={style.stepTitle}>{item.title}
                   </h3>
                   <p className={style.stepBody}>{item.body}

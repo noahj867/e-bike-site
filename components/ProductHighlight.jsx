@@ -34,9 +34,9 @@ const ProductHighlight = ({heroBanner}) => {
                     <h3 className={style.productHighlightTitle}>
                       {item.title}
                     </h3>
-                    <div>
+                    <p>
                       {item.body}
-                    </div>
+                    </p>
                   </div>
                   </div>
                 </div>

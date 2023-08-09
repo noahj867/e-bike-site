@@ -5,12 +5,10 @@
 .howItWorksContainer .howItWorksTitle {
   padding-top: 50px;
   display: flex;
-  font-size: 50px;
   margin-left: 5%;
 }
 .howItWorksContainer .subtitle {
   display: flex;
-  font-size: 24px;
   font-weight: 200;
   margin-bottom: 60px;
   margin-left: 5%;
@@ -71,9 +69,10 @@
   }
   .howItWorksContainer .howItWorksTitle {
     font-size: 50px;
+    margin-left: 0px;
   }
   .howItWorksContainer .subtitle {
-    margin-left: 20px;
+    margin-left: 0px;
   }
   .howItWorksContainer .stepContainer .stepImageText {
     flex-direction: column;
@@ -85,11 +84,17 @@
   .howItWorksContainer .stepContainer .stepImageText.block1 {
     margin-left: 0px;
   }
+  .howItWorksContainer .stepContainer .stepImageText .stepImageContainer {
+    max-width: 700px;
+  }
   .howItWorksContainer .stepContainer .stepImageText .stepText {
     margin-left: 5px;
   }
+  .howItWorksContainer .stepContainer .stepImageText .stepText .stepTextContainer {
+    max-width: 600px;
+  }
 }
-@media (max-width: 885px) {
+@media (max-width: 885px) and (max-width: 885px) {
   .howItWorksContainer {
     margin-left: 20px;
   }

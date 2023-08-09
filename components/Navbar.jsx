@@ -6,12 +6,14 @@ import style from "styles/navbar.module.css";
 const Navbar = () => {
   return (
     <div className={style.navbarContainer}>
-      <p className={style.logo}>
-        <Link href="/">E-Bike Site</Link>
-      </p>
+      <Link href="/">
+        <div className={style.imageWrapper}>
+          <img src="/logo.png" className={style.logo}/>
+        </div>
+      </Link>
       <div className={style.navbarItemContainer}>
         <p className={style.navbarItem}>
-          <Link href="">About Us</Link>
+          <Link href="/#aboutus">About Us</Link>
         </p>
         <p className={style.navbarItem}>
           <Link href="/location">Locations</Link>

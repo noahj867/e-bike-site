@@ -27,32 +27,22 @@ const Footer = () => {
       {name: "News", href:""},
       {name: "FAQ", href:""}]
     }]
-  
-  // }, {
-  // title: "Get Started", link1: "Download for iPhone", link2: "Download for Android", link3: "Buy Pass", link4: "Buy Bike"
-  // },
-  // {
-  //   title: "Learn More", link1: "News", link2: "FAQ" 
-  // }
 
   return (
     <div className={style.footerContainer}>
       <div className={style.footerTop}> 
-        <h3 className={style.logo}>24 Hour Battery</h3>
+        <img src="logo.png" className={style.logo}/>
         <p className={style.icons}>
         <AiFillInstagram />
         <AiOutlineTwitter />
       </p>
       </div>
+      <hr />
       <div className={style.footerMain}> 
       {footerContent.map((item, i) => (
         <div className={style.contentContainer} key={i}>
                     <a href="../"><b>{item.title}</b></a>
           {item.links.map((i) => <a key={i.href} href={i.href}>{i.name}</a>)}
-          {/* <a href="../">{item.link1}</a>
-          <a href="../">{item.link2}</a>
-          <a href="../">{item.link3}</a>
-          <a href="../">{item.link4}</a> */}
         </div>
       ))}
       </div>

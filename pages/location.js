@@ -12,22 +12,25 @@ const location = () => {
     return (
         <>
         <hr className={style.seperator}/>
-        <h1 className={style.locationHeader}>Station Locations</h1>
-        <hr/>
+        <div className={style.header}>
+            <h1 className={style.title}>Station Locations</h1>
+            <h3 className={style.subtitle}>Conveniently placed all around NYC</h3>
+        </div>
+        <hr className={style.headerSeperator}/>
         <div className={style.sectionContainer}>
+        <Location />
         <ul className={style.addressContainer}>
             {locations.map((item, i) => (
-                <li className={style.locationList} key={i}>
-                    <div className={style.locationWrapper}>
+                <li className={style.list} key={i}>
+                    <div className={style.wrapper}>
                         <hr className={style.seperator}/>
-                        <h2 className={style.locationName}>{item.neighborhood}</h2>
+                        <h2 className={style.name}>{item.neighborhood}</h2>
                         <p className={style.batteryCount}>Battery Count: {item.capacity}</p>
-                        <p className={style.locationAddress}><em>{item.address}</em></p>
+                        <p className={style.address}><em>{item.address}</em></p>
                     </div>
                 </li>
             ))}
             </ul>
-            <Location />
         </div>
         </>
       )

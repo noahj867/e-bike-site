@@ -16,4 +16,10 @@
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   gap: 30px;
   margin: 50px 25px;
+}
+@media (max-width: 400px) {
+  .productPageContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
+  }
 }/*# sourceMappingURL=productPage.module.css.map */

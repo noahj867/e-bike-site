@@ -1,11 +1,18 @@
-.locationHeader {
-  background-color: #7e93a1;
+.header {
+  display: flex;
+  flex-direction: column;
   padding: 50px;
+  background-color: #7e93a1;
   color: white;
+  gap: 15px;
 }
 
 .seperator {
   border: dotted 1px;
+}
+
+.headerSeperator {
+  margin-bottom: 25px;
 }
 
 .sectionContainer {
@@ -20,28 +27,27 @@
   flex-direction: column;
   gap: 40px;
   padding: 40px;
-  overflow: hidden;
   overflow-y: scroll;
-  height: 580px;
+  max-height: 580px;
   margin-top: -40px;
 }
-.sectionContainer .addressContainer .locationList {
+.sectionContainer .addressContainer .list {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.sectionContainer .addressContainer .locationList .locationWrapper {
+.sectionContainer .addressContainer .list .wrapper {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.sectionContainer .addressContainer .locationList .locationWrapper .seperator {
+.sectionContainer .addressContainer .list .wrapper .seperator {
   border: dotted 1px;
 }
-.sectionContainer .addressContainer .locationList .locationWrapper .locationName {
+.sectionContainer .addressContainer .list .wrapper .name {
   margin-bottom: 10px;
 }
-.sectionContainer .addressContainer .locationList .locationWrapper .batteryCount {
+.sectionContainer .addressContainer .list .wrapper .batteryCount {
   font-size: 1.1rem;
 }
 .sectionContainer .mapContainer {
@@ -57,4 +63,39 @@
   margin-top: -120px;
   height: 600px;
   width: 680px;
+}
+@media (max-width: 1050px) {
+  .sectionContainer {
+    padding: 25px;
+    flex-direction: column;
+    gap: 0px;
+  }
+  .sectionContainer .mapContainer {
+    max-height: 450px;
+    padding: 0px;
+  }
+}
+@media (max-width: 1050px) and (max-width: 700px) {
+  .sectionContainer .addressContainer {
+    padding: 0px;
+  }
+  .sectionContainer .mapContainer {
+    height: 550px;
+  }
+  .sectionContainer .mapContainer .map {
+    margin-top: -120px;
+    height: 550px;
+    width: 650px;
+  }
+}
+@media (max-width: 1050px) and (max-width: 400px) {
+  .sectionContainer .mapContainer {
+    height: 450px;
+    margin-bottom: -40px;
+  }
+  .sectionContainer .mapContainer .map {
+    margin-top: -120px;
+    height: 450px;
+    width: 450px;
+  }
 }/*# sourceMappingURL=location.module.css.map */

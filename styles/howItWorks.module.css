@@ -3,14 +3,14 @@
   color: black;
 }
 .howItWorksContainer .howItWorksTitle {
-  padding-top: 50px;
+  padding-top: 20px;
   display: flex;
   margin-left: 5%;
 }
 .howItWorksContainer .subtitle {
   display: flex;
   font-weight: 200;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
   margin-left: 5%;
 }
 .howItWorksContainer .stepContainer {

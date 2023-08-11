@@ -8,7 +8,8 @@ const Layout = ({children}) => {
   return (
     <div className='layout'>
       <Head>
-        <title>E-Bike Site</title>
+        <title>24H Battery</title>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet" />
       </Head>
       <header>
         <Navbar />

@@ -11,7 +11,7 @@ const HeroBanner = ({heroBanner}) => {
             <p className={style.heroBannerSubtitle}>Premium e-bikes and battery swaps at your fingertips</p>
             <div>
                 <Link href={`/product/${heroBanner.product}`}>
-                    <button type="button">Buy Bike</button>
+                    <button type="button">View Products</button>
                     <button class={style.buttonSecondary} type="button">Purchase Pass</button>
                 </Link>
             </div>

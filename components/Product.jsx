@@ -13,7 +13,6 @@ const Product = ({product}) => {
 
   return (
     <>
-    <a href="product-card">
       <div className={`${style.productCardContainer} ${name === 'Classic' ? style.productSpecial : '' }`}>
         <Link href={`/product/${slug.current}`}>
           <div className={style.productBanner}>
@@ -31,7 +30,7 @@ const Product = ({product}) => {
             <div className={style.productHighlights}>
               {highlights.map((highlight, index) => (
                 <div key={index} className={style.highlightRow}>
-                  <BeenhereIcon style={{color: '#8da8bf'}}/>
+                  <BeenhereIcon style={{color: '#B0D2EF'}}/>
                   <div className={style.productBullet}>{highlight}</div>
                 </div>
               ))}
@@ -39,7 +38,6 @@ const Product = ({product}) => {
           </div>
         </Link>
       </div>
-    </a>
     </>
   )
 }

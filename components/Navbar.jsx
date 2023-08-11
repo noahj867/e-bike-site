@@ -19,7 +19,7 @@ const Navbar = () => {
           <Link href="/location">Locations</Link>
         </p>
         <p className={style.navbarItem}>
-          <Link href="/product/product-page">Products</Link>
+          <Link href="/product/product-page">Store</Link>
         </p>
         <ArrowDropDownIcon className={style.dropDownIcon}/> 
       </div>

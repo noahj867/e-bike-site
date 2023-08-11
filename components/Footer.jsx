@@ -7,24 +7,24 @@ const Footer = () => {
   const footerContent = [{
     title: "Company", 
     links: [
-      {name: "About Us", href:"/#aboutus"},
-      {name: "Store ", href:"/product/product-page"},
-      {name: "Locations ", href:"/location"},
+      {name: "About Us", href:"#aboutus"},
+      {name: "Store ", href:"product/product-page"},
+      {name: "Locations ", href:"location"},
       {name: "Contact ", href:""}],
     },
-    {
 
+    {
     title: "Get Started", 
     links: [
       {name: "Download for iPhone", href:""},
       {name: "Download for Android", href:""},
-      {name: "Buy Pass", href:"/#product-card"},
-      {name: "Buy Bike", href:"/product/product-page"}],
+      {name: "Buy Pass", href:"#layout"},
+      {name: "Buy Bike", href:"product/product-page"}],
     },
     {
     title: "Learn More", 
     links: [
-      {name: "News", href:"/#news"},
+      {name: "News", href:"#news"},
       {name: "FAQ", href:""}]
     }]
 

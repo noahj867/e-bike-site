@@ -3,8 +3,7 @@ import style from '/styles/aboutUs.module.css'
 
 const AboutUs = () => {
   return (
-    <a name="aboutus">
-      <div className={style.sectionContainer}>
+      <div id="aboutus" className={style.sectionContainer}>
           <div className={style.contentContainer}>
               <h1 className={style.title}>About Us</h1>
               <div className={style.seperator}></div>
@@ -15,7 +14,6 @@ const AboutUs = () => {
               <img src="/about-us-girl.jpg" alt="about us photo" srcset="" />
           </div>
       </div>
-    </a>
   )
 }
 

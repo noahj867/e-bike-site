@@ -12,7 +12,7 @@ const newsItems = [
     }, 
     {   link:"https://www.nytimes.com/2021/10/12/nyregion/ebikes-escooters-eskateboards-nyc.html",
         image:"/news-link2.jpg",
-        headline:"ebikes escooters eskateboards nyc"
+        headline:"ebikes escooters eskateboards nyc and other vehicles"
     },
     {   link:"https://abcnews.go.com/US/amid rise fires deaths new york city enacts e bike law/story?id=97984159",
         image: "/news-link3.jpg",
@@ -21,26 +21,28 @@ const newsItems = [
     {   
         link:"https://gothamist.com/news/delivery-workers-say-latest-nyc-e-bike-safety-bills-dont-give-enough-support",
         image: "/news-link4.jpg",
-        headline:"delivery-workers-say-latest-nyc-e-bike-safety-bills-dont-give-enough-support"
+        headline:"delivery-workers-say-latest-nyc-e-bike-safety-bills-dont-give-enough"
     }
 ]
 
   return (
-    <> <div className={style.newsSection}>
-        <h1 className={style.newsHeader}>News</h1>
-        <h4 className={style.newsSubtitle}>Why safe and swappable e-bikes are here to stay</h4>
-        <div className={style.newsContainer}>
-            {newsItems.map((newsItem, index) => (
-                <div key={index} className={style.newsCard}>
-                    <Link href={newsItem.link}>
-                        <img src={newsItem.image} className={style.newsImage} />
-                        <h4 className={style.newsHeadline}>{newsItem.headline.charAt(0).toUpperCase() + newsItem.headline.slice(1).replace(/-/g, ' ')}</h4>
-                    </Link>   
+    <> 
+    <div id="news">
+        <div className={style.newsSection}>
+            <h1 className={style.newsHeader}>News</h1>
+            <h4 className={style.newsSubtitle}>Why safe and swappable e-bikes are here to stay</h4>
+            <div className={style.newsContainer}>
+                {newsItems.map((newsItem, index) => (
+                    <div key={index} className={style.newsCard}>
+                        <Link href={newsItem.link}>
+                            <img src={newsItem.image} className={style.newsImage} />
+                            <h4 className={style.newsHeadline}>{newsItem.headline.charAt(0).toUpperCase() + newsItem.headline.slice(1).replace(/-/g, ' ')}</h4>
+                        </Link>
+                    </div>
+                ))}
                 </div>
-            ))}
             </div>
-        </div>
-
+    </div>
     </>
   )
 }

@@ -4,17 +4,15 @@
   color: black;
 
   .howItWorksTitle {
-    padding-top: 50px;
+    padding-top: 20px;
     display: flex;
-    font-size: 50px;
     margin-left: 5%;
   }
 
   .subtitle {
     display: flex;
-    font-size: 24px;
     font-weight: 200;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
     margin-left: 5%;
   }
 
@@ -53,8 +51,6 @@
 
       .stepText {
       display: flex;
-      // align-items: center;
-      // justify-content: space-between;
       margin-right: 45px;
       margin-left: 45px;
   
@@ -84,15 +80,15 @@
     }
 
     @media (max-width: 885px) {
-
       margin-left: 20px;
 
       .howItWorksTitle {
         font-size: 50px;
+        margin-left: 0px;
       }
 
       .subtitle {
-        margin-left: 20px;
+        margin-left: 0px;
       }
 
       .stepContainer {
@@ -111,11 +107,15 @@
             margin-left: 0px;
           }
 
-          .stepImage {
+          .stepImageContainer {
+            max-width: 700px;
           }
 
           .stepText {
             margin-left: 5px;
+
+            .stepTextContainer {
+              max-width: 600px;
           }
         }
       }
@@ -124,4 +124,5 @@
     @media (max-width: 885px) {
       margin-left: 20px;
     }
+}
 }

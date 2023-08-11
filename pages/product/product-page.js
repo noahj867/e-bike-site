@@ -9,7 +9,7 @@ import {urlFor} from '../../lib/client';
 const ProductPage = ({productCards}) => {
 
   return (
-    <>
+    <div id="product-page">
     <hr className={style.linebreak}></hr>
       <div className={style.productPageBanner}>
         <h1 className={style.productPageTitle}>Everything you need to start riding</h1>
@@ -18,12 +18,12 @@ const ProductPage = ({productCards}) => {
       <div className={style.productPageContainer}>
         {productCards?.map((productCard) => <ProductCard key={productCard._id} productCard={productCard}/>)}
       </div>
-    </>
+    </div>
   )
 }
 
 export const getServerSideProps = async () => {
-    const productQuery = '*[_type == "productPage"]';
+    const productQuery = `*[_type == "product"] | order(order asc)`;
     const productCards = await client.fetch(productQuery);
   
     return {

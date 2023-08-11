@@ -9,7 +9,7 @@ const ProductPage = ({productCard}) => {
 const {image, name, slug, price} = productCard;
 
   return (
-    <div className={style.productContainer}>
+    <div id="product-card" className={style.productContainer}>
         <Link href={`/product/${slug.current}`}>
             <div className={style.productContentContainer}>
                 <img className={style.productImage} src={urlFor(image && image[0])}/>

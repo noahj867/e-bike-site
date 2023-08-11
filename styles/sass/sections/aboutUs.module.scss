@@ -1,0 +1,62 @@
+@use '../core/colors' as *;
+
+.sectionContainer {
+    display: flex;
+    gap: 150px;
+    padding: 75px 100px;
+    background-color: #e6f1fa;
+    transition: all 0.5s;
+
+    .imageWrapper {
+        display: flex;
+        max-width: 560px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .contentContainer {
+        display: flex;
+        flex-direction: column;
+        max-width: 500px;
+        gap: 30px;
+
+        .seperator {
+            width: 200px;
+            height: 1px;
+            background-color: black;
+        }
+
+        .subtitle {
+
+            u {
+                text-decoration-color: #00798f;
+            }
+        }
+
+    }
+
+    @media (max-width:1200px) {
+        flex-direction: column;
+        gap: 50px;
+
+        .contentContainer {
+            max-width: 800px;
+
+            .seperator {
+                background-color: black;
+            }
+    }
+
+    .imageWrapper {
+        display: flex;
+        max-width: 500px;
+    }
+
+    @media (max-width:950px) {
+        padding: 75px 25px;
+        gap: 25px;
+    }
+}
+}

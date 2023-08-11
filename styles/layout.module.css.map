@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["sass/sections/layout.module.scss","sass/core/_colors.scss"],"names":[],"mappings":"AAEA;EACE,YCGS;EDFT;EACA;;AAEA;EACE;EACA;EACA;;AAGD;EACC;EACA;;AAIF;EACE;EACA;;AAIF;EACE;EACA;EACA;EACA;EACA;EACA","file":"layout.module.css"}
+{"version":3,"sourceRoot":"","sources":["sass/sections/layout.module.scss","sass/core/_colors.scss"],"names":[],"mappings":"AAEA;EACE,YCGS;EDFT;EACA;;AAEA;EACE;EACA;EACA;;AAED;EACC;EACA;;AAIF;EACE;EACA;;AAIF;EACE;EACA;EACA;EACA;EACA;EACA","file":"layout.module.css"}

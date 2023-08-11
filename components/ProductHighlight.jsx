@@ -12,8 +12,8 @@ const ProductHighlight = ({heroBanner}) => {
   const productHighlightDescs = [
     { title: 'Power', body: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis, reprehenderit? Possimus, molestiae laboriosam tempora quae temporibus at ad perferendis'},
     { title: 'Speed', body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam et voluptates, cupiditate quibusdam eos explicabo.'},
-    { title: 'Convenience', body: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque voluptates eius obcaecati blanditiis odit dignissimos illo saepe, inventore esse ullam, ex itaque accusamus accusantium cumque, odio quis. Cumque, reiciendis enim.'},
-    { title: 'Safety', body: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque voluptates eius obcaecati blanditiis odit dignissimos illo saepe, inventore esse ullam, ex itaque accusamus accusantium cumque, odio quis. Cumque, reiciendis enim.'
+    { title: 'Convenience', body: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque voluptates eius obcaecati blanditiis odit dignissimos illo saepe, inventore esse ullam.'},
+    { title: 'Safety', body: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque voluptates eius obcaecati blanditiis odit dignissimos illo saepe.'
   }]
 
   return (
@@ -34,9 +34,9 @@ const ProductHighlight = ({heroBanner}) => {
                     <h3 className={style.productHighlightTitle}>
                       {item.title}
                     </h3>
-                    <div>
+                    <p>
                       {item.body}
-                    </div>
+                    </p>
                   </div>
                   </div>
                 </div>

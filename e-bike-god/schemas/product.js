@@ -2,6 +2,13 @@ export default {
     name: 'product',
     title: 'Product',
     type: 'document',
+    orderings: [
+        {
+          title: 'Manual Order',
+          name: 'manualOrder',
+          by: [{ field: 'order', direction: 'asc' }]
+        },
+      ],
     fields: [
         {
             name: 'image',
@@ -25,6 +32,12 @@ export default {
                 source: 'name',
                 maxLength: 90,
             }
+        },
+        {
+            name: 'order',
+            title: 'Order',
+            type: 'number',
+            options: 'For ordering'
         },
         {
             name: 'price',
@@ -72,6 +85,7 @@ export default {
             name: 'highlight5',
             title: 'Highlight5',
             type: 'string',
-        }
+        },
+
     ]
 }

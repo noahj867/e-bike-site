@@ -4,7 +4,6 @@
     // display: flex;
     background-color: white;
     padding: 20px 0px;
-    
 
     .productContentContainer {
         display: flex;
@@ -26,6 +25,7 @@
         border-radius: 5px;
         padding: 10px 16px;
         background-image: linear-gradient($blue-300, $blue-400);
+        // background-color: $blue-300;
         color: white;
         border: none;
         font-size: 18px;

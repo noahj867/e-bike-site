@@ -11,10 +11,13 @@ const HeroBanner = ({heroBanner}) => {
             <h1>Swap & GO</h1>
             <p className={style.heroBannerSubtitle}>Premium e-bikes and battery swaps at your fingertips</p>
             <div>
-                <Link href={`/product/${heroBanner.product}`}>
+                <Link href="/product/product-page">
                     <button type="button">View Products</button>
-                    <button class={style.buttonSecondary} type="button">Purchase Pass</button>
                 </Link>
+                <Link href="/#passes">
+                <button class={style.buttonSecondary} type="button">Purchase Pass</button>
+                </Link>
+
             </div>
         </div>
         <div className={style.motorcycleGifWrapper}>

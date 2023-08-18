@@ -34,7 +34,7 @@
   margin-left: 20%;
 }
 .howItWorksContainer .stepContainer .stepImageText .stepImageContainer {
-  max-width: 600px;
+  max-width: 650px;
 }
 .howItWorksContainer .stepContainer .stepImageText .stepImageContainer .stepImage {
   max-width: 100%;
@@ -53,7 +53,7 @@
   justify-content: center;
   text-overflow: clip;
   border-radius: 5px;
-  max-width: 650px;
+  max-width: 700px;
   gap: 30px;
 }
 .howItWorksContainer .stepContainer .stepImageText .stepText .stepTextContainer .stepBody {

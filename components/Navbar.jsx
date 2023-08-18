@@ -16,6 +16,9 @@ const Navbar = () => {
           <Link href="/#aboutus">About Us</Link>
         </p>
         <p className={style.navbarItem}>
+          <Link href="/#passes">Passes</Link>
+        </p>
+        <p className={style.navbarItem}>
           <Link href="/location">Locations</Link>
         </p>
         <p className={style.navbarItem}>

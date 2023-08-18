@@ -8,10 +8,11 @@
     transition: all 0.5s;
 
     .imageWrapper {
-        display: flex;
+        flex-shrink: 0.15;
         max-width: 560px;
 
         img {
+            height: auto;
             width: 100%;
         }
     }
@@ -19,7 +20,7 @@
     .contentContainer {
         display: flex;
         flex-direction: column;
-        max-width: 500px;
+        max-width: 650px;
         gap: 30px;
 
         .seperator {

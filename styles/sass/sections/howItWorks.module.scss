@@ -40,12 +40,13 @@
       }
 
       .stepImageContainer {
-        max-width: 500px;
+        max-width: 600px;
 
       .stepImage {
-        width: 100%;
+        max-width: 100%;
+        object-fit: cover;
+        height: auto;
         border-radius: 5px;
-
       }
     }
 
@@ -60,7 +61,7 @@
         justify-content: center;
         text-overflow: clip;
         border-radius: 5px;
-        max-width: 500px;
+        max-width: 650px;
         gap: 30px;
 
         .stepBody {
@@ -115,7 +116,7 @@
             margin-left: 5px;
 
             .stepTextContainer {
-              max-width: 600px;
+              max-width: 650px;
           }
         }
       }

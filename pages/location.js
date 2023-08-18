@@ -1,13 +1,14 @@
 import React from 'react';
 import style from '../styles/location.module.css';
-import {Location} from '../components';
+import {Map} from '../components';
 
 const location = () => {
     const locations = [
-        {neighborhood: "Downtown Brooklyn", capacity: "10", address: "845 Barclays Center, Brooklyn, NY 11211"},
-        {neighborhood: "Grand Army Plaza", capacity: "10", address: "845 Barclays Center, Brooklyn, NY 11211"},
-        {neighborhood: "Prospect Park West", capacity: "10", address: "845 Barclays Center, Brooklyn, NY 11211"},
-        {neighborhood: "Eastern Parkway", capacity: "10", address: "845 Barclays Center, Brooklyn, NY 11211"}
+        {neighborhood: "Downtown Brooklyn", capacity: "10", address: "Fowler Square, Brooklyn, NY 11217"},
+        {neighborhood: "Grand Army Plaza", capacity: "10", address: "10 Plaza Street East #1h, Brooklyn, NY 11238"},
+        {neighborhood: "Prospect Park West", capacity: "10", address: "Prospect Park Southwest, Brooklyn, NY 11215"},
+        {neighborhood: "Crown Heights", capacity: "10", address: "824 Nostrand Ave., Brooklyn, NY 11216"}, 
+        {neighborhood: "Bed Stuy", capacity: "10", address: "1387 Atlantic Ave, Brooklyn, NY 11216"}
     ]
     return (
         <>
@@ -19,7 +20,7 @@ const location = () => {
             </div>
             <hr className={style.headerSeperator}/>
             <div className={style.sectionContainer}>
-            <Location />
+            <Map />
             <ul className={style.addressContainer}>
                 {locations.map((item, i) => (
                     <li className={style.list} key={i}>

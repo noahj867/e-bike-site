@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import {urlFor} from "../lib/client";
 import style from 'styles/heroBanner.module.css';
+import Image from 'next/image';
 
 const HeroBanner = ({heroBanner}) => {
   return (
@@ -16,13 +17,14 @@ const HeroBanner = ({heroBanner}) => {
                 </Link>
             </div>
         </div>
-        
         <div className={style.motorcycleGifWrapper}>
-          <img src={"/motorcycle-gif.gif"} alt="my cool gif" className={style.motorcycleGif}/>
+          <Image 
+          src={"/motorcycle-gif-big.gif"} 
+          alt="my cool gif" 
+          width={1700}
+          height={956}
+          className={style.motorcycleGif}/>
         </div>
-        {/* <img src={urlFor(heroBanner.image)} 
-        alt="headphones" 
-        className={style.heroBannerImage}/> */}
     </div>
   )
 }

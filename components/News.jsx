@@ -1,6 +1,7 @@
 import React from 'react'
 import style from 'styles/news.module.css'
 import Link from 'next/link' 
+import Image from 'next/image'
 
 const News = () => {
 
@@ -35,7 +36,13 @@ const newsItems = [
                 {newsItems.map((newsItem, index) => (
                     <div key={index} className={style.newsCard}>
                         <Link href={newsItem.link}>
-                            <img src={newsItem.image} className={style.newsImage} />
+                            <Image 
+                                className={style.newsImage} 
+                                src={newsItem.image} 
+                                alt="news image"
+                                width={400}
+                                height={300}
+                                />
                             <h4 className={style.newsHeadline}>{newsItem.headline.charAt(0).toUpperCase() + newsItem.headline.slice(1).replace(/-/g, ' ')}</h4>
                         </Link>
                     </div>

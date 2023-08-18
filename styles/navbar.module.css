@@ -11,6 +11,7 @@
 }
 .navbarContainer .imageWrapper .logo {
   width: 100%;
+  cursor: pointer;
 }
 .navbarContainer .imageWrapper .logo:hover {
   color: #D9D9D9;

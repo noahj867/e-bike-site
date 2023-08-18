@@ -6,16 +6,17 @@
   transition: all 0.5s;
 }
 .sectionContainer .imageWrapper {
-  display: flex;
+  flex-shrink: 0.15;
   max-width: 560px;
 }
 .sectionContainer .imageWrapper img {
+  height: auto;
   width: 100%;
 }
 .sectionContainer .contentContainer {
   display: flex;
   flex-direction: column;
-  max-width: 500px;
+  max-width: 650px;
   gap: 30px;
 }
 .sectionContainer .contentContainer .seperator {

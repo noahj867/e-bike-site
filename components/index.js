@@ -8,6 +8,6 @@ export {default as HeroBanner} from './HeroBanner';
 export {default as ProductHighlight} from './ProductHighlight';
 export {default as HowItWorks} from './HowItWorks';
 export {default as News} from './News';
-export {default as Location} from './Location';
+export {default as Map} from './Map';
 export {default as ProductCard} from './ProductCard';
 export {default as AboutUs} from './AboutUs';

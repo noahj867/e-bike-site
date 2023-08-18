@@ -20,7 +20,7 @@ const Index = ({products, bannerData}) => {
       <AboutUs/>
     <div className={style.productSection}>
       <div id="passes" className={style.productsHeading}>
-        <h2>Our Pricing Packages</h2>
+        <h2>Our Pass Packages</h2>
         <p>Best deals on the market</p>
       </div>
       <div className={style.productsContainer}>

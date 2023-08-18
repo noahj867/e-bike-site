@@ -17,7 +17,6 @@ const HeroBanner = ({heroBanner}) => {
                 <Link href="/#passes">
                 <button class={style.buttonSecondary} type="button">Purchase Pass</button>
                 </Link>
-
             </div>
         </div>
         <div className={style.motorcycleGifWrapper}>

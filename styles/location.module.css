@@ -8,7 +8,7 @@
 }
 
 .seperator {
-  border: dotted 1px;
+  border: 1px;
 }
 
 .headerSeperator {
@@ -42,7 +42,7 @@
   gap: 10px;
 }
 .sectionContainer .addressContainer .list .wrapper .seperator {
-  border: dotted 1px;
+  border: solid 1px;
 }
 .sectionContainer .addressContainer .list .wrapper .name {
   margin-bottom: 10px;

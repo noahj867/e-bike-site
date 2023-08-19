@@ -1,9 +1,10 @@
 import { sizeHeight } from '@mui/system'
 import React from 'react'
 import style from 'styles/howItWorks.module.css'
+import Image from 'next/image'
 
 const HowItWorks = () => {
-  const images = [ "/how-it-works-1.png", "/how-it-works-2.png", "/how-it-works-3.png"]
+  const images = [ "/how-it-works-1.jpg", "/how-it-works-2.jpg", "/how-it-works-3.jpg"]
   const numberColors = ["#36523D", "#82a98a", "#36523D"]
   const descriptions = [
     { title: "Ride Far", step: "Step 1", body: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium a assumenda aliquam fuga molestias. Rerum fugit aliquid magnam dignissimos, delectus qui? Facilis, labore! Nisi voluptates earum cumque et ducimus quas!"}, 
@@ -19,7 +20,13 @@ const HowItWorks = () => {
           {descriptions.map((item, i) => (
             <div className={`${style.stepImageText} ${style[`block${i}`]}`} key={i}>
               <div className={style.stepImageContainer}>
-                <img className={style.stepImage} src={images[i]}/>
+                <Image 
+                  className={style.stepImage} 
+                  src={images[i]}
+                  alt="how it works image"
+                  width={800}
+                  height={533}
+                />
               </div>
               <div className={style.stepText}>
                 <div className={style.stepTextContainer}>

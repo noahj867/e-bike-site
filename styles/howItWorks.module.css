@@ -34,10 +34,12 @@
   margin-left: 20%;
 }
 .howItWorksContainer .stepContainer .stepImageText .stepImageContainer {
-  max-width: 500px;
+  max-width: 650px;
 }
 .howItWorksContainer .stepContainer .stepImageText .stepImageContainer .stepImage {
-  width: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  height: auto;
   border-radius: 5px;
 }
 .howItWorksContainer .stepContainer .stepImageText .stepText {
@@ -51,7 +53,7 @@
   justify-content: center;
   text-overflow: clip;
   border-radius: 5px;
-  max-width: 500px;
+  max-width: 700px;
   gap: 30px;
 }
 .howItWorksContainer .stepContainer .stepImageText .stepText .stepTextContainer .stepBody {
@@ -91,7 +93,7 @@
     margin-left: 5px;
   }
   .howItWorksContainer .stepContainer .stepImageText .stepText .stepTextContainer {
-    max-width: 600px;
+    max-width: 650px;
   }
 }
 @media (max-width: 885px) and (max-width: 885px) {

@@ -9,7 +9,7 @@ const AboutUs = () => {
               <h1 className={style.title}>About Us</h1>
               <div className={style.seperator}></div>
               <h3 className={style.subtitle}>We&apos;re on a mission to make e-bike delivery <em>affordable</em>, <em>safe</em>, and <em>hassle-free</em> </h3>
-              <p className={style.body}> Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sequi numquam distinctio quisquam consectetur dolore. Laudantium qui, molestiae corporis nulla alias vitae obcaecati dicta error itaque facere, magnam culpa nisi deleniti consequuntur! Harum neque, optio ratione architecto natus atque magnam corrupti tenetur, numquam consequatur facilis praesentium, consectetur ad quidem animi similique aut veritatis obcaecati modi autem ab. Doloribus ullam sit autem voluptates labore quo maxime? Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, nostrum!</p>
+              <p className={style.body}> We started 24 Hour Battery to provide a safe and affortdable alternative for e-bike couriers.</p>
           </div>
           <div className={style.imageWrapper}>
               <Image 

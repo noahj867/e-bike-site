@@ -40,8 +40,8 @@ const newsItems = [
                                 className={style.newsImage} 
                                 src={newsItem.image} 
                                 alt="news image"
-                                width={400}
-                                height={300}
+                                width={500}
+                                height={375}
                                 />
                             <h4 className={style.newsHeadline}>{newsItem.headline.charAt(0).toUpperCase() + newsItem.headline.slice(1).replace(/-/g, ' ')}</h4>
                         </Link>

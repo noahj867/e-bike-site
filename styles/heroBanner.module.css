@@ -4,15 +4,17 @@
   justify-content: center;
   flex-direction: column;
   background-color: #eae9e9;
+  background-image: url("/motorcycle-gif-big.gif");
   gap: 30px;
-  padding: 70px 20px 50px 20px;
+  padding: 300px 20px 250px 20px;
+  background-size: cover;
 }
 .heroBannerContainer .heroBannerText {
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
   text-align: center;
-  color: black;
+  color: white;
   gap: 30px;
 }
 @media (max-width: 400px) {
@@ -21,14 +23,14 @@
   }
 }
 .heroBannerContainer .heroBannerText h1 {
-  font-size: clamp(3.2rem, 12vw + 0.5rem, 8rem);
+  font-size: clamp(3.2rem, 12vw + 0.5rem, 9rem);
   white-space: nowrap;
   margin-bottom: -15px;
 }
 .heroBannerContainer .heroBannerText .heroBannerSubtitle {
-  font-size: 22px;
   text-align: center;
   padding: 0px 10px;
+  font-size: 22px;
 }
 @media (max-width: 400px) {
   .heroBannerContainer .heroBannerText .heroBannerSubtitle {

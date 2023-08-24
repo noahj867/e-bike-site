@@ -34,6 +34,7 @@
 }
 .footerContainer .footerBottom .copyright {
   margin-left: auto;
+  font-size: 16px;
 }
 @media (max-width: 700px) {
   .footerContainer .footerMain {

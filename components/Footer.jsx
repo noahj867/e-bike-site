@@ -48,7 +48,7 @@ const Footer = () => {
       </div>
       <div className={style.footerBottom}>
         <div className={style.logoSecondary}></div>
-        <div className={style.copyright}>All Rights Reserved</div>
+        <div className={style.copyright}>© 2023 24 Hr Battery. All Rights Reserved</div>
       </div>
     </div>
   )

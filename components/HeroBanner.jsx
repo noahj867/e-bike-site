@@ -8,8 +8,8 @@ const HeroBanner = ({heroBanner}) => {
   return (
     <div className={style.heroBannerContainer}>
         <div className={style.heroBannerText}>
-            <h1>Swap & GO</h1>
-            <p className={style.heroBannerSubtitle}>Premium e-bikes and battery swaps at your fingertips</p>
+            <h1>Swap & Go</h1>
+            <h3 className={style.heroBannerSubtitle}> Wave dead batteries goodbye<br/></h3>
             <div>
                 <Link href="/product/product-page">
                     <button type="button">View Products</button>
@@ -20,12 +20,12 @@ const HeroBanner = ({heroBanner}) => {
             </div>
         </div>
         <div className={style.motorcycleGifWrapper}>
-          <Image 
+          {/* <Image 
           src={"/motorcycle-gif-big.gif"} 
           alt="my cool gif" 
           width={1700}
           height={956}
-          className={style.motorcycleGif}/>
+          className={style.motorcycleGif}/> */}
         </div>
     </div>
   )

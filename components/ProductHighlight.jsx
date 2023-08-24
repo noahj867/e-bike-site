@@ -10,10 +10,10 @@ const ProductHighlight = ({heroBanner}) => {
   const productHighlightImages = [BatteryChargingFullIcon, Speed, HandshakeIcon, HealthAndSafetyIcon];
   // const productHighlightColors = ['#284b63', '#284b63', '#536f82', '#536f82'];
   const productHighlightDescs = [
-    { title: 'Power', body: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis, reprehenderit? Possimus, molestiae laboriosam tempora quae temporibus at ad perferendis'},
-    { title: 'Speed', body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam et voluptates, cupiditate quibusdam eos explicabo.'},
-    { title: 'Convenience', body: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque voluptates eius obcaecati blanditiis odit dignissimos illo saepe, inventore esse ullam.'},
-    { title: 'Safety', body: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque voluptates eius obcaecati blanditiis odit dignissimos illo saepe.'
+    { title: 'Convenience', body: "Swap out your battery in < 30 seconds at one of our battery swapping stations."},
+    { title: 'Affordability', body: "Save up to $500/month with a 24 hr battery pass or hundreds on a premium e-bike."},
+    { title: "Power", body: "Go further, faster with up to 150km range and 90km/hr top speeds."},
+    { title: 'Safety', body: "Our machines are equipped with state-of-the-art temperature control, making them among the safest places to charge a lithium-ion battery. Period."
   }]
 
   return (

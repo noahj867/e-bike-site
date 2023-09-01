@@ -1,6 +1,8 @@
 import React from 'react'
 import { AiFillInstagram, AiOutlineTwitter } from 'react-icons/ai'
 import style from 'styles/footer.module.css'
+import {FadeIn} from '../components';
+
 
 const Footer = () => {
 
@@ -29,28 +31,30 @@ const Footer = () => {
     }]
 
   return (
-    <div className={style.footerContainer}>
-      <div className={style.footerTop}> 
-        <img src="logo.png" className={style.logo}/>
-        <p className={style.icons}>
-        <AiFillInstagram />
-        <AiOutlineTwitter />
-      </p>
-      </div>
-      <hr />
-      <div className={style.footerMain}> 
-      {footerContent.map((item, i) => (
-        <div className={style.contentContainer} key={i}>
-                    <a href="../"><b>{item.title}</b></a>
-          {item.links.map((i) => <a key={i.href} href={i.href}>{i.name}</a>)}
+    <FadeIn>
+      <div className={style.footerContainer}>
+        <div className={style.footerTop}> 
+          <img src="logo.png" className={style.logo}/>
+          <p className={style.icons}>
+          <AiFillInstagram />
+          <AiOutlineTwitter />
+        </p>
         </div>
-      ))}
+        <hr />
+        <div className={style.footerMain}> 
+        {footerContent.map((item, i) => (
+          <div className={style.contentContainer} key={i}>
+                      <a href="../"><b>{item.title}</b></a>
+            {item.links.map((i) => <a key={i.href} href={i.href}>{i.name}</a>)}
+          </div>
+        ))}
+        </div>
+        <div className={style.footerBottom}>
+          <div className={style.logoSecondary}></div>
+          <div className={style.copyright}>© 2023 24 Hr Battery. All Rights Reserved</div>
+        </div>
       </div>
-      <div className={style.footerBottom}>
-        <div className={style.logoSecondary}></div>
-        <div className={style.copyright}>© 2023 24 Hr Battery. All Rights Reserved</div>
-      </div>
-    </div>
+    </FadeIn>
   )
 }
 

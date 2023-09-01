@@ -29,16 +29,31 @@
   }
 }
 .navbarContainer .navbarItemContainer .navbarItem {
-  transition: all 0.2s ease;
+  transition: all 0.2s ease-in-out;
   font-size: 1rem;
+  display: inline-block;
+  position: relative;
 }
 @media (max-width: 700px) {
   .navbarContainer .navbarItemContainer .navbarItem {
     display: none;
   }
 }
-.navbarContainer .navbarItemContainer .navbarItem:hover {
-  color: #aeaeae;
+.navbarContainer .navbarItemContainer .navbarItem:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0px;
+  left: 0px;
+  background-color: white;
+  transform-origin: bottom left;
+  transition: transform 0.25s ease-in-out;
+}
+.navbarContainer .navbarItemContainer .navbarItem:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 .navbarContainer .navbarItemContainer .dropDownIcon {
   margin-left: -45px;

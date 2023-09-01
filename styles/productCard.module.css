@@ -1,6 +1,5 @@
 .productContainer {
-  background-color: white;
-  padding: 20px 0px;
+  padding: 30px 0px;
 }
 .productContainer .productContentContainer {
   display: flex;
@@ -11,11 +10,17 @@
 }
 .productContainer .productContentContainer .productImage {
   aspect-ratio: 1/1;
+  transform: scale(1, 1);
   width: 100%;
   margin-bottom: 10px;
   background-color: #eae9e9;
+  border: solid 1px black;
   padding: 15px;
   border-radius: 5px;
+  transition: transform ease-in-out 0.3s;
+}
+.productContainer .productContentContainer .productImage:hover {
+  transform: scale(1.05, 1.05);
 }
 .productContainer .productContentContainer button {
   margin-top: 10px;

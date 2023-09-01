@@ -3,14 +3,16 @@
 .header {
     display: flex;
     flex-direction: column;
-    padding: 50px;
-    background-color: $blue-100;
-    color: white;
     gap: 15px;
-}
+    padding: 50px 0px 50px 30px;
+    // background-color: #f1f9ff;
+    background: linear-gradient($grey-100, $grey-200);
+    // border-bottom: solid 1px black;
+    color: black;
 
-.seperator {
-    border: 1px;
+    .subtitle {
+        font-weight: 400;
+    }
 }
 
 .headerSeperator {
@@ -69,11 +71,13 @@
         justify-content: center;
         margin-bottom: 30px;
         height: 600px;
+        // border-top: solid black 1px;
     
         .map {
             margin-top: -120px;
             height: 600px;
             width: 680px;
+            // border: solid black 2px;
         }
     }
 

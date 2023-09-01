@@ -11,3 +11,5 @@ export {default as News} from './News';
 export {default as Map} from './Map';
 export {default as ProductCard} from './ProductCard';
 export {default as AboutUs} from './AboutUs';
+export {default as FadeIn} from './FadeIn';
+export {default as FadeInWrapper} from './FadeInWrapper';

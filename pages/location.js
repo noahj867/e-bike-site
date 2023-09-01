@@ -16,9 +16,9 @@ const location = () => {
             <hr className={style.seperator}/>
             <div className={style.header}>
                 <h1 className={style.title}>Station Locations</h1>
-                <h3 className={style.subtitle}>Conveniently placed all around NYC</h3>
+                <h4 className={style.subtitle}>Conveniently placed all around NYC</h4>
             </div>
-            <hr className={style.headerSeperator}/>
+            {/* <hr className={style.headerSeperator}/> */}
             <div className={style.sectionContainer}>
             <Map />
             <ul className={style.addressContainer}>

@@ -1,14 +1,13 @@
 .header {
   display: flex;
   flex-direction: column;
-  padding: 50px;
-  background-color: #7e93a1;
-  color: white;
   gap: 15px;
+  padding: 50px 0px 50px 30px;
+  background: linear-gradient(#eae9e9, #D9D9D9);
+  color: black;
 }
-
-.seperator {
-  border: 1px;
+.header .subtitle {
+  font-weight: 400;
 }
 
 .headerSeperator {

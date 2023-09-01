@@ -1,8 +1,7 @@
 
 import '../styles/globals.css';
 import '../styles/app.css';
-
-import { Layout } from '../components';
+import {Layout, FadeIn} from '../components';
 
 export default function App({ Component, pageProps }) {
   return (

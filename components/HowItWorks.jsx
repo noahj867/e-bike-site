@@ -2,6 +2,8 @@ import { sizeHeight } from '@mui/system'
 import React from 'react'
 import style from 'styles/howItWorks.module.css'
 import Image from 'next/image'
+import {FadeIn} from '../components';
+
 
 const HowItWorks = () => {
   const images = [ "/how-it-works-1.jpg", "/how-it-works-2.jpg", "/how-it-works-3.jpg"]
@@ -14,33 +16,35 @@ const HowItWorks = () => {
   ]
   return (
     <>
-    <div className={style.howItWorksContainer}>
-    <h1 className={style.howItWorksTitle}>How It Works</h1>
-    {/* <h3 className={style.subtitle}>A simple three-step process</h3> */}
-        <div className={style.stepContainer}>
-          {descriptions.map((item, i) => (
-            <div className={`${style.stepImageText} ${style[`block${i}`]}`} key={i}>
-              <div className={style.stepImageContainer}>
-                <Image 
-                  className={style.stepImage} 
-                  src={images[i]}
-                  alt="how it works image"
-                  width={800}
-                  height={533}
-                />
-              </div>
-              <div className={style.stepText}>
-                <div className={style.stepTextContainer}>
-                  <h3 className={style.stepTitle}>{item.title}
-                  </h3>
-                  <p className={style.stepBody}>{item.body}
-                  </p>
+    <FadeIn>
+      <div className={style.howItWorksContainer}>
+      <h1 className={style.howItWorksTitle}>How It Works</h1>
+      {/* <h3 className={style.subtitle}>A simple three-step process</h3> */}
+          <div className={style.stepContainer}>
+            {descriptions.map((item, i) => (
+              <div className={`${style.stepImageText} ${style[`block${i}`]}`} key={i}>
+                <div className={style.stepImageContainer}>
+                  <Image 
+                    className={style.stepImage} 
+                    src={images[i]}
+                    alt="how it works image"
+                    width={800}
+                    height={533}
+                  />
+                </div>
+                <div className={style.stepText}>
+                  <div className={style.stepTextContainer}>
+                    <h3 className={style.stepTitle}>{item.title}
+                    </h3>
+                    <p className={style.stepBody}>{item.body}
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-              ))}
+                ))}
+          </div>
         </div>
-      </div>
+      </FadeIn>
     </>
   )
 }

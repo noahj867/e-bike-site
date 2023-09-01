@@ -1,10 +1,12 @@
 import React from 'react'
 import style from '/styles/aboutUs.module.css'
 import Image from 'next/image'
+import {FadeIn} from '../components';
 
 const AboutUs = () => {
   return (
       <div id="aboutus" className={style.sectionContainer}>
+        <FadeIn className={style.fadeIn}>
           <div className={style.contentContainer}>
               <h1 className={style.title}>About Us</h1>
               <div className={style.seperator}></div>
@@ -19,6 +21,7 @@ const AboutUs = () => {
                 height={1176}
             />
           </div>
+        </FadeIn>
       </div>
   )
 }

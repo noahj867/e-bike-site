@@ -2,6 +2,8 @@ import React from 'react'
 import style from 'styles/news.module.css'
 import Link from 'next/link' 
 import Image from 'next/image'
+import {FadeIn} from '../components';
+
 
 const News = () => {
 
@@ -28,8 +30,8 @@ const newsItems = [
 
   return (
     <> 
-    <div id="news">
-        <div className={style.newsSection}>
+    <div id="news" className={style.newsSection}>
+        <FadeIn>
             <h1 className={style.newsHeader}>News</h1>
             <h4 className={style.newsSubtitle}>Why safe and swappable e-bikes are here to stay</h4>
             <div className={style.newsContainer}>
@@ -47,8 +49,8 @@ const newsItems = [
                         </Link>
                     </div>
                 ))}
-                </div>
             </div>
+        </FadeIn>
     </div>
     </>
   )

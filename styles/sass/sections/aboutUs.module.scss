@@ -2,10 +2,14 @@
 
 .sectionContainer {
     display: flex;
-    gap: 150px;
-    padding: 75px 100px;
     background-color: #e6f1fa;
-    transition: all 0.5s;
+
+    .fadeIn {
+        display: flex;
+        transition: all 0.5s;
+        // border: 3px red solid;
+        gap: 150px;
+        padding: 75px 100px;
 
     .imageWrapper {
         flex-shrink: 0.15;
@@ -30,7 +34,6 @@
         }
 
         .subtitle {
-
             u {
                 text-decoration-color: #00798f;
             }
@@ -59,5 +62,6 @@
         padding: 75px 25px;
         gap: 25px;
     }
+}
 }
 }

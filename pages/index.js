@@ -2,7 +2,7 @@ import React from 'react';
 import style from 'styles/layout.module.css';
 // import Fade from 'react-reveal/fade';
 
-import {Product, FooterBanner, HeroBanner, HowItWorks, ProductHighlight, News, AboutUs}
+import {Product, FooterBanner, HeroBanner, HowItWorks, ProductHighlight, News, AboutUs, FadeInWrapper}
 from '../components';
 
 import {client} from '../lib/client';
@@ -30,6 +30,7 @@ const Index = ({products, bannerData}) => {
     <News />
 
     <FooterBanner footerBanner={bannerData.length && bannerData[0]}/>
+
     </>
   )
 };

@@ -35,15 +35,33 @@
       }
 
       .navbarItem {
-        transition: all 0.2s ease;
+        transition: all 0.2s ease-in-out;
         font-size: 1rem;
+        display: inline-block;
+        position: relative;
         @media (max-width: 700px) {
           display: none;
         }
 
-        &:hover{
-          color: $grey-300
-        }
+          &:after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 2px;
+            bottom: 0px;
+            left: 0px;
+            background-color: white;
+            transform-origin: bottom left;
+            transition: transform 0.25s ease-in-out;
+          }
+
+
+          &:hover:after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+          }
+    
         }
 
         .dropDownIcon{

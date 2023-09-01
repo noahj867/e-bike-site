@@ -1,21 +1,20 @@
-.linebreak {
-  border: 1px black;
-}
-
 .productPageBanner {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  padding: 50px;
-  background-color: #7e93a1;
-  color: white;
+  padding: 50px 0px 50px 30px;
+  background: linear-gradient(#eae9e9, #D9D9D9);
+  color: black;
+}
+.productPageBanner .productPageSubtitle {
+  font-weight: 400;
 }
 
 .productPageContainer {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   gap: 30px;
-  margin: 50px 25px;
+  padding: 25px 25px;
 }
 @media (max-width: 400px) {
   .productPageContainer {

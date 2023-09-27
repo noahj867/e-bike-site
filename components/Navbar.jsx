@@ -4,7 +4,12 @@ import {AiOutlineShopping} from 'react-icons/ai';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import style from "styles/navbar.module.css";
 import { FadeIn } from '../components';
+
+import { Cart } from './'
+import { useStateContext } from '../context/StateContext';
+
 const Navbar = () => {
+  const { showCart, setShowCart, totalQuantities } = useStateContext();
   return (
     <div className={style.navbarContainer}>
       <Link href="/">
@@ -43,10 +48,11 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <button type='button' className={style.cartIcon} onClick=''>
+      <button type='button' className={style.cartIcon} onClick={() => setShowCart(true)}>
         <AiOutlineShopping />
-        <span className={style.cartItemQty}></span>
+        <span className={style.cartItemQty}>{totalQuantities}</span>
       </button>
+      {showCart && <Cart />}
     </div>
   )
 }

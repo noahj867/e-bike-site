@@ -22,7 +22,6 @@ const ProductHighlight = ({heroBanner}) => {
     <>
     <FadeIn>
       <h2 className={style.sectionTitle}>Why 24 Hour Battery?</h2>
-      <div className={style.underline}></div>
       <div className={style.productHighlightContainer}>
           <div className={style.productHighlightDetails}>
               {productHighlightDescs.map((item, index) => (

@@ -78,6 +78,25 @@
 }
 .productHighlightContainer .productHighlightDetails .productHighlightRow .productHighlightDesc h3 {
   font-size: 2rem;
+  display: inline-block;
+  position: relative;
+  width: fit-content;
+}
+.productHighlightContainer .productHighlightDetails .productHighlightRow .productHighlightDesc h3:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 4px;
+  left: 0px;
+  bottom: 0px;
+  background-color: #00a3c0;
+  transform-origin: bottom left;
+  transition: transform ease-in-out 0.25s;
+}
+.productHighlightContainer .productHighlightDetails .productHighlightRow .productHighlightDesc h3:hover:after {
+  transform-origin: bottom left;
+  transform: scaleX(1);
 }
 .productHighlightContainer .productHighlightDetails .productHighlightRow .productHighlightDesc p {
   font-size: 1.25rem;

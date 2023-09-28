@@ -4,12 +4,13 @@ import BatteryChargingFullIcon from '@mui/icons-material/BatteryChargingFull';
 import Speed from '@mui/icons-material/Speed';
 import HandshakeIcon from '@mui/icons-material/Handshake';
 import HealthAndSafetyIcon from '@mui/icons-material/HealthAndSafety';
+import SellIcon from '@mui/icons-material/Sell';
 import style from 'styles/productHighlight.module.css';
 import {FadeIn} from '../components';
 
 
 const ProductHighlight = ({heroBanner}) => {
-  const productHighlightImages = [BatteryChargingFullIcon, Speed, HandshakeIcon, HealthAndSafetyIcon];
+  const productHighlightImages = [HandshakeIcon, SellIcon, Speed, HealthAndSafetyIcon];
   // const productHighlightColors = ['#284b63', '#284b63', '#536f82', '#536f82'];
   const productHighlightDescs = [
     { title: 'Convenience', body: "Swap out your battery in < 30 seconds at one of our battery swapping stations."},
@@ -44,10 +45,6 @@ const ProductHighlight = ({heroBanner}) => {
                   </div>
               ))}
           </div>
-          {/* <img
-              className={style.productHighlightImage}
-              src={urlFor(heroBanner.image)} 
-              alt="bike machine"/> */}
       </div>
     </FadeIn>
     </>

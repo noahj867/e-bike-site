@@ -1,0 +1,48 @@
+@use "../core/colors" as *;
+
+.wrapper {
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 100;
+    will-change: transform;
+    transition: all 1s ease-in-out;
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        height: 100vh;
+        max-width: 600px;
+        background-color: white;
+        color: black;
+        float: right;
+        padding: 40px 10px;
+        position: relative;
+
+        .product {
+            display: flex;
+            gap: 10px;
+
+            .productImage {
+                max-width: 125px;
+                margin-right: 10px;
+                border: black 1px solid;
+                border-radius: 5px;
+                background-color: $grey-100;
+            }
+
+            .itemDescription {
+
+                .flexTop {
+                    display: flex;
+                    gap: 100px;
+                }
+                
+            }
+        }
+        
+      }
+}

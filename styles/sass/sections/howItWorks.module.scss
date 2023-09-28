@@ -27,9 +27,10 @@
 
     .stepImageText {
       display: flex;
+      gap: 40px;
       margin-bottom: 75px;
-      margin-left: 25px;
-      margin-right: 25px;
+      // margin-left: 25px;
+      margin-right: 20px;
 
       &.block0, &.block2 {
         margin-left: 5%;
@@ -52,14 +53,13 @@
 
       .stepText {
       display: flex;
-      margin-right: 45px;
-      margin-left: 45px;
+      // margin-right: 45px;
+      // margin-left: 45px;
   
       .stepTextContainer {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        text-overflow: clip;
         border-radius: 5px;
         max-width: 700px;
         gap: 30px;
@@ -73,7 +73,8 @@
           font-size: 2rem;
           line-height: 3px;
           text-decoration: underline #00a3c0;
-          
+          overflow-wrap: break-word;
+          white-space: normal;
         }
         } 
     }

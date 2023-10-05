@@ -3,7 +3,7 @@
 .productCardContainer {
   display: flex;
   flex-direction: column;
-  align-items: stretch;
+  align-items: space-around;
   text-align: center;  
   background-color: white;
   border-radius: 5px;
@@ -15,6 +15,7 @@
   margin-bottom: 50px;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   margin-right: 10px;
+  border: $sky-blue-100 5px solid;
 
   @media (max-width:1200px) {
     height: 500px;
@@ -38,8 +39,9 @@
     flex-direction: column;
     padding: 15px 0px 15px 0px;
     margin-bottom: 10px;
+    justify-content: center;
     // background: linear-gradient($sky-blue-200, $sky-blue-300);
-    background-color: $sky-blue-100;
+    // background-color: $sky-blue-100;
     border-radius: 5px 5px 0 0;
 
     .productName {
@@ -61,11 +63,19 @@
       transform: scale(1, 1);
       transition: transform 0.5s ease;
     }
+
+    hr {
+      width: 250px;
+    }
   }
 
   .productDetailContainer {
+    display: flex;
 
     .productHighlights {
+      display: flex;
+      flex-direction: column;
+      align-items: baseline;
     
       .highlightRow {
         display: flex;

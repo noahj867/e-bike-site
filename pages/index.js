@@ -21,7 +21,7 @@ const Index = ({products, bannerData}) => {
     <div className={style.productSection}>
       <div id="passes" className={style.productsHeading}>
         <h2>Our Pass Packages</h2>
-        <p>Best deals on the market</p>
+        {/* <p>Best deals on the market</p> */}
       </div>
       <div className={style.productsContainer}>
         {productCards.map((product) => <Product key={product._id} product={product}/>)}

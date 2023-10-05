@@ -12,7 +12,7 @@ import style from 'styles/cart.module.css';
 
 const Cart = () => {
   const cartRef = useRef();
-  const { totalPrice, totalQuantities, cartItems, setShowCart } = useStateContext();
+  const { totalPrice, totalQuantities, cartItems, setShowCart, toggleCartItemQuantity } = useStateContext();
 
   return (
     <div className={style.wrapper} ref={cartRef}>
@@ -51,12 +51,11 @@ const Cart = () => {
                     <h5>{item.name}</h5>
                     <h4>{item.price}</h4>
                   </div>
-                  <div className={style.flexTop}>
-                    <p className={style.quantity}>
-                      <span className={style.quantityDesc}>Quantity:</span>
-                      <span className={style.minus} onClick=""><AiOutlineMinus /></span>
-                      <span className={style.number} onClick=''>0</span>
-                      <span className={style.plus} onClick=""><AiOutlinePlus /></span>
+                  <div className={style.flexBottom}>
+                    <p className={style.quantityDesc}>
+                      <span className={style.minus} onClick={() => toggleCartItemQuantity(item._id, 'dec')}><AiOutlineMinus /></span>
+                      <span className={style.number} onClick={item.quantity}>0</span>
+                      <span className={style.plus} onClick={() => toggleCartItemQuantity(item._id, 'inc')}> <AiOutlinePlus /></span>
                     </p>
                   </div>
                   <button

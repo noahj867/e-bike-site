@@ -9,10 +9,30 @@ import { useStateContext } from '../context/StateContext';
 import { urlFor } from '../lib/client';
 import Image from 'next/image';
 import style from 'styles/cart.module.css';
+import getStripe from '../lib/getStripe';
 
 const Cart = () => {
   const cartRef = useRef();
-  const { totalPrice, totalQuantities, cartItems, setShowCart, toggleCartItemQuantity } = useStateContext();
+  const { totalPrice, totalQuantities, cartItems, setShowCart, toggleCartItemQuantity, onRemove } = useStateContext();
+
+  const handleCheckout = async () => {
+    const stripe = await getStripe();
+
+    const response = await fetch('/api/stripe', {
+      method: 'POST', 
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(cartItems),
+    });
+    if(response.status === 500) return;
+
+    const data = await response.json();
+  
+    toast.loading('Redirecting...');
+  
+    stripe.redirectToCheckout({ sessionId: data.id })
+  }
 
   return (
     <div className={style.wrapper} ref={cartRef}>
@@ -23,7 +43,7 @@ const Cart = () => {
         onClick={() => setShowCart(false)}>
           <AiOutlineLeft size={20}/>
           <span className={style.title}>Your Cart:</span>
-          <span className={style.cartItems}> {totalQuantities} items</span>
+          <span className={style.cartItems}>{` (${totalQuantities} items)`}</span>
 
         </button>
 
@@ -54,16 +74,15 @@ const Cart = () => {
                   <div className={style.flexBottom}>
                     <p className={style.quantityDesc}>
                       <span className={style.minus} onClick={() => toggleCartItemQuantity(item._id, 'dec')}><AiOutlineMinus /></span>
-                      <span className={style.number} onClick={item.quantity}>0</span>
+                      <span className={style.number} onClick=''>{item.quantity}</span>
                       <span className={style.plus} onClick={() => toggleCartItemQuantity(item._id, 'inc')}> <AiOutlinePlus /></span>
                     </p>
                   </div>
                   <button
                     type="button"
                     className={style.removeItem}
-                    onClick="">
+                    onClick={() => onRemove(item)}>
                       <TiDeleteOutline/>
-        
                   </button>
                 </div>
               </div>
@@ -79,7 +98,7 @@ const Cart = () => {
                 <button 
                   type="button"
                   className={style.btn}
-                  onClick="">
+                  onClick={handleCheckout}>
                     Pre-order with Stripe
                 </button>
               </div>

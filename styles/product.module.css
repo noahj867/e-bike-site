@@ -1,19 +1,18 @@
 .productCardContainer {
   display: flex;
   flex-direction: column;
-  align-items: space-around;
+  align-items: space-evenly;
   text-align: center;
-  background-color: white;
+  background: white;
   border-radius: 5px;
   width: 380px;
-  height: 530px;
+  height: 500px;
   transform: scale(1, 1);
-  transition: transform 0.5s ease;
+  transition: transform 0.6s ease;
   color: black;
   margin-bottom: 50px;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   margin-right: 10px;
-  border: #c0dbf2 5px solid;
+  border: #c0dbf2 4px solid;
 }
 @media (max-width: 1200px) {
   .productCardContainer {
@@ -30,14 +29,13 @@
   }
 }
 .productCardContainer:hover {
-  transform: scale(1.03, 1.03);
+  transform: scale(1.02, 1.02);
 }
 .productCardContainer .productBanner {
   display: flex;
   flex-direction: column;
   padding: 15px 0px 15px 0px;
   margin-bottom: 10px;
-  justify-content: center;
   border-radius: 5px 5px 0 0;
 }
 .productCardContainer .productBanner .productName {
@@ -48,24 +46,14 @@
   margin-top: 5px;
 }
 .productCardContainer .productBanner .productPrice {
-  font-weight: 500;
+  font-size: 35px;
+  font-weight: 300;
 }
 .productCardContainer .productBanner .productImage {
   display: flex;
   justify-content: center;
   transform: scale(1, 1);
   transition: transform 0.5s ease;
-}
-.productCardContainer .productBanner hr {
-  width: 250px;
-}
-.productCardContainer .productDetailContainer {
-  display: flex;
-}
-.productCardContainer .productDetailContainer .productHighlights {
-  display: flex;
-  flex-direction: column;
-  align-items: baseline;
 }
 .productCardContainer .productDetailContainer .productHighlights .highlightRow {
   display: flex;

@@ -3,19 +3,20 @@
 .productCardContainer {
   display: flex;
   flex-direction: column;
-  align-items: space-around;
+  align-items: space-evenly;
   text-align: center;  
-  background-color: white;
+  // background: linear-gradient(white, $grey-100);
+  background: white;
   border-radius: 5px;
   width: 380px;
-  height: 530px;
+  height: 500px;
   transform: scale(1, 1);
-  transition: transform 0.5s ease;
+  transition: transform 0.6s ease;
   color: black;
   margin-bottom: 50px;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  // box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   margin-right: 10px;
-  border: $sky-blue-100 5px solid;
+  border: $sky-blue-100 4px solid;
 
   @media (max-width:1200px) {
     height: 500px;
@@ -31,7 +32,7 @@
   }
 
   &:hover{
-    transform: scale(1.03,1.03);
+    transform: scale(1.02,1.02);
   }
 
   .productBanner {
@@ -39,7 +40,6 @@
     flex-direction: column;
     padding: 15px 0px 15px 0px;
     margin-bottom: 10px;
-    justify-content: center;
     // background: linear-gradient($sky-blue-200, $sky-blue-300);
     // background-color: $sky-blue-100;
     border-radius: 5px 5px 0 0;
@@ -54,7 +54,8 @@
     }
 
     .productPrice {
-      font-weight: 500;
+      font-size: 35px;
+      font-weight: 300;
     }
 
     .productImage {
@@ -63,19 +64,11 @@
       transform: scale(1, 1);
       transition: transform 0.5s ease;
     }
-
-    hr {
-      width: 250px;
-    }
   }
 
   .productDetailContainer {
-    display: flex;
 
     .productHighlights {
-      display: flex;
-      flex-direction: column;
-      align-items: baseline;
     
       .highlightRow {
         display: flex;

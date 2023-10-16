@@ -17,17 +17,17 @@ const Product = ({product}) => {
         <Link href={`/product/${slug.current}`}>
           <div className={style.productBanner}>
             <h2 className={style.productName}>{name}</h2>
-            <p className={style.productSubtitle}>{subtitle}</p>
-            <hr />
-            {/* <h2 className={style.productPrice}>{price_display}</h2> */}
+            {/* <p className={style.productSubtitle}>{subtitle}</p> */}
+            {/* <hr /> */}
+            <h2 className={style.productPrice}>{price_display}</h2>
           </div>
           <div className={style.productDetailContainer}>
-           {/* <img
+           <img
               src={urlFor(image && image[0])}
               width={200}
               height={200}
               className={style.productImage}
-              /> */}
+              />
             <div className={style.productHighlights}>
               {highlights.map((highlight, index) => (
                 <div key={index} className={style.highlightRow}>

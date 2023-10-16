@@ -42,7 +42,7 @@ const ProductDetails = ({product, products}) => {
                     <p className={style.quantity}>
                         <span className={style.quantityDesc}>Quantity:</span>
                         <span className={style.minus} onClick={decQty}><AiOutlineMinus /></span>
-                        <span className={style.number} onClick=''>{qty}</span>
+                        <span className={style.number}>{qty}</span>
                         <span className={style.plus} onClick={incQty}><AiOutlinePlus /></span>
                     </p>
                     <button 

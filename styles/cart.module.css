@@ -20,18 +20,142 @@
   padding: 40px 10px;
   position: relative;
 }
-.wrapper .container .product {
+.wrapper .container .heading {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  gap: 2px;
+  margin-left: 10px;
+  border: none;
+  background-color: transparent;
+}
+.wrapper .container .heading .title {
+  font-size: 16px;
+  margin-left: 10px;
+}
+.wrapper .container .heading .cartItems {
+  font-size: 16px;
+  margin-left: 6px;
+  color: #536f82;
+}
+.wrapper .container .emptyCart {
+  margin: 40px;
+  text-align: center;
+}
+.wrapper .container .emptyCart h3 {
+  font-weight: 600;
+  font-size: 20px;
+}
+.wrapper .container .emptyCart .button {
+  width: 100%;
+  max-width: 300px;
+  padding: 10px 12px;
+  border-radius: 15px;
+  border: none;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-top: 40px;
+  text-transform: uppercase;
+  background-color: #8da8bf;
+  color: #fff;
+  cursor: pointer;
+  transform: scale(1, 1);
+  transition: transform 0.5s ease;
+}
+.wrapper .container .emptyCart .button:hover {
+  transform: scale(1.05, 1.05);
+}
+.wrapper .container .productContainer {
+  margin-top: 15px;
+  overflow: auto;
+  max-height: 70vh;
+  padding: 20px 10px;
+}
+.wrapper .container .productContainer .product {
   display: flex;
   gap: 10px;
+  margin-bottom: 30px;
 }
-.wrapper .container .product .productImage {
+.wrapper .container .productContainer .product .productImage {
   max-width: 125px;
   margin-right: 10px;
   border: black 1px solid;
   border-radius: 5px;
   background-color: #eae9e9;
 }
-.wrapper .container .product .itemDescription .flexTop {
+.wrapper .container .productContainer .product .itemDescription {
+  max-width: 350px;
+}
+.wrapper .container .productContainer .product .itemDescription .flexTop {
   display: flex;
   gap: 100px;
+}
+.wrapper .container .productContainer .product .itemDescription .flexBottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+.wrapper .container .productContainer .product .itemDescription .flexBottom .quantityDesc {
+  display: flex;
+  border: 1px solid gray;
+}
+.wrapper .container .productContainer .product .itemDescription .flexBottom .quantityDesc span {
+  font-size: 24px;
+  padding: 3px 6px;
+  cursor: pointer;
+}
+.wrapper .container .productContainer .product .itemDescription .flexBottom .quantityDesc .minus {
+  border-right: solid 1px gray;
+  color: #7e93a1;
+}
+.wrapper .container .productContainer .product .itemDescription .flexBottom .quantityDesc .number {
+  border-right: solid 1px gray;
+}
+.wrapper .container .productContainer .product .itemDescription .flexBottom .quantityDesc .plus {
+  color: #203c4f;
+}
+.wrapper .container .productContainer .product .removeItem {
+  font-size: 24px;
+  color: #f02d34;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+}
+.wrapper .container .cartBottom {
+  position: absolute;
+  bottom: 12px;
+  right: 5px;
+  width: 100%;
+  padding: 30px 65px;
+}
+.wrapper .container .cartBottom .total {
+  display: flex;
+  justify-content: space-between;
+}
+.wrapper .container .cartBottom .total h3 {
+  font-size: 22px;
+}
+.wrapper .container .cartBottom .buttonContainer {
+  max-width: 400px;
+}
+.wrapper .container .cartBottom .buttonContainer .button {
+  width: 100%;
+  max-width: 300px;
+  padding: 10px 12px;
+  border-radius: 15px;
+  border: none;
+  font-size: 16px;
+  margin-top: 10px;
+  margin-top: 40px;
+  text-transform: uppercase;
+  background-color: #8da8bf;
+  color: #fff;
+  cursor: pointer;
+  transform: scale(1, 1);
+  transition: transform 0.5s ease;
+}
+.wrapper .container .cartBottom .buttonContainer .button:hover {
+  transform: scale(1.05, 1.05);
 }/*# sourceMappingURL=cart.module.css.map */

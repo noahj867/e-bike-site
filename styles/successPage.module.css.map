@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["sass/sections/successPage.scss"],"names":[],"mappings":"AAAA;EACI","file":"successPage.css"}
+{"version":3,"sourceRoot":"","sources":["sass/sections/successPage.module.scss"],"names":[],"mappings":"AAAA;EACI","file":"successPage.module.css"}

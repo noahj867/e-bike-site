@@ -123,15 +123,30 @@
   transform-origin: bottom left;
 }
 .navbarContainer .cartIcon {
+  position: relative;
   transition: all 0.2s linear 0s;
   font-size: 28px;
   padding-left: 50px;
   cursor: pointer;
-  color: #d9d9d9;
+  color: white;
   /* transition: transform .4s ease; */
   border: none;
   background-color: transparent;
 }
-.navbarContainer .cartIcon:hover {
-  color: #aeaeae;
+.navbarContainer .cartIcon .cartItemQty {
+  display: flex;
+  border-radius: 50%;
+  position: absolute;
+  right: -5px;
+  top: -5px;
+  font-size: 14px;
+  background-color: red;
+  padding: 5px;
+  width: 18px;
+  height: 18px;
+  justify-content: center;
+  align-items: center;
+}
+.navbarContainer .cartIcon .cartItemQty:hover {
+  color: white;
 }/*# sourceMappingURL=navbar.module.css.map */

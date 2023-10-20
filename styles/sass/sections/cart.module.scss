@@ -22,27 +22,165 @@
         padding: 40px 10px;
         position: relative;
 
-        .product {
+        .heading{
             display: flex;
-            gap: 10px;
+            align-items: center;
+            font-size: 18px;
+            font-weight: 500;
+            cursor: pointer;
+            gap: 2px;
+            margin-left: 10px;
+            border: none;
+            background-color: transparent;
 
-            .productImage {
-                max-width: 125px;
-                margin-right: 10px;
-                border: black 1px solid;
-                border-radius: 5px;
-                background-color: $grey-100;
+            .title{
+                font-size: 16px;
+                margin-left: 10px;
             }
 
-            .itemDescription {
+            .cartItems {
+                font-size: 16px;
+                margin-left: 6px;
+                color: $blue-200;
+            }
+          }
 
-                .flexTop {
-                    display: flex;
-                    gap: 100px;
+          .emptyCart {
+            margin:40px;
+            text-align:center;
+
+            h3{
+                font-weight: 600;
+                font-size: 20px;
+              }
+
+              .button{
+                width: 100%;
+                max-width: 300px;
+                padding: 10px 12px;
+                border-radius: 15px;
+                border: none;
+                font-size: 20px;
+                margin-top: 10px;
+                margin-top: 40px;
+                text-transform: uppercase;
+                background-color: $sky-blue-300;
+                color: #fff;
+                cursor: pointer;
+                  transform: scale(1, 1);
+                transition: transform 0.5s ease;
+              }
+              .button:hover{
+                transform: scale(1.05,1.05);
+              }
+          }
+          .productContainer{
+            margin-top: 15px;
+            overflow: auto;
+          max-height: 70vh;
+          padding: 20px 10px;
+
+            .product {
+                display: flex;
+                gap: 10px;
+                margin-bottom: 30px;
+
+                .productImage {
+                    max-width: 125px;
+                    margin-right: 10px;
+                    border: black 1px solid;
+                    border-radius: 5px;
+                    background-color: $grey-100;
                 }
-                
+
+                .itemDescription {
+                    max-width: 350px;
+                    
+                    .flexTop {
+                        display: flex;
+                        gap:100px;
+                    }
+
+                    .flexBottom {
+                        display: flex;
+                        justify-content: space-between;
+                        margin-top: 60px;
+
+                        .quantityDesc {
+                            display: flex;
+                            border: 1px solid gray;
+
+                            span {
+                                font-size: 24px;
+                                padding: 3px 6px;
+                                cursor: pointer;
+                            }
+
+                            .minus {
+                                border-right: solid 1px gray;
+                                color: $blue-100;
+                            }
+
+                            .number {
+                                border-right: solid 1px gray;
+                            }
+                            .plus {
+                                color: $blue-400;
+                            }
+                        }
+                    }
+                    
+                }
+                .removeItem{
+                    font-size: 24px;
+                    color: #f02d34;
+                    cursor: pointer;
+                    background: transparent;
+                    border: none;
+                  }
             }
-        }
+         }
         
-      }
+         .cartBottom {
+            position: absolute;
+            bottom: 12px;
+            right: 5px;
+            width: 100%;
+            padding: 30px 65px;
+
+            .total {
+                display: flex;
+                justify-content: space-between;
+
+                h3 {
+                    font-size: 22px;
+                }
+            }
+
+            .buttonContainer {
+                max-width: 400px;
+
+                .button{
+                    width: 100%;
+                    max-width: 300px;
+                    padding: 10px 12px;
+                    border-radius: 15px;
+                    border: none;
+                    font-size: 16px;
+                    margin-top: 10px;
+                    margin-top: 40px;
+                    text-transform: uppercase;
+                    background-color: $sky-blue-300;
+                    color: #fff;
+                    cursor: pointer;
+                      transform: scale(1, 1);
+                    transition: transform 0.5s ease;
+                  }
+                  .button:hover{
+                    transform: scale(1.05,1.05);
+                  }
+            }
+
+         }
+    }
 }

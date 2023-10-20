@@ -47,24 +47,23 @@ const Cart = () => {
         className={style.heading}
         onClick={() => setShowCart(false)}>
           <AiOutlineLeft size={20}/>
-          <span className={style.title}>Your Cart:</span>
+          <span className={style.title}>Your Cart</span>
           <span className={style.cartItems}>{` (${totalQuantities} items)`}</span>
-
         </button>
 
         {cartItems.length < 1 && (
           <div className={style.emptyCart}>
-            <AiOutlineShopping size={150}/>
-            <h3>Your shopping bag is empty</h3>
-            <Link href="/">
-              <button 
-              type="button"
-              onClick={() => setShowCart(false)}
-              className={style.button}
-              >
-                Continue Shopping
-              </button>
-            </Link>
+              <AiOutlineShopping size={150}/>
+              <h3>Your shopping bag is empty</h3>
+              <Link href="/">
+                <button 
+                type="button"
+                onClick={() => setShowCart(false)}
+                className={style.button}
+                >
+                  Continue Shopping
+                </button>
+              </Link>
           </div>
         )}
           <div className={style.productContainer}>
@@ -82,13 +81,13 @@ const Cart = () => {
                       <span className={style.number} onClick=''>{item.quantity}</span>
                       <span className={style.plus} onClick={() => toggleCartItemQuantity(item._id, 'inc')}> <AiOutlinePlus /></span>
                     </p>
-                  </div>
-                  <button
+                    <button
                     type="button"
                     className={style.removeItem}
                     onClick={() => onRemove(item)}>
                       <TiDeleteOutline/>
                   </button>
+                  </div>
                 </div>
               </div>
             ))}
@@ -102,7 +101,7 @@ const Cart = () => {
               <div className={style.buttonContainer}>
                 <button 
                   type="button"
-                  className={style.btn}
+                  className={style.button}
                   onClick={handleCheckout}>
                     Pre-order with Stripe
                 </button>

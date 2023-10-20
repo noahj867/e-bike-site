@@ -108,7 +108,6 @@
           &:hover {
             transition: 0.25s;
             opacity: 1;
-
           }
 
           .dropDownItem {
@@ -141,18 +140,35 @@
   }
     
     .cartIcon{
+      position: relative;
       transition: all 0.2s linear 0s;
       font-size: 28px;
       padding-left: 50px;
       cursor: pointer;
-      color: #d9d9d9;
+      color: white;
       /* transition: transform .4s ease; */
       border: none;
       background-color: transparent;
 
-      &:hover{
-        color: $grey-300
+      .cartItemQty {
+        display: flex;
+        border-radius: 50%;
+        position: absolute;
+        right: -5px;
+        top: -5px;
+        font-size: 14px;
+        background-color: red;
+        padding: 5px;
+        width: 18px;
+        height: 18px;
+        justify-content: center;
+        align-items: center;
+
+        &:hover{
+          color: white;
+        }
       }
+
     
     }
     }

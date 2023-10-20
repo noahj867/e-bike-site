@@ -146,7 +146,7 @@ padding: 20px 10px;
 .item-desc .flex{
   display: flex;
   justify-content: space-between;
-  width: 350px;
+  max-width: 350px;
    color: #324d67;
 
 }
@@ -167,7 +167,7 @@ padding: 20px 10px;
   font-size: 22px;
 
 }
-.remove-item{
+.removeItem{
   font-size: 24px;
   color: #f02d34;
   cursor: pointer;

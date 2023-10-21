@@ -1,0 +1,25 @@
+.wrapper {
+  margin-top: 50px;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.95);
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 100;
+  will-change: transform top bottom;
+  transition: all 1s ease-in-out;
+}
+.wrapper .container {
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper .container .itemContainer .item {
+  font-weight: 500px;
+  font-size: 24px;
+  display: inline;
+}/*# sourceMappingURL=menu.module.css.map */

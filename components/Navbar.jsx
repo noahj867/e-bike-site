@@ -4,19 +4,23 @@ import {AiOutlineShopping} from 'react-icons/ai';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import style from "styles/navbar.module.css";
 import { FadeIn } from '../components';
+import MenuIcon from '@mui/icons-material/Menu';
 
-import { Cart } from './'
+import { Cart, Menu } from './'
+
 import { useStateContext } from '../context/StateContext';
 
 const Navbar = () => {
-  const { showCart, setShowCart, totalQuantities } = useStateContext();
+  const { showCart, setShowCart, showMenu, setShowMenu, totalQuantities, } = useStateContext();
   return (
     <div className={style.navbarContainer}>
-      <Link href="/">
-        <div className={style.imageWrapper}>
+      <MenuIcon className={style.menuIcon} onClick={() => setShowMenu(true)}/>
+      {showMenu && <Menu/>}
+      <div className={style.imageWrapper}>
+        <Link href="/">
           <img src="/logo.png" className={style.logo}/>
-        </div>
-      </Link>
+        </Link>
+      </div>
       <div className={style.navbarItemContainer}>
         <p className={style.navbarItem}>
           <Link href="/#aboutus">About Us</Link>

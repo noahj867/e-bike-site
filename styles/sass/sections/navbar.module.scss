@@ -4,9 +4,15 @@
     display: flex;
     align-items: center;
     // justify-content: space-between;
-    padding-right: 25px;
+    padding: 0px 20px;
     background-color: $blue-300;
     color: white;
+    min-height: 30px;
+
+    @media (max-width: 710px) {
+      justify-content: space-between;
+      padding: 5px 20px;
+    }
 
     .imageWrapper {
       max-width: 200px;
@@ -21,11 +27,24 @@
       }
     }
 
+    .menuIcon {
+      font-size: 30px;
+      display: none;
+      @media (max-width: 710px) {
+        display: inline;
+      }
+    }
+
     .navbarItemContainer {
       display: flex;
       margin-left: auto;
       gap: 50px;
       padding-right: 25px;
+
+      @media (max-width: 710px) {
+        display: none;
+        margin-left: none;
+      }
 
 
       @media (max-width: 500px) {
@@ -35,12 +54,9 @@
 
       .navbarItem {
         font-size: 1rem;
-        padding: 30px 0px;
         display: inline-block;
         position: relative;
-        @media (max-width: 700px) {
-          display: none;
-        }
+        padding: 25px 0px;
 
           &:after {
             content: "";
@@ -48,7 +64,7 @@
             width: 100%;
             transform: scaleX(0);
             height: 2px;
-            bottom: 30px;
+            bottom: 25px;
             left: 0px;
             background-color: white;
             transform-origin: bottom left;
@@ -66,17 +82,13 @@
         .dropDown {
           position: relative;
           display: flex;
-          align-items: center;
 
           .navbarItem {
             font-size: 1rem;
             display: inline-block;
             position: relative;
-            @media (max-width: 700px) {
-              display: none;
-            }
-          }
 
+          }
           &:hover .dropDownContent {
             display: flex;
             transition: 0.25s;
@@ -86,10 +98,9 @@
           }
         .dropDownIcon{
           // margin-left: -45px;
-          padding-bottom: 5px;
-          @media (max-width: 700px) {
-            display: none;
-          }
+          margin-top: 23px;
+          font-size: 20px;
+
         }
 
         .dropDownContent {
@@ -97,7 +108,7 @@
           border-radius: 5px;
           padding: 5px;
           gap: 15px;
-          top: 80px;
+          top: 70px;
           opacity: 0;
           flex-direction: column;
           padding: 10px;
@@ -149,6 +160,10 @@
       /* transition: transform .4s ease; */
       border: none;
       background-color: transparent;
+
+      @media (max-width: 710px) {
+        padding-left: 0;
+      }
 
       .cartItemQty {
         display: flex;

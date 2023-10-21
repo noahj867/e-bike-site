@@ -13,3 +13,4 @@ export {default as ProductCard} from './ProductCard';
 export {default as AboutUs} from './AboutUs';
 export {default as FadeIn} from './FadeIn';
 export {default as FadeInWrapper} from './FadeInWrapper';
+export {default as Menu} from './Menu';

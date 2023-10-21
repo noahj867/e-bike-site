@@ -77,9 +77,9 @@ const Cart = () => {
                   </div>
                   <div className={style.flexBottom}>
                     <p className={style.quantityDesc}>
-                      <span className={style.minus} onClick={() => toggleCartItemQuantity(item._id, 'dec')}><AiOutlineMinus /></span>
+                      <button className={style.minus} onClick={() => toggleCartItemQuantity(item._id, 'dec')}><AiOutlineMinus /></button>
                       <span className={style.number} onClick=''>{item.quantity}</span>
-                      <span className={style.plus} onClick={() => toggleCartItemQuantity(item._id, 'inc')}> <AiOutlinePlus /></span>
+                      <button className={style.plus} onClick={() => toggleCartItemQuantity(item._id, 'inc')}> <AiOutlinePlus /></button>
                     </p>
                     <button
                     type="button"

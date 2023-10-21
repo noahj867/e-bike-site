@@ -1,3 +1,66 @@
-.successWrapper {
+.wrapper {
+  min-height: 60vh;
+  margin: 10px;
+}
+.wrapper .success {
   display: flex;
+  margin: auto;
+  justify-content: center;
+  max-width: 1000px;
+  margin-top: 160px;
+  background-color: #dcdcdc;
+  padding: 50px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.wrapper .success .icon {
+  color: green;
+  font-size: 60px;
+}
+.wrapper .success h2 {
+  text-transform: capitalize;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: 900;
+  color: #284b63;
+}
+.wrapper .success .email-msg {
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+}
+.wrapper .success .description {
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  margin: 10px;
+  margin-top: 30px;
+}
+.wrapper .success .description a {
+  margin-left: 5px;
+  color: #284b63;
+  text-decoration: underline;
+}
+.wrapper .success .button {
+  width: 100%;
+  max-width: 300px;
+  padding: 10px 12px;
+  border-radius: 15px;
+  border: none;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-top: 40px;
+  text-transform: uppercase;
+  background-color: #8da8bf;
+  color: #fff;
+  cursor: pointer;
+  transform: scale(1, 1);
+  transition: transform 0.5s ease;
+}
+.wrapper .success .button:hover {
+  transform: scale(1.05, 1.05);
 }/*# sourceMappingURL=successPage.module.css.map */

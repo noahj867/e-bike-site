@@ -114,6 +114,48 @@
       color:black;
       margin-bottom: 15px;
     }
+
+    .buttons {
+
+      .quantity {
+        display: flex;
+        margin: 10px 0px;
+
+        button {
+          background-color: white;
+          font-size: 24px;
+          padding: 4px 8px;
+          cursor: pointer;
+          box-shadow: none;
+          border-radius: 0px;
+        }
+
+          span {
+            font-size: 24px;
+            padding: 4px 8px;
+            cursor: pointer;
+        }
+        .quantityDesc {
+          margin-right: 10px;
+        }
+
+        .minus {
+            border: solid 1px gray;
+            color: $blue-100;
+        }
+
+        .number {
+            border-top: solid 1px gray;
+            border-bottom: solid 1px gray;
+
+        }
+        .plus {
+            color: $blue-400;
+            border: solid 1px gray;
+        }
+        
+      }
+    }
   }
   @media (max-width: 750px) {
     flex-direction: column;

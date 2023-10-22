@@ -9,13 +9,16 @@
     color: white;
     min-height: 30px;
 
-    @media (max-width: 710px) {
+    @media (max-width: 740px) {
       justify-content: space-between;
       padding: 5px 20px;
     }
 
     .imageWrapper {
       max-width: 200px;
+      @media (max-width: 500px) {
+        max-width: 125px;
+      }
   
         .logo{
         width: 100%;
@@ -30,9 +33,10 @@
     .menuIcon {
       font-size: 30px;
       display: none;
-      @media (max-width: 710px) {
+      @media (max-width: 740px) {
         display: inline;
       }
+      cursor: pointer;
     }
 
     .navbarItemContainer {
@@ -41,7 +45,7 @@
       gap: 50px;
       padding-right: 25px;
 
-      @media (max-width: 710px) {
+      @media (max-width: 740px) {
         display: none;
         margin-left: none;
       }
@@ -161,7 +165,7 @@
       border: none;
       background-color: transparent;
 
-      @media (max-width: 710px) {
+      @media (max-width: 740px) {
         padding-left: 0;
       }
 

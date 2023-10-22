@@ -9,12 +9,26 @@ import MenuIcon from '@mui/icons-material/Menu';
 import { Cart, Menu } from './'
 
 import { useStateContext } from '../context/StateContext';
+import { useEffect } from 'react';
 
 const Navbar = () => {
   const { showCart, setShowCart, showMenu, setShowMenu, totalQuantities, } = useStateContext();
+
+  useEffect(() => {
+    if (showMenu) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
+    } 
+
+    return () => {
+      document.body.style.overflow = 'auto';
+    }
+
+  }, [showMenu])
   return (
     <div className={style.navbarContainer}>
-      <MenuIcon className={style.menuIcon} onClick={() => setShowMenu(true)}/>
+      <MenuIcon className={style.menuIcon} onClick={() => setShowMenu(prevState => !prevState)}/>
       {showMenu && <Menu/>}
       <div className={style.imageWrapper}>
         <Link href="/">

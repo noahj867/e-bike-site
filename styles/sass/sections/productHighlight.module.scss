@@ -1,5 +1,16 @@
 @use '../core/colors' as *;
 
+@keyframes slideUp {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+  }
+
 @property --gradient-angle {
     syntax: '<angle>';
     initial-value: 0deg;
@@ -10,6 +21,9 @@
     0% { --gradient-angle: 0deg; }
     100% { --gradient-angle: 360deg; }
 }
+
+.wrapper {
+    animation: slideUp forwards 1s;
 
 .sectionTitle {
     margin: 25px 25px;
@@ -115,3 +129,4 @@
               }
         }
     }
+}

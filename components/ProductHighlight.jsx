@@ -22,6 +22,7 @@ const ProductHighlight = ({heroBanner}) => {
   return (
     <>
     <FadeIn>
+    <div className={style.wrapper}>
       <h2 className={style.sectionTitle}>Why 24 Hour Battery?</h2>
       <div className={style.productHighlightContainer}>
           <div className={style.productHighlightDetails}>
@@ -46,6 +47,7 @@ const ProductHighlight = ({heroBanner}) => {
               ))}
           </div>
       </div>
+    </div>
     </FadeIn>
     </>
   )

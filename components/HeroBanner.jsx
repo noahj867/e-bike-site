@@ -8,7 +8,7 @@ import {FadeIn} from '../components';
 const HeroBanner = ({heroBanner}) => {
   return (
     <div className={style.heroBannerContainer}>
-      <FadeIn>
+      {/* <FadeIn> */}
         <div className={style.heroBannerText}>
             <h1>Swap & Go</h1>
             <h3 className={style.heroBannerSubtitle}> Wave dead batteries goodbye.<br/></h3>
@@ -22,14 +22,8 @@ const HeroBanner = ({heroBanner}) => {
             </div>
         </div>
         <div className={style.motorcycleGifWrapper}>
-          {/* <Image 
-          src={"/motorcycle-gif-big.gif"} 
-          alt="my cool gif" 
-          width={1700}
-          height={956}
-          className={style.motorcycleGif}/> */}
         </div>
-      </FadeIn>
+      {/* </FadeIn> */}
     </div>
   )
 }

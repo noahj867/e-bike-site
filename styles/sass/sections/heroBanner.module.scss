@@ -1,5 +1,16 @@
 @use '../core/colors' as *;
 
+@keyframes slideUp {
+  from {
+      transform: translateY(100%);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
 .heroBannerContainer{
   display: flex;
   // align-items: top;
@@ -7,16 +18,14 @@
   justify-content: center;
   flex-direction: column;
   background-color: $grey-100;
-  // background-image: linear-gradient(to bottom, $grey-100 50%,white 100%);
   background-image: url("/motorcycle-gif-big.gif");
   gap: 30px;
-  // gap: 100px;
-  // padding: 70px 20px 50px 20px;
   padding: 300px 20px 250px 20px;
   background-size: cover;
 
 
   .heroBannerText {
+    animation: slideUp forwards 1s;
     display: flex;  
     flex-wrap: nowrap;
     flex-direction: column;

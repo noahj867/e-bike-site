@@ -1,3 +1,13 @@
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 .heroBannerContainer {
   display: flex;
   align-items: center;
@@ -10,6 +20,7 @@
   background-size: cover;
 }
 .heroBannerContainer .heroBannerText {
+  animation: slideUp forwards 1s;
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;

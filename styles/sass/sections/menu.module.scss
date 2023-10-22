@@ -1,14 +1,44 @@
+@use '../core/colors' as *;
+
+@keyframes slideDown {
+    from {
+        transform: translateY(calc(-100% - 50px));
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 .wrapper {
+    animation: slideDown 1s forwards;
     margin-top: 50px;
     height: 100vh;
     width: 100vw;
-    background: rgba(0, 0, 0, 0.95);
+    background: rgba(26, 26, 26, 0.85);
     position: fixed;
     right: 0;
     top: 0;
     z-index: 100;
-    will-change: transform top bottom;
-    transition: all 1s ease-in-out;
+
+    @media (min-width: 741px) {
+        margin-top: 68px
+    }
+
+    @media (max-width:500px) {
+        margin-top: 44px;  
+    }
+    &:before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        backdrop-filter: blur(100px); /* Adjust the blur value as needed */
+        z-index: -1; /* Place the pseudo-element behind the Menu content */
+    }
 
     .container {
         margin-top: 150px;
@@ -23,7 +53,10 @@
             .item {
                 font-weight: 500px;
                 font-size: 24px; 
-                display: inline;
+
+                &:hover {
+                    color: $sky-blue-200;
+                }
             }
         }
     }

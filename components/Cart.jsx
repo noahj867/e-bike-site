@@ -53,7 +53,7 @@ const Cart = () => {
 
         {cartItems.length < 1 && (
           <div className={style.emptyCart}>
-              <AiOutlineShopping size={150}/>
+              <AiOutlineShopping size={100}/>
               <h3>Your shopping bag is empty</h3>
               <Link href="/">
                 <button 

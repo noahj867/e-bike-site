@@ -61,14 +61,13 @@
 .wrapper .container .emptyCart .button {
   width: 100%;
   max-width: 300px;
-  padding: 10px 12px;
+  padding: 8px 10px;
   border-radius: 15px;
   border: none;
-  font-size: 20px;
-  margin-top: 10px;
+  font-size: 16px;
   margin-top: 40px;
   text-transform: uppercase;
-  background-color: #8da8bf;
+  background-color: #66d1a8;
   color: #fff;
   cursor: pointer;
   transform: scale(1, 1);

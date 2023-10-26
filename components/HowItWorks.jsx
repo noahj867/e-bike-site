@@ -6,7 +6,8 @@ import {FadeIn} from '../components';
 
 
 const HowItWorks = () => {
-  const images = [ "/how-it-works-1.png", "/how-it-works-2.png", "/how-it-works-3.png"]
+  // const images = [ "/how-it-works-1.png", "/how-it-works-2.png", "/how-it-works-3.png"]
+  const images = [ "/download.jpg", "/download-1.jpg", "/download-2.jpg"]
   const numberColors = ["#36523D", "#82a98a", "#36523D"]
   const descriptions = [
     { title: "Power Your Ride", step: "Step 1", body: "When you decide to purchase one of our e-bikes, there are two battery options to choose from: buy a battery outright or buy a 24 Hr Battery Pass."}, 

@@ -18,15 +18,15 @@ const Index = ({products, bannerData}) => {
       <ProductHighlight heroBanner={bannerData.length && bannerData[0]}/>
       <HowItWorks/>
       <AboutUs/>
-    <div className={style.productSection}>
+    {/* <div className={style.productSection}>
       <div id="passes" className={style.productsHeading}>
         <h2>Our Pass Packages</h2>
-        {/* <p>Best deals on the market</p> */}
+        <p>Best deals on the market</p>
       </div>
       <div className={style.productsContainer}>
         {productCards.map((product) => <Product key={product._id} product={product}/>)}
       </div>
-    </div>
+    </div> */}
     <News />
 
     <FooterBanner footerBanner={bannerData.length && bannerData[0]}/>

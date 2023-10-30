@@ -16,8 +16,8 @@ const HeroBanner = ({heroBanner}) => {
                 <Link href="/product/product-page">
                     <button type="button">View Products</button>
                 </Link>
-                <Link href="/#passes">
-                <button class={style.buttonSecondary} type="button">Purchase Pass</button>
+                <Link href="/#howitworks">
+                <button class={style.buttonSecondary} type="button">Learn More</button>
                 </Link>
             </div>
         </div>

@@ -1,7 +1,9 @@
-import React from 'react'
-import { AiFillInstagram, AiOutlineTwitter } from 'react-icons/ai'
+import React from 'react';
+import { AiFillInstagram } from 'react-icons/ai'
+import { FaTiktok } from "react-icons/fa";
 import style from 'styles/footer.module.css'
 import {FadeIn} from '../components';
+import Image from 'next/image';
 
 
 const Footer = () => {
@@ -12,7 +14,7 @@ const Footer = () => {
       {name: "About Us", href:"/#aboutus"},
       {name: "Store ", href:"/product/product-page"},
       {name: "Locations ", href:"/location"},
-      {name: "Contact ", href:""}],
+      {name: "Contact ", href:"mailto:24hourbatterynyc@gmail.com"}],
     },
 
     {
@@ -20,8 +22,7 @@ const Footer = () => {
     links: [
       {name: "Download for iPhone", href:""},
       {name: "Download for Android", href:""},
-      {name: "Buy Pass", href:"/#passes"},
-      {name: "Buy Bike", href:"/product/product-page"}],
+      {name: "Pre-order Bike", href:"/product/product-page"}],
     },
     {
     title: "Learn More", 
@@ -34,10 +35,15 @@ const Footer = () => {
     <FadeIn>
       <div className={style.footerContainer}>
         <div className={style.footerTop}> 
-          <img src="logo.png" className={style.logo}/>
+          <Image src="/logo.png" width={150} height={35} className={style.logo} alt="logo" />
+          {/* <img src="logo.png" className={style.logo}/> */}
           <p className={style.icons}>
-          <AiFillInstagram />
-          <AiOutlineTwitter />
+          <a href="https://instagram.com/24hourbattery">
+            <AiFillInstagram />
+          </a>
+          <a href="http://www.tiktok.com/@24hourbattery">
+            <FaTiktok />
+          </a>
         </p>
         </div>
         <hr />

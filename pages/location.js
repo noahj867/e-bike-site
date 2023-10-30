@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import style from '../styles/location.module.css';
 import {Map} from '../components';
 
-const location = () => {
+const Location = () => {
     const locations = [
         {neighborhood: "Downtown Brooklyn", capacity: "10", address: "Fowler Square, Brooklyn, NY 11217"},
         {neighborhood: "Grand Army Plaza", capacity: "10", address: "10 Plaza Street East #1h, Brooklyn, NY 11238"},
@@ -10,9 +10,22 @@ const location = () => {
         {neighborhood: "Crown Heights", capacity: "10", address: "824 Nostrand Ave., Brooklyn, NY 11216"}, 
         {neighborhood: "Bed Stuy", capacity: "10", address: "1387 Atlantic Ave, Brooklyn, NY 11216"}
     ]
+
+    useEffect(() => {
+        document.body.style.overflow = 'hidden';
+
+        return () => {
+        document.body.style.overflow = '';
+        };
+    }, []);
+
     return (
+
         <>
-        <div id="location">
+        <div className={style.comingSoonOverlay}>
+            <div className={style.comingSoonText}>Coming Soon... </div>
+        </div>
+        <div id="location" className={style.sectionWrapper}>
             <hr className={style.seperator}/>
             <div className={style.header}>
                 <h1 className={style.title}>Station Locations</h1>
@@ -40,4 +53,4 @@ const location = () => {
     }
 
 
-export default location
+export default Location

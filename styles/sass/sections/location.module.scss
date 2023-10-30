@@ -1,5 +1,29 @@
 @use '../core/colors' as *;
 
+.comingSoonOverlay {
+    position: fixed;
+    top: 69px;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7); /* semi-transparent black */
+    z-index: 1000; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+    .comingSoonText {
+        font-size: 64px;
+        font-weight: 600;
+        filter: blur(0px);
+    }
+  }
+
+.sectionWrapper {
+    filter: blur(6px);
+}
+
 .header {
     display: flex;
     flex-direction: column;
@@ -126,6 +150,7 @@
         
     }
 }
+
 
 
 

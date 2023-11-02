@@ -1,18 +1,6 @@
 @use '../core/colors' as *;
 
-@keyframes slideUp {
-    from {
-        transform: translateY(100%);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-  }
-
 .sectionContainer {
-    animation: slideUp forwards 2s;
     display: flex;
     background-color: #e6f1fa;
 

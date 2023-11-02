@@ -21,9 +21,6 @@
     --gradient-angle: 360deg;
   }
 }
-.wrapper {
-  animation: slideUp forwards 1s;
-}
 .wrapper .sectionTitle {
   margin: 25px 25px;
   padding-top: 25px;

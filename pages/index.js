@@ -2,7 +2,7 @@ import React from 'react';
 import style from 'styles/layout.module.css';
 // import Fade from 'react-reveal/fade';
 
-import {Product, FooterBanner, HeroBanner, HowItWorks, ProductHighlight, News, AboutUs, FadeInWrapper}
+import {Product, FooterBanner, HeroBanner, HowItWorks, ProductHighlight, News, AboutUs, FadeInWrapper, Form}
 from '../components';
 
 import {client} from '../lib/client';
@@ -18,6 +18,7 @@ const Index = ({products, bannerData}) => {
       <ProductHighlight heroBanner={bannerData.length && bannerData[0]}/>
       <HowItWorks/>
       <AboutUs/>
+      <Form />
     {/* <div className={style.productSection}>
       <div id="passes" className={style.productsHeading}>
         <h2>Our Pass Packages</h2>
@@ -28,7 +29,6 @@ const Index = ({products, bannerData}) => {
       </div>
     </div> */}
     <News />
-
     <FooterBanner footerBanner={bannerData.length && bannerData[0]}/>
 
     </>

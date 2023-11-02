@@ -29,6 +29,7 @@
   float: right;
   padding: 40px 10px;
   position: relative;
+  z-index: 10;
 }
 .wrapper .container .heading {
   display: flex;

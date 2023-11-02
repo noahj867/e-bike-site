@@ -9,7 +9,6 @@
   }
 }
 .howItWorksContainer {
-  animation: slideUp forwards 1s;
   background-color: white;
   color: black;
 }

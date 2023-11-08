@@ -11,6 +11,10 @@
     }
   }
 
+#product-page {
+    animation: forwards 1s slideUp;
+}
+
 .productPageBanner {
     display: flex;
     flex-direction: column;
@@ -24,13 +28,8 @@
 
     .productPageSubtitle {
         font-weight: 400;
-        
     }
 
-}
-
-.linebreak {
-    // border: solid 1px black;
 }
 
 .productPageContainer {

@@ -8,6 +8,10 @@
     opacity: 1;
   }
 }
+#product-page {
+  animation: forwards 1s slideUp;
+}
+
 .productPageBanner {
   display: flex;
   flex-direction: column;

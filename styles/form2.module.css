@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+  gap: 30px;
+}
+.container .form input[type=text],
+.container .form input[type=email],
+.container .form input[type=tel] {
+  width: 100%;
+  padding: 8px;
+  margin: 6px 0 12px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.container .row {
+  display: flex;
+  gap: 10px;
+}/*# sourceMappingURL=form2.module.css.map */

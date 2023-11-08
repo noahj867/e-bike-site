@@ -16,7 +16,7 @@ const FooterBanner = ({footerBanner: {discount, largeText1, largeText2, saleTime
             <button className={style.primaryButton}type='button'>{buttonText}</button>
           </Link>
           <Link href={"/#passes"}>
-            <button className={style.secondaryButton}type='button'>Purchase Pass</button>
+            <button className={style.secondaryButton}type='button'>Join Waitlist</button>
           </Link>
         </div>
 

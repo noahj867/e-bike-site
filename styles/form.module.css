@@ -1,18 +1,66 @@
-.container {
+.contactFormContainer {
+  width: 90vw;
+  max-width: 800px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 100px;
-  gap: 30px;
+  flex-direction: column;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
 }
-.container .form input[type=text],
-.container .form input[type=email],
-.container .form input[type=tel] {
-  width: 100%;
-  padding: 8px;
-  margin: 6px 0 12px;
-  display: inline-block;
+.contactFormContainer h2 {
+  text-align: center;
+  color: #284b63;
+  margin-bottom: 1.5rem;
+}
+.contactFormContainer .contactForm {
+  display: flex;
+  flex-direction: column;
+}
+.contactFormContainer .contactForm .nameFields,
+.contactFormContainer .contactForm .countryPhoneFields {
+  display: flex;
+  justify-content: space-between;
+}
+.contactFormContainer .contactForm .nameFields label,
+.contactFormContainer .contactForm .countryPhoneFields label {
+  flex-basis: calc(50% - 0.5rem);
+}
+.contactFormContainer .contactForm .nameFields label:first-child,
+.contactFormContainer .contactForm .countryPhoneFields label:first-child {
+  margin-right: 1rem;
+}
+.contactFormContainer .contactForm .label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+.contactFormContainer .contactForm .label:focus-within .input {
+  border-color: #284b63;
+}
+.contactFormContainer .contactForm .input {
+  padding: 0.75rem;
   border: 1px solid #ccc;
   border-radius: 4px;
-  box-sizing: border-box;
+  margin-top: 0.5rem;
+  width: 100%;
+}
+.contactFormContainer .contactForm .input:focus {
+  outline: none;
+  border-color: #284b63;
+  box-shadow: 0 0 0 2px rgba(40, 75, 99, 0.2);
+}
+.contactFormContainer .contactForm .button {
+  padding: 1rem 2rem;
+  background: #284b63;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.contactFormContainer .contactForm .button:hover {
+  background-color: #192f3f;
 }/*# sourceMappingURL=form.module.css.map */

@@ -8,6 +8,18 @@ import {urlFor} from '../../lib/client';
 
 const ProductPage = ({productCards}) => {
 
+
+
+  // const count = 3;
+  // const accessories = productCard
+
+  const bike = productCards.find(bike => bike.name === "24hr Battery Bike");
+  const accessories = productCards.filter(accessory => 
+    accessory.name !== "24hr Battery Bike" &&
+    accessory.name !== "Classic Pass" &&
+    accessory.name !== "Mover Pass"
+  )
+
   return (
     <div id="product-page">
       <div className={style.productPageBanner}>
@@ -16,7 +28,11 @@ const ProductPage = ({productCards}) => {
       </div>    
       {/* <hr className={style.linebreak}></hr> */}
       <div className={style.productPageContainer}>
-        {productCards?.map((productCard) => <ProductCard key={productCard._id} productCard={productCard}/>)}
+        <div className={style.bikeContainer}>
+          <div className={style.bikeTitle}></div>
+          <ProductCard productCard={bike}/>
+        </div>
+        {accessories?.map((accessory) => <ProductCard key={accessory._id} productCard={accessory}/>)}
       </div>
     </div>
   )

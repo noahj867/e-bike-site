@@ -38,7 +38,7 @@ const Form = () => {
         });
         console.log('Form Data Submitted: ', response);
       } catch (error) {
-        console.error('Submission error', error);
+        console.error('Submission error', JSON.stringify(error));
     };
   }
 

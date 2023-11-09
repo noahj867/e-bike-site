@@ -11,7 +11,7 @@ const {image, name, slug, price} = productCard;
   return (
     <div id="product-card" className={style.productContainer}>
         <Link href={`/product/${slug.current}`}>
-            <div className={style.productContentContainer}>
+          <div className={style.productContentContainer}>
                 <img className={style.productImage} src={urlFor(image && image[0])}/>
                 <h4 className={style.productTitle}>{name}</h4>
                 <p className={style.productPrice}><em><b>Price:</b> ${price}</em></p>

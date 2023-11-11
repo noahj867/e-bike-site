@@ -1,5 +1,16 @@
 @use "../core/colors" as *;
 
+@keyframes slideUp {
+  from {
+      transform: translateY(100%);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
 
 .productDetailContainer{
   display: flex;
@@ -10,6 +21,7 @@
   background: white;
   margin-right: 20px;
   margin-bottom: 200px;
+  // animation: slideUp forwards 1.5s;
 
   .imageContainer {
     max-width: 400px;
@@ -20,10 +32,8 @@
       width: 100%;
       cursor: pointer;
       transition: .3s ease-in-out;
-
-      &:hover{
-        background-color: white;
-      }
+      background-color: white;
+      border: 1px $blue-300 solid;
     }
 
     .smallImagesContainer{
@@ -51,7 +61,7 @@
   }
 
   .productDetailDesc {
-    max-width: 500px;
+    max-width: 600px;
     display: flex;
     flex-direction: column;
 

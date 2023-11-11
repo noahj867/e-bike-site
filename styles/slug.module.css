@@ -1,3 +1,13 @@
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 .productDetailContainer {
   display: flex;
   gap: 40px;
@@ -17,9 +27,8 @@
   width: 100%;
   cursor: pointer;
   transition: 0.3s ease-in-out;
-}
-.productDetailContainer .imageContainer .productDetailImage:hover {
   background-color: white;
+  border: 1px #284b63 solid;
 }
 .productDetailContainer .imageContainer .smallImagesContainer {
   display: flex;
@@ -41,7 +50,7 @@
   border-style: solid;
 }
 .productDetailContainer .productDetailDesc {
-  max-width: 500px;
+  max-width: 600px;
   display: flex;
   flex-direction: column;
 }

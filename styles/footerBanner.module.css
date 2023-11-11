@@ -8,6 +8,7 @@
   line-height: 1;
   color: white;
   margin: 60px 20px 20px 20px;
+  border-radius: 5px;
 }
 .footerBannerContainer .bannerHeader {
   display: flex;
@@ -29,7 +30,12 @@
   font-size: 20px;
   font-weight: 500;
   cursor: pointer;
-  box-shadow: 2px 2px 3px #575757;
+  box-shadow: 2px 2px 3px black;
+  transition: all 0.3s;
+}
+.footerBannerContainer button:hover {
+  box-shadow: 3px 3px 3px black;
+  transform: scale(1.05, 1.05);
 }
 .footerBannerContainer .secondaryButton {
   margin-left: 15px;

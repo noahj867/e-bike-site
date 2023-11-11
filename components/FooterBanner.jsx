@@ -2,10 +2,15 @@ import React from 'react';
 import Link from 'next/link';
 import { urlFor } from '../lib/client';
 import style from 'styles/footerBanner.module.css'
-import {FadeIn} from '../components';
+import { useStateContext } from '../context/StateContext';
+// import {FadeIn} from '../components';
 
 
-const FooterBanner = ({footerBanner: {discount, largeText1, largeText2, saleTime, smallText, midText, desc, product, buttonText, image}}) => {
+
+const FooterBanner = () => {
+
+  const {handleOverlayToggle} = useStateContext();
+
   return (
     <div className={style.footerBannerContainer}>
         <h1 className={style.bannerHeader}>The Future of Delivery is here
@@ -13,11 +18,9 @@ const FooterBanner = ({footerBanner: {discount, largeText1, largeText2, saleTime
         <p className={style.bannerSubtitle}>Ride with us</p>
         <div>
           <Link href={"/product/product-page"}>
-            <button className={style.primaryButton}type='button'>{buttonText}</button>
+            <button className={style.primaryButton}type='button'>Shop Now</button>
           </Link>
-          <Link href={"/#passes"}>
-            <button className={style.secondaryButton}type='button'>Join Waitlist</button>
-          </Link>
+            <button className={style.secondaryButton}type='button' onClick={handleOverlayToggle}>Join Waitlist</button>
         </div>
 
     </div>

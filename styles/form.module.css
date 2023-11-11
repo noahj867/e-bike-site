@@ -1,4 +1,15 @@
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 .contactFormContainer {
+  position: relative;
   width: 90vw;
   max-width: 800px;
   display: flex;
@@ -8,6 +19,15 @@
   background: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
+  animation: slideUp 1s forwards;
+}
+.contactFormContainer .close {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  font-size: 28px;
+  color: #284b63;
+  cursor: pointer;
 }
 .contactFormContainer h2 {
   text-align: center;

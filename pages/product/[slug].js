@@ -5,15 +5,24 @@ import {AiOutlineMinus, AiOutplinePlus,
 AiFillStar, AiOutlineStar, AiOutlinePlus} from 'react-icons/ai';
 import { useStateContext } from '../../context/StateContext';
 import style from 'styles/slug.module.css';
+import {Form, Overlay} from '../../components';
 
 
 const ProductDetails = ({product, products}) => {
     const {image, name, description, price, subtitle, highlight1, highlight2, highlight3, highlight4 } = product;
     const [index, setIndex] = useState(0);
-    const { decQty, incQty, qty, onAdd} = useStateContext();
+    const { decQty, incQty, qty, onAdd, showOverlay, handleOverlayToggle} = useStateContext();
 
+    console.log("Before toggle:", showOverlay);
+    console.log("After toggle:", showOverlay);
+    
   return (
         <div className={style.productDetailContainer}>
+                  {showOverlay && (
+        <Overlay >
+          <Form toggleOverlay={handleOverlayToggle} showOverlay={showOverlay}/>
+        </Overlay>
+      )}
             <div className={style.imageContainer}>
                 <img 
                 src={urlFor(image && image[index])}
@@ -52,17 +61,17 @@ const ProductDetails = ({product, products}) => {
                     </button>
                     <button
                     className={style.buyNow} 
-                    onClick=''>Pre-order</button>
+                    onClick={handleOverlayToggle}>Pre-order</button>
                 </div>
                 {highlight1 && (
                 <div className={style.productAccessoryContainer}>
-                    <h3 className={style.productAccessoryTitle}>Pass Includes...</h3>
+                    {/* <h3 className={style.productAccessoryTitle}>Pass Includes...</h3>
                     <ul className={style.productAccessoryList}>
                         <li className={style.productAccessory}>{highlight1}</li>
                         <li className={style.productAccessory}>{highlight2}</li>
                         <li className={style.productAccessory}>{highlight3}</li>
                         <li className={style.productAccessory}>{highlight4}</li>
-                    </ul>
+                    </ul> */}
                 </div>
                     )
                 }

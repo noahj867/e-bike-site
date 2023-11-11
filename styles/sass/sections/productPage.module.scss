@@ -2,7 +2,7 @@
 
 @keyframes slideUp {
     from {
-        transform: translateY(200%);
+        transform: translateY(100%);
         opacity: 0;
     }
     to {
@@ -12,7 +12,6 @@
   }
 
 #product-page {
-    animation: forwards 1s slideUp;
 }
 
 .productPageBanner {
@@ -33,6 +32,7 @@
 }
 
 .productPageContainer {
+    animation: forwards 1.5s slideUp;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     // background-color: $sky-blue-50;

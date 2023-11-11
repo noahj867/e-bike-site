@@ -18,7 +18,6 @@ const Index = ({products, bannerData}) => {
       <ProductHighlight heroBanner={bannerData.length && bannerData[0]}/>
       <HowItWorks/>
       <AboutUs/>
-      <Form/>
     {/* <div className={style.productSection}>
       <div id="passes" className={style.productsHeading}>
         <h2>Our Pass Packages</h2>
@@ -30,8 +29,7 @@ const Index = ({products, bannerData}) => {
     </div> */}
     <News />
     <FooterBanner footerBanner={bannerData.length && bannerData[0]}/>
-
-    </>
+  </>
   )
 };
 

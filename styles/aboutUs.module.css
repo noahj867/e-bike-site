@@ -15,6 +15,7 @@
 .sectionContainer .fadeIn .imageWrapper img {
   height: auto;
   width: 100%;
+  border-radius: 5px;
 }
 .sectionContainer .fadeIn .contentContainer {
   display: flex;

@@ -69,13 +69,18 @@
    transition: all 0.5s linear 0s;
    border-radius: 5px;
    font-size: 1.2rem;
-   box-shadow: 2px 2px 3px $blue-500;
+   box-shadow: 2px 2px 3px black;
+   transition: transform 0.3s ;
 
    @media (max-width: 400px) {
     padding: 10px 20px;
     font-size: .9rem;
-
    }
+
+   &:hover {
+    box-shadow: 3px 3px 3px black;
+    transform: scale(1.05, 1.05);
+  }
  }
 
   .buttonSecondary{

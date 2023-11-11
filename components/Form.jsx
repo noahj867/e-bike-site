@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import style from 'styles/form.module.css';
 import {client} from '../lib/client';
+import { TiDeleteOutline } from 'react-icons/ti';
+import { toast } from 'react-hot-toast';
+
 
 const countries = {
   US: '+1',
@@ -8,7 +11,8 @@ const countries = {
   MEXICO: '+52'
 };
 
-const Form = () => {
+
+const Form = ({ showOverlay, toggleOverlay }) => {
     const [formData, setFormData] = useState({
       firstName: '',
       lastName: '',
@@ -36,14 +40,20 @@ const Form = () => {
         const response = await client.create({
           _type: 'contact', ...formData
         });
+        toast.success("Success! Welcome to the Waitlist");
+        toggleOverlay();
         console.log('Form Data Submitted: ', response);
       } catch (error) {
         console.error('Submission error', JSON.stringify(error));
     };
   }
+  console.log(showOverlay);
 
   return (
   <div className={style.contactFormContainer}>
+      <div className={style.close} >
+        <TiDeleteOutline onClick={toggleOverlay}/>
+      </div>
       <h2>Sign up today</h2>
       <form className={style.contactForm} onSubmit={handleSubmit}>
         <div className={style.nameFields}>
@@ -124,7 +134,7 @@ const Form = () => {
             />
           </label>
         </div>
-        <button className={style.button} type="submit" >Submit</button>
+        <button className={style.button} type="submit">Submit</button>
       </form>
     </div>
   );

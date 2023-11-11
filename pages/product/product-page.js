@@ -1,17 +1,15 @@
 import React from 'react';
 import Link from 'next/link';
 import style from 'styles/productPage.module.css';
-import {ProductCard} from '../../components';
+import {ProductCard, Form, Overlay} from '../../components';
+import {useStateContext} from '../../context/StateContext';
 
 import {client} from '../../lib/client';
 import {urlFor} from '../../lib/client';
 
 const ProductPage = ({productCards}) => {
 
-
-
-  // const count = 3;
-  // const accessories = productCard
+const {showOverlay, handleOverlayToggle} = useStateContext();
 
   const bike = productCards.find(bike => bike.name === "24hr Battery Bike");
   const accessories = productCards.filter(accessory => 
@@ -22,6 +20,11 @@ const ProductPage = ({productCards}) => {
 
   return (
     <div id="product-page">
+        {showOverlay && (
+          <Overlay >
+            <Form toggleOverlay={handleOverlayToggle} showOverlay={showOverlay}/>
+          </Overlay>
+        )}
       <div className={style.productPageBanner}>
         <h1 className={style.productPageTitle}>Start Riding Today</h1>
         <h4 className={style.productPageSubtitle}>Bikes, accessories and more</h4>  

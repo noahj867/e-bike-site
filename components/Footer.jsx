@@ -20,15 +20,13 @@ const Footer = () => {
     {
     title: "Get Started", 
     links: [
-      {name: "Download for iPhone", href:""},
-      {name: "Download for Android", href:""},
-      {name: "Pre-order Bike", href:"/product/product-page"}],
+      {name: "Pre-Order Bike", href:"/product/explorer"},
+      {name: "Join Waitlist", href:"/"}],
     },
     {
     title: "Learn More", 
     links: [
-      {name: "News", href:"/#news"},
-      {name: "FAQ", href:""}]
+      {name: "News", href:"/#news"}],
     }]
 
   return (

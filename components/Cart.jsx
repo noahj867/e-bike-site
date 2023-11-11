@@ -13,7 +13,18 @@ import getStripe from '../lib/getStripe';
 
 const Cart = () => {
   const cartRef = useRef();
-  const { totalPrice, totalQuantities, cartItems, setShowCart, toggleCartItemQuantity, onRemove } = useStateContext();
+  const { 
+    totalPrice, 
+    totalQuantities, 
+    cartItems, 
+    setShowCart, 
+    toggleCartItemQuantity, 
+    onRemove, 
+    showOverlay, 
+    handleOverlayToggle } = useStateContext();
+
+    console.log(typeof handleOverlayToggle); // Should log "function"
+
 
   const handleCheckout = async () => {
     const stripe = await getStripe();
@@ -102,8 +113,11 @@ const Cart = () => {
                 <button 
                   type="button"
                   className={style.button}
-                  onClick={handleCheckout}>
-                    Pre-order with Stripe
+                  onClick={() => {
+                  handleOverlayToggle();
+                  setShowCart();
+                  }}>
+                    Join the Waitlist
                 </button>
               </div>
             </div>

@@ -60,13 +60,18 @@
   transition: all 0.5s linear 0s;
   border-radius: 5px;
   font-size: 1.2rem;
-  box-shadow: 2px 2px 3px #182d3b;
+  box-shadow: 2px 2px 3px black;
+  transition: transform 0.3s;
 }
 @media (max-width: 400px) {
   .heroBannerContainer .heroBannerText button {
     padding: 10px 20px;
     font-size: 0.9rem;
   }
+}
+.heroBannerContainer .heroBannerText button:hover {
+  box-shadow: 3px 3px 3px black;
+  transform: scale(1.05, 1.05);
 }
 .heroBannerContainer .heroBannerText .buttonSecondary {
   background-color: white;

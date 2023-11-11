@@ -49,8 +49,8 @@ const Navbar = () => {
           <p className={style.navbarItem}>
             <Link href="/product/product-page">Store</Link>
           </p>
-          <ArrowDropDownIcon className={style.dropDownIcon}/> 
-          <div className={style.dropDownContent}>
+          {/* <ArrowDropDownIcon className={style.dropDownIcon}/>  */}
+          {/* <div className={style.dropDownContent}>
             <p className={style.dropDownItem}>
               <Link href="/#">Home</Link>
             </p>
@@ -63,14 +63,14 @@ const Navbar = () => {
             <p className={style.dropDownItem}>
               <Link href="/#">Passes</Link>
             </p>
-          </div>
+          </div> */}
         </div>
       </div>
       <button type='button' className={style.cartIcon} onClick={() => setShowCart(true)}>
         <AiOutlineShopping />
         <span className={style.cartItemQty}>{totalQuantities}</span>
       </button>
-      {showCart && <Cart />}
+      {showCart && <Cart/>}
     </div>
   )
 }

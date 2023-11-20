@@ -90,26 +90,41 @@
 .wrapper .container .productContainer .product .productImage {
   max-width: 125px;
   margin-right: 10px;
+  padding: 5px;
   border: black 1px solid;
   border-radius: 5px;
   background-color: #eae9e9;
 }
 .wrapper .container .productContainer .product .itemDescription {
-  max-width: 350px;
+  min-width: 350px;
+}
+@media (max-width: 550px) {
+  .wrapper .container .productContainer .product .itemDescription {
+    min-width: 200px;
+  }
+}
+@media (max-width: 400px) {
+  .wrapper .container .productContainer .product .itemDescription {
+    min-width: 135px;
+  }
 }
 .wrapper .container .productContainer .product .itemDescription .flexTop {
   display: flex;
-  gap: 100px;
+  justify-content: space-between;
+  width: 100%;
+  gap: 10px;
 }
-@media (max-width: 360px) {
+@media (max-width: 400px) {
   .wrapper .container .productContainer .product .itemDescription .flexTop {
-    gap: 30px;
+    max-width: 135px;
   }
 }
 .wrapper .container .productContainer .product .itemDescription .flexBottom {
   display: flex;
   justify-content: space-between;
   margin-top: 60px;
+  gap: 10px;
+  width: 100%;
 }
 .wrapper .container .productContainer .product .itemDescription .flexBottom .quantityDesc {
   display: flex;
@@ -139,14 +154,18 @@
 }
 .wrapper .container .productContainer .product .removeItem {
   font-size: 24px;
+  margin-left: auto;
   color: #f02d34;
   cursor: pointer;
   background: transparent;
   border: none;
 }
 .wrapper .container .cartBottom {
-  position: relative;
-  top: 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  bottom: 10px;
   right: 5px;
   width: 100%;
   padding: 30px 65px;
@@ -154,24 +173,25 @@
 .wrapper .container .cartBottom .total {
   display: flex;
   justify-content: space-between;
+  width: 100%; /* Ensures the .total div takes the full width */
+  max-width: 400px; /* Adjust as necessary */
 }
 .wrapper .container .cartBottom .total h3 {
   font-size: 22px;
 }
 .wrapper .container .cartBottom .buttonContainer {
-  position: relative;
+  display: flex;
+  justify-content: center; /* This will center the button within the container */
   max-width: 400px;
+  width: 100%; /* Ensures the container takes full width */
 }
 .wrapper .container .cartBottom .buttonContainer .button {
-  position: absolute;
-  right: 8px;
   width: 100%;
   max-width: 300px;
   padding: 10px 12px;
   border-radius: 15px;
   border: none;
   font-size: 16px;
-  margin-top: 10px;
   margin-top: 40px;
   text-transform: uppercase;
   background-color: #284b63;

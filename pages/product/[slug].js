@@ -18,11 +18,11 @@ const ProductDetails = ({product, products}) => {
     
   return (
         <div className={style.productDetailContainer}>
-                  {showOverlay && (
-        <Overlay >
-          <Form toggleOverlay={handleOverlayToggle} showOverlay={showOverlay}/>
-        </Overlay>
-      )}
+            {showOverlay && (
+                <Overlay >
+                <Form toggleOverlay={handleOverlayToggle} showOverlay={showOverlay}/>
+                </Overlay>
+            )}
             <div className={style.imageContainer}>
                 <img 
                 src={urlFor(image && image[index])}

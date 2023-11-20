@@ -7,7 +7,6 @@ const Overlay = ({children, toggleOverlay}) => {
         <div className={style.overlayContent}>
             {children}
         </div>
-        <button onClick={toggleOverlay}></button>
     </div>
   )
 }

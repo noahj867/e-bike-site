@@ -83,16 +83,16 @@
         }
 
 
-        // .dropDown {
-        //   position: relative;
-        //   display: flex;
+        .dropDown {
+          position: relative;
+          display: flex;
 
-        //   .navbarItem {
-        //     font-size: 1rem;
-        //     display: inline-block;
-        //     position: relative;
+          .navbarItem {
+            font-size: 1rem;
+            display: inline-block;
+            position: relative;
 
-        //   }
+          }
           // &:hover .dropDownContent {
           //   display: flex;
           //   transition: 0.25s;
@@ -107,50 +107,50 @@
 
         }
 
-        // .dropDownContent {
-        //   position: absolute;
-        //   border-radius: 5px;
-        //   padding: 5px;
-        //   gap: 15px;
-        //   top: 70px;
-        //   opacity: 0;
-        //   flex-direction: column;
-        //   padding: 10px;
-        //   background-color: white;
-        //   box-shadow: 1px 1px 1px black;
+        .dropDownContent {
+          position: absolute;
+          border-radius: 5px;
+          padding: 5px;
+          gap: 15px;
+          top: 70px;
+          opacity: 0;
+          flex-direction: column;
+          padding: 10px;
+          background-color: white;
+          box-shadow: 1px 1px 1px black;
 
 
-        //   &:hover {
-        //     transition: 0.25s;
-        //     opacity: 1;
-        //   }
+          &:hover {
+            transition: 0.25s;
+            opacity: 1;
+          }
 
-        //   .dropDownItem {
-        //     font-size: 1rem;
-        //     color: black;
-        //     display: inline-block;
-        //     position: relative;
+          .dropDownItem {
+            font-size: 1rem;
+            color: black;
+            display: inline-block;
+            position: relative;
 
-        //     &:after {
-        //       content: "";
-        //       position: absolute;
-        //       width: 100%;
-        //       transform: scaleX(0);
-        //       height: 2px;
-        //       bottom: 0px;
-        //       left: 0px;
-        //       background-color: black;
-        //       transform-origin: bottom left;
-        //       transition: transform 0.2s;
-        //     }
+            &:after {
+              content: "";
+              position: absolute;
+              width: 100%;
+              transform: scaleX(0);
+              height: 2px;
+              bottom: 0px;
+              left: 0px;
+              background-color: black;
+              transform-origin: bottom left;
+              transition: transform 0.2s;
+            }
   
   
-        //     &:hover:after {
-        //       transform: scaleX(1);
-        //       transform-origin: bottom left;
-        //     }
-        //   }
-        // }
+            &:hover:after {
+              transform: scaleX(1);
+              transform-origin: bottom left;
+            }
+          }
+        }
     }
   }
     

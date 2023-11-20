@@ -100,21 +100,33 @@
                 .productImage {
                     max-width: 125px;
                     margin-right: 10px;
+                    padding: 5px;
                     border: black 1px solid;
                     border-radius: 5px;
                     background-color: $grey-100;
                 }
 
                 .itemDescription {
-                    max-width: 350px;
+                    min-width: 350px;
+
+                    @media (max-width: 550px) {
+                        min-width: 200px;
+                    }
+
+                    @media (max-width: 400px) {
+                        min-width: 135px;
+                    }
+
                     
                     .flexTop {
                         display: flex;
-                        gap:100px;
+                        justify-content: space-between;
+                        width: 100%;
+                        gap: 10px;
 
-                        @media (max-width: 360px) {
-                            // justify-content: space-between;
-                            gap: 30px;
+
+                        @media (max-width: 400px) {
+                            max-width: 135px;
                         }
                     }
 
@@ -122,6 +134,9 @@
                         display: flex;
                         justify-content: space-between;
                         margin-top: 60px;
+                        gap: 10px;
+                        width: 100%;
+
 
                         .quantityDesc {
                             display: flex;
@@ -159,6 +174,7 @@
                 }
                 .removeItem{
                     font-size: 24px;
+                    margin-left: auto;
                     color: #f02d34;
                     cursor: pointer;
                     background: transparent;
@@ -168,48 +184,51 @@
          }
         
          .cartBottom {
-            position: relative;
-            top: 420px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: absolute;
+            bottom: 10px;
             right: 5px;
             width: 100%;
             padding: 30px 65px;
-
+        
             .total {
                 display: flex;
                 justify-content: space-between;
-
+                width: 100%; /* Ensures the .total div takes the full width */
+                max-width: 400px; /* Adjust as necessary */
                 h3 {
                     font-size: 22px;
                 }
             }
-
+        
             .buttonContainer {
-                position: relative;
+                display: flex;
+                justify-content: center; /* This will center the button within the container */
                 max-width: 400px;
-
-                .button{
-                    position: absolute;
-                    right: 8px;
+                width: 100%; /* Ensures the container takes full width */
+                
+                .button {
                     width: 100%;
                     max-width: 300px;
                     padding: 10px 12px;
                     border-radius: 15px;
                     border: none;
                     font-size: 16px;
-                    margin-top: 10px;
                     margin-top: 40px;
                     text-transform: uppercase;
                     background-color: $blue-300;
                     color: #fff;
                     cursor: pointer;
-                      transform: scale(1, 1);
+                    transform: scale(1, 1);
                     transition: transform 0.5s ease;
-                  }
-                  .button:hover{
+                }
+                .button:hover {
                     transform: scale(1.05,1.05);
-                  }
+                }
             }
-
-         }
+        }
+        
     }
 }

@@ -23,7 +23,7 @@ const HeroBanner = () => {
             <h3 className={style.heroBannerSubtitle}> Wave dead batteries goodbye.<br/></h3>
               <div>
                 <Link href="/product/explorer">
-                    <button type="button">24 Hr Bike</button>
+                    <button type="button">24HB Bike</button>
                 </Link>
                 <button class={style.buttonSecondary} type="button" onClick={handleOverlayToggle}>Join Waitlist</button>
             </div>

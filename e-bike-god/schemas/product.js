@@ -62,30 +62,115 @@ export default {
             type: 'string',
         },
         {
-            name: 'highlight1',
-            title: 'Highlight1',
+            name: 'spec1',
+            title: 'Spec1',
             type: 'string',
         },
         {
-            name: 'highlight2',
-            title: 'Highlight2',
+            name: 'spec2',
+            title: 'Spec2',
             type: 'string',
         },         
         {
-            name: 'highlight3',
-            title: 'Highlight3',
+            name: 'spec3',
+            title: 'Spec3',
             type: 'string',
         },        
         {
-            name: 'highlight4',
-            title: 'Highlight4',
+            name: 'spec4',
+            title: 'Spec4',
             type: 'string',
         },
         {
-            name: 'highlight5',
-            title: 'Highlight5',
+            name: 'spec5',
+            title: 'Spec5',
             type: 'string',
         },
+        {
+            name: 'spec6',
+            title: 'Spec6',
+            type: 'string',
+        },
+        {
+            name: 'spec7',
+            title: 'Spec7',
+            type: 'string',
+        },         
+        {
+            name: 'spec8',
+            title: 'Spec8',
+            type: 'string',
+        },        
+        {
+            name: 'spec9',
+            title: 'Spec9',
+            type: 'string',
+        },
+        {
+            name: 'spec10',
+            title: 'Spec10',
+            type: 'string',
+        },
+        {
+            name: 'spec11',
+            title: 'Spec11',
+            type: 'string',
+        },
+        {
+            name: 'specDetails1',
+            title: 'SpecDetails1',
+            type: 'string',
+        },
+        {
+            name: 'specDetails2',
+            title: 'SpecDetails2',
+            type: 'string',
+        },         
+        {
+            name: 'specDetails3',
+            title: 'SpecDetails3',
+            type: 'string',
+        },        
+        {
+            name: 'specDetails4',
+            title: 'SpecDetails4',
+            type: 'string',
+        },
+        {
+            name: 'specDetails5',
+            title: 'SpecDetails5',
+            type: 'string',
+        },
+        {
+            name: 'specDetails6',
+            title: 'SpecDetails6',
+            type: 'string',
+        },
+        {
+            name: 'specDetails7',
+            title: 'SpecDetails7',
+            type: 'string',
+        },         
+        {
+            name: 'specDetails8',
+            title: 'SpecDetails8',
+            type: 'string',
+        },        
+        {
+            name: 'specDetails9',
+            title: 'SpecDetails9',
+            type: 'string',
+        },
+        {
+            name: 'specDetails10',
+            title: 'SpecDetails10',
+            type: 'string',
+        },
+        {
+            name: 'specDetails11',
+            title: 'SpecDetails11',
+            type: 'string',
+        }
 
     ]
 }

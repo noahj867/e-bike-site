@@ -5,15 +5,14 @@ import {ProductCard, Form, Overlay} from '../../components';
 import {useStateContext} from '../../context/StateContext';
 
 import {client} from '../../lib/client';
-import {urlFor} from '../../lib/client';
 
 const ProductPage = ({productCards}) => {
 
 const {showOverlay, handleOverlayToggle} = useStateContext();
 
-  const bike = productCards.find(bike => bike.name === "24hr Battery Bike");
+  const bike = productCards.find(bike => bike.name === "24Hr Battery Bike");
   const accessories = productCards.filter(accessory => 
-    accessory.name !== "24hr Battery Bike" &&
+    accessory.name !== "24Hr Battery Bike" &&
     accessory.name !== "Classic Pass" &&
     accessory.name !== "Mover Pass"
   )

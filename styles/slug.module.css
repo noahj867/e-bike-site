@@ -54,19 +54,37 @@
   display: flex;
   flex-direction: column;
 }
-.productDetailContainer .productDetailDesc .productAccessoryContainer {
+.productDetailContainer .productDetailDesc .specDropDown {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 500;
+}
+.productDetailContainer .productDetailDesc .specSection {
+  border: 1.5px solid;
+  border-radius: 5px;
+}
+.productDetailContainer .productDetailDesc .specWrapper {
+  width: 100%;
   display: flex;
   flex-direction: column;
+  border-radius: 5px;
 }
-.productDetailContainer .productDetailDesc .productAccessoryContainer .productAccessoryTitle {
-  margin-top: 30px;
-  margin-bottom: 10px;
-}
-.productDetailContainer .productDetailDesc .productAccessoryContainer .productAccessoryList {
+.productDetailContainer .productDetailDesc .specWrapper .specContainer {
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  gap: 8px;
-  margin-left: 20px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 10px;
+  gap: 5px;
+  text-overflow: right;
+}
+.productDetailContainer .productDetailDesc .specWrapper .specContainer .specDetails {
+  font-weight: 400;
+}
+.productDetailContainer .productDetailDesc .specWrapper .specLineBreak {
+  border-bottom: 1px black;
+  margin: 0;
 }
 .productDetailContainer .productDetailDesc .productSubtitle {
   font-size: 1.2rem;

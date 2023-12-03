@@ -14,7 +14,7 @@ const {image, name, slug, price} = productCard;
           <div className={style.productContentContainer}>
                 <img className={style.productImage} src={urlFor(image && image[0])}/>
                 <h4 className={style.productTitle}>{name}</h4>
-                <p className={style.productPrice}><em><b>Price:</b> ${price}</em></p>
+                <p className={style.productPrice}><em><b>Price:</b>${price}</em></p>
                 <button className={style.addToCart}>Add to Cart</button>
             </div>
         </Link>

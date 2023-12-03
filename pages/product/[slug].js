@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-
+import ArrowDropDown from '@mui/icons-material/ArrowDropDown';
 import {client, urlFor} from '../../lib/client';
 import {AiOutlineMinus, AiOutplinePlus, 
 AiFillStar, AiOutlineStar, AiOutlinePlus} from 'react-icons/ai';
@@ -9,18 +9,57 @@ import {Form, Overlay} from '../../components';
 
 
 const ProductDetails = ({product, products}) => {
-    const {image, name, description, price, subtitle, highlight1, highlight2, highlight3, highlight4 } = product;
+    const {
+        image, 
+        name, 
+        description,
+        price, 
+        subtitle, 
+        spec1, 
+        spec2, 
+        spec3, 
+        spec4, 
+        spec5,
+        spec6, 
+        spec7 , 
+        spec8, 
+        spec9, 
+        spec10,
+        spec11,
+        specDetails1,
+        specDetails2,
+        specDetails3,
+        specDetails4,
+        specDetails5,
+        specDetails6,
+        specDetails7,
+        specDetails8,
+        specDetails9,
+        specDetails10,
+        specDetails11
+      } 
+      = product;
     const [index, setIndex] = useState(0);
     const { decQty, incQty, qty, onAdd, showOverlay, handleOverlayToggle} = useStateContext();
-
-    console.log("Before toggle:", showOverlay);
-    console.log("After toggle:", showOverlay);
+    const specs = [
+        {title: spec1, details: specDetails1},
+        {title: spec2, details: specDetails2},
+        {title: spec3, details: specDetails3},
+        {title: spec4, details: specDetails4},
+        {title: spec5, details: specDetails5},
+        {title: spec6, details: specDetails6},
+        {title: spec7, details: specDetails7},
+        {title: spec8, details: specDetails8},
+        {title: spec9, details: specDetails9},
+        {title: spec10, details: specDetails10},
+        {title: spec11, details: specDetails11}
+    ]
     
   return (
         <div className={style.productDetailContainer}>
             {showOverlay && (
                 <Overlay >
-                <Form toggleOverlay={handleOverlayToggle} showOverlay={showOverlay}/>
+                    <Form toggleOverlay={handleOverlayToggle} showOverlay={showOverlay}/>
                 </Overlay>
             )}
             <div className={style.imageContainer}>
@@ -63,18 +102,26 @@ const ProductDetails = ({product, products}) => {
                     className={style.buyNow} 
                     onClick={handleOverlayToggle}>Pre-order</button>
                 </div>
-                {highlight1 && (
-                <div className={style.productAccessoryContainer}>
-                    {/* <h3 className={style.productAccessoryTitle}>Pass Includes...</h3>
-                    <ul className={style.productAccessoryList}>
-                        <li className={style.productAccessory}>{highlight1}</li>
-                        <li className={style.productAccessory}>{highlight2}</li>
-                        <li className={style.productAccessory}>{highlight3}</li>
-                        <li className={style.productAccessory}>{highlight4}</li>
-                    </ul> */}
-                </div>
+                {spec1 && (
+                    <details>
+                        <summary className={style.specDropDown}>
+                            Specs
+                        </summary>
+                        <div className={style.specSection} >
+                        {specs.map((item, i) => (
+                            <div className={style.specWrapper} key={i}>
+                                <div className={style.specContainer}>
+                                    <h4 className={style.specTitle}>{item.title}</h4>
+                                    <h5 className={style.specDetails}>{item.details}</h5>
+                                </div>
+                                <hr className={style.specLineBreak}/>
+                            </div>
+                        ))}
+                        </div>
+                    </details>
                     )
                 }
+                {console.log(product)}
             </div>
         </div>
     )

@@ -105,7 +105,7 @@ const ProductDetails = ({product, products}) => {
                 {spec1 && (
                     <details>
                         <summary className={style.specDropDown}>
-                            Specs
+                            More Info
                         </summary>
                         <div className={style.specSection} >
                         {specs.map((item, i) => (

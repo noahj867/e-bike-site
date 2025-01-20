@@ -12,16 +12,19 @@
 }
 
 .heroBannerContainer{
+  position: relative;
   display: flex;
   // align-items: top;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   background-color: $grey-100;
-  background-image: url("/motorcycle-gif-big.gif");
+  // background-image: url("/motorcycle-gif-big.gif");
   gap: 30px;
-  padding: 300px 20px 250px 20px;
+  min-height: 900px;
+  // padding: 300px 20px 250px 20px;
   background-size: cover;
+  overflow: hidden; // Ensures no content spills out
 
 
   .heroBannerText {
@@ -106,5 +109,11 @@
 
   @media (max-width: 800px) {
     justify-content: center;
+    min-height: 700px;
+  }
+
+  @media (max-width: 400px) {
+    justify-content: center;
+    min-height: 600px;
   }
 }

@@ -13,6 +13,21 @@ const HeroBanner = () => {
 
   return (
     <div className={style.heroBannerContainer}>
+      <video 
+        src="/motorcycle-medium-no-audio.mp4" 
+        autoPlay 
+        loop 
+        muted 
+        playsInline 
+        loading="lazy"
+        style={{    
+          width: '100%',
+          height: '100%',
+          position: 'absolute',
+          objectFit: 'cover',
+          top: 0,
+          left: 0,}}
+      />
       {showOverlay && (
         <Overlay >
           <Form toggleOverlay={handleOverlayToggle} showOverlay={showOverlay}/>
@@ -25,7 +40,7 @@ const HeroBanner = () => {
                 <Link href="/product/explorer">
                     <button type="button">24HB Bike</button>
                 </Link>
-                <button class={style.buttonSecondary} type="button" onClick={handleOverlayToggle}>Join Waitlist</button>
+                <button className={style.buttonSecondary} type="button" onClick={handleOverlayToggle}>Join Waitlist</button>
             </div>
         </div>
         <div className={style.motorcycleGifWrapper}>

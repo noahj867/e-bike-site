@@ -9,15 +9,16 @@
   }
 }
 .heroBannerContainer {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   background-color: #eae9e9;
-  background-image: url("/motorcycle-gif-big.gif");
   gap: 30px;
-  padding: 300px 20px 250px 20px;
+  min-height: 900px;
   background-size: cover;
+  overflow: hidden;
 }
 .heroBannerContainer .heroBannerText {
   animation: slideUp forwards 1s;
@@ -92,5 +93,12 @@
 @media (max-width: 800px) {
   .heroBannerContainer {
     justify-content: center;
+    min-height: 700px;
+  }
+}
+@media (max-width: 400px) {
+  .heroBannerContainer {
+    justify-content: center;
+    min-height: 600px;
   }
 }/*# sourceMappingURL=heroBanner.module.css.map */
